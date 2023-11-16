@@ -4,9 +4,7 @@ import { Currency } from '@sushiswap/core-sdk'
 import NavLink from 'app/components/NavLink'
 import Settings from 'app/components/Settings'
 import Typography from 'app/components/Typography'
-import { Feature } from 'app/enums'
 import MyOrders from 'app/features/legacy/limit-order/MyOrders'
-import { featureEnabled } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useRouter } from 'next/router'
 import React, { FC } from 'react'
@@ -49,7 +47,7 @@ const HeaderNew: FC<HeaderNewProps> = ({ inputCurrency, outputCurrency, trident 
             {i18n._(t`Swap`)}
           </Typography>
         </NavLink>
-        {featureEnabled(Feature.LIMIT_ORDERS, chainId) ? (
+        {/* {featureEnabled(Feature.LIMIT_ORDERS, chainId) ? (
           <NavLink
             activeClassName="text-high-emphesis"
             href={{
@@ -61,7 +59,7 @@ const HeaderNew: FC<HeaderNewProps> = ({ inputCurrency, outputCurrency, trident 
               {i18n._(t`Limit`)}
             </Typography>
           </NavLink>
-        ) : null}
+        ) : null} */}
       </div>
       <div className="flex gap-4">
         {isLimitOrder && <MyOrders />}
