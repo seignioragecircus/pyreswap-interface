@@ -103,10 +103,10 @@ const WalletModal: FC<WalletModal> = ({ pendingTransactions, confirmedTransactio
 
       // log selected wallet
 
-      gtag('event', 'Change Wallet', {
-        event_category: 'Wallet',
-        event_label: name,
-      })
+      // gtag('event', 'Change Wallet', {
+      //   event_category: 'Wallet',
+      //   event_label: name,
+      // })
 
       setPendingWallet({ connector: conn, id }) // set wallet for pending view
       setWalletView(WALLET_VIEWS.PENDING)

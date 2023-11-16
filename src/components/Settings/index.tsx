@@ -1,17 +1,13 @@
-import { CheckIcon, CogIcon } from '@heroicons/react/outline'
+import { CogIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import { Percent } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
-import CloseIcon from 'app/components/CloseIcon'
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'
 import Popover from 'app/components/Popover'
-import QuestionHelper from 'app/components/QuestionHelper'
-import Switch from 'app/components/Switch'
 import TransactionSettings from 'app/components/TransactionSettings'
 import Typography from 'app/components/Typography'
-import { Feature } from 'app/enums'
-import { classNames, featureEnabled } from 'app/functions'
+import { classNames } from 'app/functions'
 import useWalletSupportsSushiGuard from 'app/hooks/useWalletSupportsSushiGuard'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useToggleSettingsMenu } from 'app/state/application/hooks'
@@ -47,7 +43,7 @@ const SettingsTab: FC<SettingsTabProps> = ({ placeholderSlippage, className, tri
               </Typography>
               <TransactionSettings placeholderSlippage={placeholderSlippage} trident={trident} />
             </div>
-            <div className="flex flex-col gap-3 p-3 border rounded border-dark-800/60">
+            {/* <div className="flex flex-col gap-3 p-3 border rounded border-dark-800/60">
               <Typography variant="xxs" weight={700} className="text-secondary">
                 {i18n._(t`Interface Settings`)}
               </Typography>
@@ -102,7 +98,7 @@ const SettingsTab: FC<SettingsTabProps> = ({ placeholderSlippage, className, tri
                 </div>
               )}
               {/* // @ts-ignore TYPE NEEDS FIXING*/}
-              {featureEnabled(Feature.SUSHIGUARD, chainId ?? -1) && walletSupportsSushiGuard && (
+            {/* {featureEnabled(Feature.SUSHIGUARD, chainId ?? -1) && walletSupportsSushiGuard && (
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <Typography variant="xs" className="text-high-emphesis" weight={700}>
@@ -121,7 +117,7 @@ const SettingsTab: FC<SettingsTabProps> = ({ placeholderSlippage, className, tri
                   />
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         }
       >

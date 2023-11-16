@@ -1,13 +1,8 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { DiscordIcon, InstagramIcon, MediumIcon, TwitterIcon } from 'app/components/Icon'
-import LanguageSwitch from 'app/components/LanguageSwitch'
 import Typography from 'app/components/Typography'
-import { Feature } from 'app/enums'
-import { featureEnabled } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 import Container from '../Container'
@@ -29,7 +24,7 @@ const Footer = () => {
                 Sushi
               </Typography>
             </div>
-            <Typography variant="xs" className="text-low-emphesis">
+            {/* <Typography variant="xs" className="text-low-emphesis">
               {i18n._(t`Our community is building a comprehensive decentralized trading platform for the future of finance. Join
               us!`)}
             </Typography>
@@ -46,13 +41,13 @@ const Footer = () => {
               <a href="https://discord.gg/NVPXN4e" target="_blank" rel="noreferrer">
                 <DiscordIcon width={16} className="text-low-emphesis" />
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col gap-1 text-right">
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Products`)}
             </Typography>
-            <Link href={featureEnabled(Feature.TRIDENT, chainId) ? '/trident/pools' : '/legacy/pool'} passHref={true}>
+            {/* <Link href={featureEnabled(Feature.TRIDENT, chainId) ? '/trident/pools' : '/legacy/pool'} passHref={true}>
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Liquidity Pools`)}
               </Typography>
@@ -76,13 +71,13 @@ const Footer = () => {
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Tools`)}
               </Typography>
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-col gap-1 md:text-right lg:text-right">
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Help`)}
             </Typography>
-            <a href="https://docs.sushi.com" target="_blank" rel="noreferrer">
+            {/* <a href="https://docs.sushi.com" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`What is Sushi?`)}
               </Typography>
@@ -101,13 +96,13 @@ const Footer = () => {
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Ask on Forum`)}
               </Typography>
-            </a>
+            </a> */}
           </div>
           <div className="flex flex-col gap-1 text-right xs:text-right md:text-left lg:text-right">
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Developers`)}
             </Typography>
-            <a href="https://docs.sushi.com" target="_blank" rel="noreferrer">
+            {/* <a href="https://docs.sushi.com" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`GitBook`)}
               </Typography>
@@ -126,13 +121,13 @@ const Footer = () => {
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`SushiGuard`)}
               </Typography>
-            </a>
+            </a> */}
           </div>
           <div className="flex flex-col gap-1 md:text-right lg:text-right">
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Governance`)}
             </Typography>
-            <a href="https://forum.sushi.com" target="_blank" rel="noreferrer">
+            {/* <a href="https://forum.sushi.com" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Forum & Proposals`)}
               </Typography>
@@ -141,13 +136,13 @@ const Footer = () => {
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Vote`)}
               </Typography>
-            </a>
+            </a> */}
           </div>
           <div className="flex flex-col gap-1 text-right">
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Protocol`)}
             </Typography>
-            <a href="https://rbieu62gj0f.typeform.com/to/KkrPkOFe" target="_blank" rel="noreferrer">
+            {/* <a href="https://rbieu62gj0f.typeform.com/to/KkrPkOFe" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Apply for Onsen`)}
               </Typography>
@@ -166,11 +161,11 @@ const Footer = () => {
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Vesting`)}
               </Typography>
-            </Link>
+            </Link> */}
           </div>
-          <div className="flex flex-col gap-1">
+          {/* <div className="flex flex-col gap-1">
             <LanguageSwitch />
-          </div>
+          </div> */}
         </div>
       </Container>
     </div>

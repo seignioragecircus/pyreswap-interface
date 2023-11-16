@@ -6,7 +6,7 @@ import { I18nProvider } from '@lingui/react'
 import { remoteLoader } from '@lingui/remote-loader'
 import Web3ReactManager from 'app/components/Web3ReactManager'
 import getLibrary from 'app/functions/getLibrary'
-import { exception, GOOGLE_ANALYTICS_TRACKING_ID, pageview } from 'app/functions/gtag'
+// import { exception, pageview } from 'app/functions/gtag'
 import DefaultLayout from 'app/layouts/Default'
 import { BlockNumberProvider } from 'app/lib/hooks/useBlockNumber'
 import { MulticallUpdater } from 'app/lib/state/multicall'
@@ -20,7 +20,6 @@ import * as plurals from 'make-plural/plurals'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import Script from 'next/script'
 import { DefaultSeo } from 'next-seo'
 import React, { Fragment, useEffect } from 'react'
 import { Provider as ReduxProvider } from 'react-redux'
@@ -61,28 +60,28 @@ function MyApp({ Component, pageProps, fallback, err }) {
   const router = useRouter()
   const { locale, events } = router
 
-  useEffect(() => {
-    // @ts-ignore TYPE NEEDS FIXING
-    const handleRouteChange = (url) => {
-      pageview(url)
-    }
-    events.on('routeChangeComplete', handleRouteChange)
+  // useEffect(() => {
+  //   @ts-ignore TYPE NEEDS FIXING
+  //   const handleRouteChange = (url) => {
+  //     pageview(url)
+  //   }
+  //   events.on('routeChangeComplete', handleRouteChange)
 
-    // @ts-ignore TYPE NEEDS FIXING
-    const handleError = (error) => {
-      exception({
-        description: `${error.message} @ ${error.filename}:${error.lineno}:${error.colno}`,
-        fatal: true,
-      })
-    }
+  //   @ts-ignore TYPE NEEDS FIXING
+  //   const handleError = (error) => {
+  //      exception({
+  //        description: `${error.message} @ ${error.filename}:${error.lineno}:${error.colno}`,
+  //        fatal: true,
+  //      })
+  //    }
 
-    window.addEventListener('error', handleError)
+  //   window.addEventListener('error', handleError)
 
-    return () => {
-      events.off('routeChangeComplete', handleRouteChange)
-      window.removeEventListener('error', handleError)
-    }
-  }, [events])
+  //   return () => {
+  //     events.off('routeChangeComplete', handleRouteChange)
+  //     window.removeEventListener('error', handleError)
+  //   }
+  // }, [events])
 
   useEffect(() => {
     // @ts-ignore TYPE NEEDS FIXING
@@ -123,18 +122,18 @@ function MyApp({ Component, pageProps, fallback, err }) {
 
   return (
     <>
-      <Head>Sushi</Head>
+      <Head>PyreSwap</Head>
       <meta
         name="viewport"
         content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
       />
 
       {/* Global Site Tag (gtag.js) - Google Analytics */}
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_TRACKING_ID}`}
-      />
-      <Script
+      /> */}
+      {/* <Script
         id="gtag-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -147,7 +146,7 @@ function MyApp({ Component, pageProps, fallback, err }) {
             });
           `,
         }}
-      />
+      /> */}
       <I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>
         <Web3ReactProvider getLibrary={getLibrary}>
           {/*@ts-ignore TYPE NEEDS FIXING*/}

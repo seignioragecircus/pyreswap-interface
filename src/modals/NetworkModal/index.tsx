@@ -25,17 +25,17 @@ export const SUPPORTED_NETWORKS: Record<
     blockExplorerUrls: string[]
   }
 > = {
-  [ChainId.ETHEREUM]: {
-    chainId: '0x1',
-    chainName: 'Ethereum',
-    nativeCurrency: {
-      name: 'Ethereum',
-      symbol: 'ETH',
-      decimals: 18,
-    },
-    rpcUrls: ['https://mainnet.infura.io/v3'],
-    blockExplorerUrls: ['https://etherscan.com'],
-  },
+  // [ChainId.ETHEREUM]: {
+  //   chainId: '0x1',
+  //   chainName: 'Ethereum',
+  //   nativeCurrency: {
+  //     name: 'Ethereum',
+  //     symbol: 'ETH',
+  //     decimals: 18,
+  //   },
+  //   rpcUrls: ['https://mainnet.infura.io/v3'],
+  //   blockExplorerUrls: ['https://etherscan.com'],
+  // },
   [ChainId.ROPSTEN]: {
     chainId: '0x3',
     chainName: 'Ropsten',
@@ -321,24 +321,24 @@ const NetworkModal: FC<{ switchNetwork: (targetChain: number) => void }> = ({ sw
         <HeadlessUiModal.Header header={i18n._(t`Select a network`)} onClose={toggleNetworkModal} />
         <div className="grid grid-flow-row-dense grid-cols-1 gap-4 overflow-y-auto md:grid-cols-2">
           {[
-            ChainId.ETHEREUM,
-            ChainId.ARBITRUM,
-            ChainId.ARBITRUM_NOVA,
-            ChainId.MATIC,
-            ChainId.XDAI,
+            // ChainId.ETHEREUM,
+            // ChainId.ARBITRUM,
+            // ChainId.ARBITRUM_NOVA,
+            // ChainId.MATIC,
+            // ChainId.XDAI,
             ChainId.FANTOM,
-            ChainId.MOONRIVER,
-            ChainId.HARMONY,
+            // ChainId.MOONRIVER,
+            // ChainId.HARMONY,
             ChainId.AVALANCHE,
-            ChainId.OPTIMISM,
-            ChainId.MOONBEAM,
-            ChainId.FUSE,
+            // ChainId.OPTIMISM,
+            // ChainId.MOONBEAM,
+            // ChainId.FUSE,
             ChainId.BSC,
-            ChainId.KAVA,
-            ChainId.METIS,
-            ChainId.TELOS,
-            ChainId.CELO,
-            ChainId.BOBA_AVAX,
+            // ChainId.KAVA,
+            // ChainId.METIS,
+            // ChainId.TELOS,
+            // ChainId.CELO,
+            // ChainId.BOBA_AVAX,
             // ChainId.OKEX,
             // ChainId.HECO,
             // ChainId.PALM,

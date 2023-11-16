@@ -2,7 +2,7 @@ import { BeakerIcon, GlobeIcon, SwitchVerticalIcon, TrendingUpIcon } from '@hero
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import { ChainId, SUSHI_ADDRESS } from '@sushiswap/core-sdk'
-import { RocketIcon, WalletIcon } from 'app/components/Icon'
+import { RocketIcon } from 'app/components/Icon'
 import { Feature } from 'app/enums'
 import { featureEnabled } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
@@ -41,12 +41,12 @@ const useMenu: UseMenu = () => {
         title: i18n._(t`Swap`),
         link: '/swap',
       },
-      {
-        key: 'limit',
-        title: i18n._(t`Limit order`),
-        link: '/limit-order',
-        disabled: !featureEnabled(Feature.LIMIT_ORDERS, chainId),
-      },
+      // {
+      //   key: 'limit',
+      //   title: i18n._(t`Limit order`),
+      //   link: '/limit-order',
+      //   disabled: !featureEnabled(Feature.LIMIT_ORDERS, chainId),
+      // },
     ]
 
     const liquidity = [
@@ -139,7 +139,7 @@ const useMenu: UseMenu = () => {
         key: 'trade',
         title: i18n._(t`Trade`),
         icon: <SwitchVerticalIcon width={20} />,
-        items: trade.filter((item) => !item?.disabled),
+        items: trade.filter((item) => item),
       })
       menu.push({
         key: 'liquidity',
@@ -149,26 +149,26 @@ const useMenu: UseMenu = () => {
       })
     }
 
-    if (featureEnabled(Feature.LIQUIDITY_MINING, chainId)) {
-      const farmItems = {
-        key: 'farm',
-        title: i18n._(t`Farm`),
-        icon: <SwitchVerticalIcon width={20} className="rotate-90 filter" />,
-        items: [
-          {
-            key: 'farm',
-            title: i18n._(t`Onsen Menu`),
-            link: '/farm',
-          },
-          {
-            key: 'my-farms',
-            title: i18n._(t`My Farms`),
-            link: '/farm?filter=portfolio',
-          },
-        ],
-      }
-      menu.push(farmItems)
-    }
+    // if (featureEnabled(Feature.LIQUIDITY_MINING, chainId)) {
+    //   const farmItems = {
+    //     key: 'farm',
+    //     title: i18n._(t`Farm`),
+    //     icon: <SwitchVerticalIcon width={20} className="rotate-90 filter" />,
+    //     items: [
+    //       {
+    //         key: 'farm',
+    //         title: i18n._(t`Onsen Menu`),
+    //         link: '/farm',
+    //       },
+    //       {
+    //         key: 'my-farms',
+    //         title: i18n._(t`My Farms`),
+    //         link: '/farm?filter=portfolio',
+    //       },
+    //     ],
+    //   }
+    //   menu.push(farmItems)
+    // }
 
     if (featureEnabled(Feature.KASHI, chainId)) {
       menu.push({
@@ -278,13 +278,13 @@ const useMenu: UseMenu = () => {
       ],
     }
 
-    if (featureEnabled(Feature.BENTOBOX, chainId)) {
-      analyticsMenu.items.push({
-        key: 'farms',
-        title: 'Farms',
-        link: `/analytics/farms`,
-      })
-    }
+    // if (featureEnabled(Feature.BENTOBOX, chainId)) {
+    //   analyticsMenu.items.push({
+    //     key: 'farms',
+    //     title: 'Farms',
+    //     link: `/analytics/farms`,
+    //   })
+    // }
 
     if (featureEnabled(Feature.BENTOBOX, chainId)) {
       analyticsMenu.items.push({
@@ -298,43 +298,43 @@ const useMenu: UseMenu = () => {
       menu.push(analyticsMenu)
     }
 
-    if (account && chainId !== ChainId.ARBITRUM_NOVA) {
-      const portfolio = {
-        key: 'portfolio',
-        title: i18n._(t`Portfolio`),
+    // if (account && chainId !== ChainId.ARBITRUM_NOVA) {
+    //   const portfolio = {
+    //     key: 'portfolio',
+    //     title: i18n._(t`Portfolio`),
 
-        icon: <WalletIcon width={20} />,
-        items: [
-          {
-            key: 'account',
-            title: 'Account',
-            link: `/account?account=${account}`,
-          },
-        ],
-      }
+    //     icon: <WalletIcon width={20} />,
+    //     items: [
+    //       {
+    //         key: 'account',
+    //         title: 'Account',
+    //         link: `/account?account=${account}`,
+    //       },
+    //     ],
+    //   }
 
-      if (featureEnabled(Feature.SUBGRAPH, chainId)) {
-        portfolio.items.push({
-          key: 'liquidity',
-          title: 'Liquidity',
-          link: `/account/liquidity?account=${account}`,
-        })
-      }
+    //   if (featureEnabled(Feature.SUBGRAPH, chainId)) {
+    //     portfolio.items.push({
+    //       key: 'liquidity',
+    //       title: 'Liquidity',
+    //       link: `/account/liquidity?account=${account}`,
+    //     })
+    //   }
 
-      if (featureEnabled(Feature.KASHI, chainId)) {
-        portfolio.items.push({
-          key: 'lending',
-          title: 'Lending',
-          link: `/account/lending?account=${account}`,
-        })
-        portfolio.items.push({
-          key: 'borrowing',
-          title: 'Borrowing',
-          link: `/account/borrowing?account=${account}`,
-        })
-      }
-      menu.push(portfolio)
-    }
+    //   if (featureEnabled(Feature.KASHI, chainId)) {
+    //     portfolio.items.push({
+    //       key: 'lending',
+    //       title: 'Lending',
+    //       link: `/account/lending?account=${account}`,
+    //     })
+    //     portfolio.items.push({
+    //       key: 'borrowing',
+    //       title: 'Borrowing',
+    //       link: `/account/borrowing?account=${account}`,
+    //     })
+    //   }
+    //   menu.push(portfolio)
+    // }
 
     return menu.filter((el) => Object.keys(el).length > 0)
   }, [account, chainId, i18n])

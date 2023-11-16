@@ -11,13 +11,11 @@ import { clearAllTransactions } from 'app/state/transactions/actions'
 import Image from 'next/image'
 import React, { FC, useCallback, useMemo } from 'react'
 import { ExternalLink as LinkIcon } from 'react-feather'
-import { WalletLinkConnector } from 'web3-react-walletlink-connector'
 
 import Button from '../Button'
 import ExternalLink from '../ExternalLink'
 import Typography from '../Typography'
 import Copy from './Copy'
-import Transaction from './Transaction'
 
 interface AccountDetailsProps {
   toggleWalletModal: () => void
@@ -68,15 +66,18 @@ const AccountDetails: FC<AccountDetailsProps> = ({
         <HeadlessUiModal.BorderedContent className="flex flex-col gap-3">
           <div className="flex items-center justify-between">
             {connectorName}
-            {connector !== injected && !(connector instanceof WalletLinkConnector) && (
+            <Button variant="outlined" color="blue" size="xs" onClick={deactivate}>
+              {i18n._(t`Disconnect`)}
+            </Button>
+            {/* {connector !== injected && !(connector instanceof WalletLinkConnector) && (
               <Button variant="outlined" color="blue" size="xs" onClick={deactivate}>
                 {i18n._(t`Disconnect`)}
               </Button>
-            )}
+            )} */}
 
-            <Button variant="outlined" color="blue" size="xs" onClick={openOptions}>
+            {/* <Button variant="outlined" color="blue" size="xs" onClick={openOptions}>
               {i18n._(t`Change`)}
-            </Button>
+            </Button> */}
           </div>
           <div id="web3-account-identifier-row" className="flex flex-col justify-center gap-4">
             <div className="flex items-center gap-4">
@@ -117,7 +118,7 @@ const AccountDetails: FC<AccountDetailsProps> = ({
             </div>
           </div>
         </HeadlessUiModal.BorderedContent>
-        <HeadlessUiModal.BorderedContent className="flex flex-col gap-3">
+        {/* <HeadlessUiModal.BorderedContent className="flex flex-col gap-3">
           <div className="flex items-center justify-between">
             <Typography variant="xs" weight={700} className="text-secondary">
               {i18n._(t`Recent Transactions`)}
@@ -142,7 +143,7 @@ const AccountDetails: FC<AccountDetailsProps> = ({
               </Typography>
             )}
           </div>
-        </HeadlessUiModal.BorderedContent>
+        </HeadlessUiModal.BorderedContent> */}
       </div>
     </div>
   )
