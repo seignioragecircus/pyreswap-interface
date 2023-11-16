@@ -1,4 +1,3 @@
-import Davatar from '@davatar/react'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import { HeadlessUiModal } from 'app/components/Modal'
@@ -8,7 +7,6 @@ import { shortenAddress } from 'app/functions/format'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch } from 'app/state/hooks'
 import { clearAllTransactions } from 'app/state/transactions/actions'
-import Image from 'next/image'
 import React, { FC, useCallback, useMemo } from 'react'
 import { ExternalLink as LinkIcon } from 'react-feather'
 
@@ -81,7 +79,7 @@ const AccountDetails: FC<AccountDetailsProps> = ({
           </div>
           <div id="web3-account-identifier-row" className="flex flex-col justify-center gap-4">
             <div className="flex items-center gap-4">
-              <div className="overflow-hidden rounded-full">
+              {/* <div className="overflow-hidden rounded-full">
                 <Davatar
                   size={48}
                   // @ts-ignore TYPE NEEDS FIXING
@@ -91,7 +89,7 @@ const AccountDetails: FC<AccountDetailsProps> = ({
                   }
                   provider={library}
                 />
-              </div>
+              </div> */}
               <Typography weight={700} variant="lg" className="text-white">
                 {ENSName ? ENSName : account && shortenAddress(account)}
               </Typography>
