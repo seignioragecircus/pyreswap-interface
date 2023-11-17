@@ -7,14 +7,12 @@ import {
   ChainId,
   CHAINLINK_ORACLE_ADDRESS,
   ENS_REGISTRAR_ADDRESS,
-  FACTORY_ADDRESS,
   MAKER_ADDRESS,
   MASTERCHEF_ADDRESS,
   MASTERCHEF_V2_ADDRESS,
   MERKLE_DISTRIBUTOR_ADDRESS,
   MINICHEF_ADDRESS,
   MULTICALL2_ADDRESS,
-  ROUTER_ADDRESS,
   SUSHI_ADDRESS,
   TIMELOCK_ADDRESS,
   WNATIVE_ADDRESS,
@@ -40,7 +38,8 @@ import ENS_PUBLIC_RESOLVER_ABI from 'app/constants/abis/ens-public-resolver.json
 import ENS_ABI from 'app/constants/abis/ens-registrar.json'
 import { ERC20_BYTES32_ABI } from 'app/constants/abis/erc20'
 import ERC20_ABI from 'app/constants/abis/erc20.json'
-import FACTORY_ABI from 'app/constants/abis/factory.json'
+// import FACTORY_ABI from 'app/constants/abis/factory.json'
+import FACTORY_ABI from 'app/constants/abis/factory-pyreswap.json'
 import INARI_ABI from 'app/constants/abis/inari.json'
 import MULTICALL_ABI from 'app/constants/abis/interface-multicall.json'
 import KASHI_REPOSITORY_ABI from 'app/constants/abis/kashi-repository.json'
@@ -54,7 +53,8 @@ import MERKLE_DISTRIBUTOR_ABI from 'app/constants/abis/merkle-distributor.json'
 import MINICHEF_ABI from 'app/constants/abis/minichef-v2.json'
 import MISO_HELPER_ABI from 'app/constants/abis/miso-helper.json'
 import MULTICALL2_ABI from 'app/constants/abis/multicall2.json'
-import ROUTER_ABI from 'app/constants/abis/router.json'
+// import ROUTER_ABI from 'app/constants/abis/router.json'
+import ROUTER_ABI from 'app/constants/abis/router-pyreswap.json'
 import SUSHI_ABI from 'app/constants/abis/sushi.json'
 import SUSHIROLL_ABI from 'app/constants/abis/sushi-roll.json'
 import TIMELOCK_ABI from 'app/constants/abis/timelock.json'
@@ -69,6 +69,8 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useMemo } from 'react'
 
 const UNI_FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+const FACTORY_ADDRESS_PYRESWAP = '0x045D720873f0260e23DA812501a7c5930E510aA4'
+const ROUTER_ADDRESS_PYRESWAP = '0x29cf2367f188951E8a33b2424B7CEF75C3a38fA8'
 
 export function useEIP2612Contract(tokenAddress?: string): Contract | null {
   return useContract(tokenAddress, EIP_2612_ABI, false)
@@ -220,13 +222,15 @@ export function useMiniChefContract(withSignerIfPossible?: boolean): Contract | 
 
 export function useFactoryContract(): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract(chainId ? FACTORY_ADDRESS[chainId] : undefined, FACTORY_ABI, false)
+  // There needs to be a dependency on blockchain
+  return useContract(chainId ? FACTORY_ADDRESS_PYRESWAP : undefined, FACTORY_ABI, false)
 }
 
 export function useRouterContract(withSignerIfPossible?: boolean): Contract | null {
   const { chainId } = useActiveWeb3React()
+  // There needs to be a dependency on blockchain
   // @ts-ignore TYPE NEEDS FIXING
-  return useContract(ROUTER_ADDRESS[chainId], ROUTER_ABI, withSignerIfPossible)
+  return useContract(ROUTER_ADDRESS_PYRESWAP, ROUTER_ABI, withSignerIfPossible)
 }
 
 export function useSushiBarContract(withSignerIfPossible?: boolean): Contract | null {

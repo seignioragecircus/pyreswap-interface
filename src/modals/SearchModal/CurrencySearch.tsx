@@ -13,7 +13,7 @@ import CurrencyModalView from 'app/modals/SearchModal/CurrencyModalView'
 import { useCurrencyModalContext } from 'app/modals/SearchModal/CurrencySearchModal'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useRouter } from 'next/router'
-import React, { KeyboardEvent, useCallback, useEffect, useMemo, useState } from 'react'
+import React, { KeyboardEvent, useCallback, useMemo, useState } from 'react'
 
 import CommonBases from './CommonBases'
 import CurrencyList from './CurrencyList'
@@ -61,14 +61,14 @@ export function CurrencySearch({
     }, {})
   }
 
-  useEffect(() => {
-    if (isAddressSearch) {
-      gtag('event', 'Search by address', {
-        event_category: 'Currency Select',
-        event_label: isAddressSearch,
-      })
-    }
-  }, [isAddressSearch])
+  // useEffect(() => {
+  //   if (isAddressSearch) {
+  //     gtag('event', 'Search by address', {
+  //       event_category: 'Currency Select',
+  //       event_label: isAddressSearch,
+  //     })
+  //   }
+  // }, [isAddressSearch])
 
   const filteredTokens: Token[] = useMemo(() => {
     return filterTokens(Object.values(allTokens), debouncedQuery)

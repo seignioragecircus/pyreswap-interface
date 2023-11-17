@@ -1,3 +1,4 @@
+// import { ChainId, Pair, Token } from '@sushiswap/core-sdk'
 import { Pair } from '@sushiswap/core-sdk'
 import { useV2Pairs } from 'app/hooks/useV2Pairs'
 import { useActiveWeb3React } from 'app/services/web3'
@@ -21,6 +22,20 @@ export const useV2PairsWithLiquidity = (): V2PairsWithLiquidity => {
 
   // 0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32
 
+  // console.log(trackedTokenPairs)
+
+  // const axlUSDC = new Token(
+  //   ChainId.FANTOM,
+  //   '0x1B6382DBDEa11d97f24495C9A90b7c88469134a4',
+  //   6,
+  //   'axlUSDC',
+  //   'Axelar Wrapped USDC'
+  // )
+  // const wftm = new Token(ChainId.FANTOM, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM')
+
+  // const array: [Token, Token][] = [[axlUSDC, wftm]]
+  // console.log(array)
+
   const tokenPairsWithLiquidityTokens = useMemo(
     () =>
       trackedTokenPairs.map((tokens) => ({
@@ -29,6 +44,9 @@ export const useV2PairsWithLiquidity = (): V2PairsWithLiquidity => {
       })),
     [trackedTokenPairs]
   )
+
+  console.log(tokenPairsWithLiquidityTokens)
+
   const liquidityTokens = useMemo(
     () => tokenPairsWithLiquidityTokens.map((tpwlt) => tpwlt.liquidityToken),
     [tokenPairsWithLiquidityTokens]

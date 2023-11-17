@@ -1,6 +1,7 @@
-import { JSBI, ZERO } from '@sushiswap/core-sdk'
-import { PROTOCOL_FEE, PROTOCOL_FEE_DIVISOR } from '@sushiswap/kashi-sdk'
+// import { JSBI, ZERO } from '@sushiswap/core-sdk'
+import { JSBI } from '@sushiswap/core-sdk'
 
+// import { PROTOCOL_FEE, PROTOCOL_FEE_DIVISOR } from '@sushiswap/kashi-sdk'
 import { KashiMediumRiskLendingPair } from './KashiMediumRiskLendingPair'
 
 export function accrueTotalAssetWithFee(pair: KashiMediumRiskLendingPair): {
@@ -14,12 +15,13 @@ export function accrueTotalAssetWithFee(pair: KashiMediumRiskLendingPair): {
     ),
     JSBI.BigInt(1e18)
   )
-  const feeAmount = JSBI.divide(JSBI.multiply(extraAmount, PROTOCOL_FEE), PROTOCOL_FEE_DIVISOR) // % of interest paid goes to fee
-  const feeFraction = JSBI.greaterThan(pair.currentAllAssets, ZERO)
-    ? JSBI.divide(JSBI.multiply(feeAmount, pair.totalAsset.base), pair.currentAllAssets)
-    : ZERO
+  // const feeAmount = JSBI.divide(JSBI.multiply(extraAmount, PROTOCOL_FEE), PROTOCOL_FEE_DIVISOR) // % of interest paid goes to fee
+  // const feeFraction = JSBI.greaterThan(pair.currentAllAssets, ZERO)
+  //   ? JSBI.divide(JSBI.multiply(feeAmount, pair.totalAsset.base), pair.currentAllAssets)
+  //   : ZERO
   return {
     elastic: pair.totalAsset.elastic,
-    base: JSBI.add(pair.totalAsset.base, feeFraction),
+    // base: JSBI.add(pair.totalAsset.base, feeFraction),
+    base: JSBI.add(pair.totalAsset.base, pair.totalAsset.base),
   }
 }

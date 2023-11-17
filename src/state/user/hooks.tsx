@@ -7,7 +7,6 @@ import {
   CHAINLINK_ORACLE_ADDRESS,
   computePairAddress,
   Currency,
-  FACTORY_ADDRESS,
   KASHI_ADDRESS,
   Pair,
   Token,
@@ -169,13 +168,17 @@ export function useURLWarningToggle(): () => void {
  * @param tokenB the other token
  */
 export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
+  const FACTORY_ADDRESS_PYRESWAP = '0x045D720873f0260e23DA812501a7c5930E510aA4'
+
   if (tokenA.chainId !== tokenB.chainId) throw new Error('Not matching chain IDs')
   if (tokenA.equals(tokenB)) throw new Error('Tokens cannot be equal')
-  if (!FACTORY_ADDRESS[tokenA.chainId]) throw new Error('No V2 factory address on this chain')
+  // if (!FACTORY_ADDRESS[tokenA.chainId]) throw new Error('No V2 factory address on this chain')
+  if (!FACTORY_ADDRESS_PYRESWAP) throw new Error('No V2 factory address on this chain')
 
   return new Token(
     tokenA.chainId,
-    computePairAddress({ factoryAddress: FACTORY_ADDRESS[tokenA.chainId], tokenA, tokenB }),
+    // computePairAddress({ factoryAddress: FACTORY_ADDRESS[tokenA.chainId], tokenA, tokenB }),
+    computePairAddress({ factoryAddress: FACTORY_ADDRESS_PYRESWAP, tokenA, tokenB }),
     18,
     'UNI-V2',
     'Uniswap V2'
@@ -307,6 +310,7 @@ export function toKashiLiquidityToken([collateral, asset]: [Token, Token]): Toke
 export function useTrackedTokenPairs(): [Token, Token][] {
   const { chainId } = useActiveWeb3React()
   const tokens = useAllTokens()
+  // console.log(tokens)
 
   // pinned pairs
   const pinnedPairs = useMemo(() => (chainId ? PINNED_PAIRS[chainId] ?? [] : []), [chainId])
@@ -334,6 +338,7 @@ export function useTrackedTokenPairs(): [Token, Token][] {
         : [],
     [tokens, chainId]
   )
+  // console.log(generatedPairs)
 
   // pairs saved by users
   const savedSerializedPairs = useAppSelector(({ user: { pairs } }) => pairs)
@@ -348,10 +353,14 @@ export function useTrackedTokenPairs(): [Token, Token][] {
     })
   }, [savedSerializedPairs, chainId])
 
+  // console.log(savedSerializedPairs)
+
   const combinedList = useMemo(
     () => userPairs.concat(generatedPairs).concat(pinnedPairs),
     [generatedPairs, pinnedPairs, userPairs]
   )
+
+  // console.log(combinedList)
 
   return useMemo(() => {
     // dedupes pairs of tokens in the combined list
@@ -360,6 +369,7 @@ export function useTrackedTokenPairs(): [Token, Token][] {
       const key = sorted ? `${tokenA.address}:${tokenB.address}` : `${tokenB.address}:${tokenA.address}`
       if (memo[key]) return memo
       memo[key] = sorted ? [tokenA, tokenB] : [tokenB, tokenA]
+      // console.log(memo)
       return memo
     }, {})
 
