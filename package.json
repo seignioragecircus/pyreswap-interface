@@ -251,6 +251,6 @@
     "showDetails": true
   },
   "dependencies": {
-    "sushi-sdk-ftm": "^1.0.5"
+    "sushi-sdk-ftm": "^1.0.7"
   }
 }
