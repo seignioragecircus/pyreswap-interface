@@ -1,10 +1,10 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
+import { Fee } from '@sushiswap/trident-sdk'
 import Checkbox from 'app/components/Checkbox'
 import { AvailablePoolConfig, deDupe } from 'app/components/Migrate/migrate-utils'
 import { classNames } from 'app/functions'
 import React, { FC } from 'react'
-import { Fee } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 interface OptionProps {
   selectedPoolConfig?: AvailablePoolConfig
