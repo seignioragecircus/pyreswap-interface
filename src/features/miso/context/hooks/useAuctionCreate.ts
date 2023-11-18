@@ -1,6 +1,5 @@
 import { defaultAbiCoder } from '@ethersproject/abi'
 import { AddressZero } from '@ethersproject/constants'
-import { CHAIN_KEY, Percent } from '@sushiswap/core-sdk'
 import MISO from '@sushiswap/miso/exports/all.json'
 import { AuctionCreationFormInputFormatted } from 'app/features/miso/AuctionCreationForm'
 import { NATIVE_PAYMENT_TOKEN } from 'app/features/miso/context/constants'
@@ -18,6 +17,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { addMinutes, getUnixTime } from 'date-fns'
 import { useCallback } from 'react'
+import { CHAIN_KEY, Percent } from 'sushi-sdk-ftm'
 const useAuctionCreate = () => {
   const { chainId, account } = useActiveWeb3React()
   const addTransaction = useTransactionAdder()

@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from 'sushi-sdk-ftm'
 
 export interface TransactionTableData {
   type: string

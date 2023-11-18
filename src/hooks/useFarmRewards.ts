@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Currency, NATIVE, SUSHI, Token } from '@sushiswap/core-sdk'
 import * as XDAI_TOKENS from 'app/config/tokens/xdai'
 import { Feature } from 'app/enums'
 import { Chef, PairType } from 'app/features/onsen/enum'
@@ -29,6 +28,7 @@ import {
 } from 'app/services/graph'
 import { useGetAllTridentPools } from 'app/services/graph/hooks/pools'
 import { useCallback, useMemo } from 'react'
+import { ChainId, Currency, NATIVE, SUSHI, Token } from 'sushi-sdk-ftm'
 
 import { useAllTokens } from './Tokens'
 

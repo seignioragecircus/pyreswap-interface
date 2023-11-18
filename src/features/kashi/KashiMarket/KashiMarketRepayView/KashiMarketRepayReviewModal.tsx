@@ -1,7 +1,6 @@
 import { Signature } from '@ethersproject/bytes'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import { HeadlessUiModal } from 'app/components/Modal'
@@ -11,6 +10,7 @@ import { KashiMarketDetailsView, useKashiMarket, useRepayExecute } from 'app/fea
 import { unwrappedToken, warningSeverity } from 'app/functions'
 import { useIsExpertMode } from 'app/state/user/hooks'
 import React, { FC, useCallback, useState } from 'react'
+import { CurrencyAmount } from 'sushi-sdk-ftm'
 
 import { KashiMarketRepayButtonProps } from './KashiMarketRepayButton'
 

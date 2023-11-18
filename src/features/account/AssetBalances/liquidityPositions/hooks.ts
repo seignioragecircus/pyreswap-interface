@@ -1,4 +1,3 @@
-import { Token } from '@sushiswap/core-sdk'
 import { PoolType } from '@sushiswap/trident-sdk'
 import { getApy } from 'app/functions'
 import {
@@ -10,6 +9,7 @@ import {
 } from 'app/services/graph'
 import { useTridentPools } from 'app/services/graph/hooks/pools'
 import { useMemo } from 'react'
+import { Token } from 'sushi-sdk-ftm'
 
 interface PositionBalances {
   account: string

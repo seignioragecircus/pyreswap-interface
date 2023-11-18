@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Token } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import DoubleCurrencyLogo from 'app/components/DoubleLogo'
 import Typography from 'app/components/Typography'
@@ -13,6 +12,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useMemo } from 'react'
+import { ChainId, Token } from 'sushi-sdk-ftm'
 
 const chartTimespans = [
   {

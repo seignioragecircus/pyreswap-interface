@@ -1,4 +1,8 @@
 import { splitSignature } from '@ethersproject/bytes'
+import { DAI, USDC } from 'app/config/tokens/ethereum'
+import { useSingleCallResult } from 'app/lib/hooks/multicall'
+import { useActiveWeb3React } from 'app/services/web3'
+import { useMemo, useState } from 'react'
 import {
   Currency,
   CurrencyAmount,
@@ -9,11 +13,7 @@ import {
   Token,
   Trade as V2Trade,
   TradeType,
-} from '@sushiswap/core-sdk'
-import { DAI, USDC } from 'app/config/tokens/ethereum'
-import { useSingleCallResult } from 'app/lib/hooks/multicall'
-import { useActiveWeb3React } from 'app/services/web3'
-import { useMemo, useState } from 'react'
+} from 'sushi-sdk-ftm'
 
 import { useEIP2612Contract } from './useContract'
 import useIsArgentWallet from './useIsArgentWallet'

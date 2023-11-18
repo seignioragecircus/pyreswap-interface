@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { GRAPH_HOST } from 'app/services/graph/constants'
 import {
   barHistoriesQuery,
@@ -10,6 +9,7 @@ import {
 } from 'app/services/graph/queries/bar'
 import { getUnixTime, startOfHour, startOfMinute, startOfSecond, subDays } from 'date-fns'
 import { request } from 'graphql-request'
+import { ChainId } from 'sushi-sdk-ftm'
 
 const BAR = {
   [ChainId.ETHEREUM]: 'olastenberg/bar',

@@ -1,15 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import {
-  DAI_ADDRESS,
-  FRAX_ADDRESS,
-  MIM_ADDRESS,
-  NATIVE,
-  SUSHI_ADDRESS,
-  USDC_ADDRESS,
-  USDT_ADDRESS,
-} from '@sushiswap/core-sdk'
 import Form from 'app/components/Form'
 import FormFieldHelperText from 'app/components/Form/FormFieldHelperText'
 import ToggleButtonGroup from 'app/components/ToggleButton'
@@ -18,6 +9,15 @@ import { useToken } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC } from 'react'
 import { useFormContext, useWatch } from 'react-hook-form'
+import {
+  DAI_ADDRESS,
+  FRAX_ADDRESS,
+  MIM_ADDRESS,
+  NATIVE,
+  SUSHI_ADDRESS,
+  USDC_ADDRESS,
+  USDT_ADDRESS,
+} from 'sushi-sdk-ftm'
 
 interface AuctionPaymentCurrencyFieldProps {
   name: string

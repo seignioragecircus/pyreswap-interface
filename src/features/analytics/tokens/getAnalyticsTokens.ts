@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getBentoStrategies, getBlockDaysAgo, getNativePrice, getTokens } from 'app/services/graph'
+import { ChainId } from 'sushi-sdk-ftm'
 
 interface getAnalyticsTokensProps {
   chainId: ChainId

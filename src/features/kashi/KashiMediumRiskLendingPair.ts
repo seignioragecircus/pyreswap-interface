@@ -1,17 +1,6 @@
 import { toAmount, toShare } from '@sushiswap/bentobox-sdk'
-import {
-  Currency,
-  CurrencyAmount,
-  JSBI,
-  maximum,
-  minimum,
-  Price,
-  Rebase,
-  toElastic,
-  Token,
-  ZERO,
-} from '@sushiswap/core-sdk'
 import { accrue, AccrueInfo, computePairAddress, interestAccrue, takeFee } from '@sushiswap/kashi-sdk'
+import { Currency, CurrencyAmount, JSBI, maximum, minimum, Price, Rebase, toElastic, Token, ZERO } from 'sushi-sdk-ftm'
 
 import { accrueTotalAssetWithFee } from './functions'
 import { Oracle } from './oracles'

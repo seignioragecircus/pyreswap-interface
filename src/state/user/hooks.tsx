@@ -2,15 +2,6 @@ import { defaultAbiCoder } from '@ethersproject/abi'
 import { getCreate2Address } from '@ethersproject/address'
 import { AddressZero } from '@ethersproject/constants'
 import { keccak256 } from '@ethersproject/solidity'
-import {
-  BENTOBOX_ADDRESS,
-  CHAINLINK_ORACLE_ADDRESS,
-  computePairAddress,
-  Currency,
-  KASHI_ADDRESS,
-  Pair,
-  Token,
-} from '@sushiswap/core-sdk'
 import { CHAINLINK_PRICE_FEED_MAP } from 'app/config/oracles/chainlink'
 import { BASES_TO_TRACK_LIQUIDITY_FOR, PINNED_PAIRS } from 'app/config/routing'
 import { e10 } from 'app/functions'
@@ -20,6 +11,15 @@ import { AppState } from 'app/state'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useCallback, useMemo } from 'react'
 import { useSelector } from 'react-redux'
+import {
+  BENTOBOX_ADDRESS,
+  CHAINLINK_ORACLE_ADDRESS,
+  computePairAddress,
+  Currency,
+  KASHI_ADDRESS,
+  Pair,
+  Token,
+} from 'sushi-sdk-ftm'
 
 import {
   addSerializedPair,

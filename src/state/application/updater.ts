@@ -1,8 +1,8 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import useDebounce from 'app/hooks/useDebounce'
 import useIsWindowVisible from 'app/hooks/useIsWindowVisible'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useEffect, useState } from 'react'
+import { ChainId } from 'sushi-sdk-ftm'
 
 import { useAppDispatch } from '../hooks'
 import { updateChainId } from './reducer'

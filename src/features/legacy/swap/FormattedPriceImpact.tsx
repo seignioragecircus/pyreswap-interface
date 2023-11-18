@@ -1,6 +1,6 @@
-import { Percent } from '@sushiswap/core-sdk'
 import { warningSeverity } from 'app/functions/prices'
 import React from 'react'
+import { Percent } from 'sushi-sdk-ftm'
 
 const SEVERITY = {
   0: 'text-green',

@@ -1,7 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, NATIVE, Percent, Price, Token } from '@sushiswap/core-sdk'
 import Typography from 'app/components/Typography'
 import { auctionDetailsSchema } from 'app/features/miso/AuctionCreationWizard/AuctionDetailsStep'
 import { generalDetailsSchema } from 'app/features/miso/AuctionCreationWizard/GeneralDetailsStep'
@@ -17,6 +16,7 @@ import { classNames, tryParseAmount } from 'app/functions'
 import { useToken } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, ReactNode, useMemo } from 'react'
+import { Currency, CurrencyAmount, NATIVE, Percent, Price, Token } from 'sushi-sdk-ftm'
 
 interface Item {
   title: string

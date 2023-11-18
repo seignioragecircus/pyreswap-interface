@@ -1,11 +1,11 @@
 import { getAddress } from '@ethersproject/address'
-import { Token } from '@sushiswap/core-sdk'
 import DoubleCurrencyLogo from 'app/components/DoubleLogo'
 import Table from 'app/components/Table'
 import ColoredNumber from 'app/features/analytics/ColoredNumber'
 import { formatNumber, formatNumberScale, formatPercent, getApy } from 'app/functions'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { Token } from 'sushi-sdk-ftm'
 
 interface PairListProps {
   pairs: {

@@ -1,4 +1,3 @@
-import { ChainId, Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import { STABLECOIN_AMOUNT_OUT } from 'app/hooks/useUSDCPrice'
 import { fetcher } from 'app/services/graph'
 import {
@@ -6,6 +5,7 @@ import {
   getTridentTokenPricesQuery,
   getTridentTokensQuery,
 } from 'app/services/graph/queries'
+import { ChainId, Currency, CurrencyAmount } from 'sushi-sdk-ftm'
 
 const formatCurrencyAmounts = (chainId: ChainId, tokenPrices: TokenPrice[]) => {
   return tokenPrices.map(({ derivedUSD }) => {

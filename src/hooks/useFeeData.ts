@@ -1,9 +1,9 @@
 import { FeeData } from '@ethersproject/abstract-provider'
-import { ChainId } from '@sushiswap/core-sdk'
 import { EIP_1559_ACTIVATION_BLOCK } from 'app/constants'
 import useBlockNumber from 'app/lib/hooks/useBlockNumber'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useEffect, useState } from 'react'
+import { ChainId } from 'sushi-sdk-ftm'
 
 interface FeeDataExtend extends FeeData {
   eip1559: boolean

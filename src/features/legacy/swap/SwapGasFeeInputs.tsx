@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, NATIVE } from '@sushiswap/core-sdk'
 import NumericalInput from 'app/components/Input/Numeric'
 import Typography from 'app/components/Typography'
 import useFeeData from 'app/hooks/useFeeData'
@@ -9,6 +8,7 @@ import { useAppDispatch } from 'app/state/hooks'
 import { setFees, setMaxFee, setPriorityFee } from 'app/state/swap/actions'
 import { useExpertModeManager } from 'app/state/user/hooks'
 import React, { FC, useEffect, useState } from 'react'
+import { CurrencyAmount, NATIVE } from 'sushi-sdk-ftm'
 import { toWei } from 'web3-utils'
 
 const SwapGasFeeInputs: FC = () => {

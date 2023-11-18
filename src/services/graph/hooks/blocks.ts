@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getAverageBlockTime, getBlock, getMassBlocks } from 'app/services/graph/fetchers'
 import {
   addSeconds,
@@ -12,6 +11,7 @@ import {
   subYears,
 } from 'date-fns'
 import stringify from 'fast-json-stable-stringify'
+import { ChainId } from 'sushi-sdk-ftm'
 import useSWR from 'swr'
 
 import { GraphProps } from '../interfaces'

@@ -1,6 +1,5 @@
 import { getAddress } from '@ethersproject/address'
 import { AddressZero } from '@ethersproject/constants'
-import { WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
 import {
   Action,
   BatchAction,
@@ -11,6 +10,7 @@ import {
   WithdrawAction,
 } from 'app/hooks/useBentoBox/types'
 import { BigNumber } from 'ethers'
+import { WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
 
 export const depositAction: Action<DepositActionPayload> = ({
   bentobox,

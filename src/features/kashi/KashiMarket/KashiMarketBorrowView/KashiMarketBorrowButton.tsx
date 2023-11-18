@@ -1,7 +1,6 @@
 import { Signature } from '@ethersproject/bytes'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, JSBI, KASHI_ADDRESS, Percent, ZERO } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import Typography from 'app/components/Typography'
 import { Warning, Warnings } from 'app/entities/Warnings'
@@ -17,6 +16,7 @@ import { useBentoBoxContract } from 'app/hooks'
 import { useBentoOrWalletBalance } from 'app/hooks/useBentoOrWalletBalance'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, ReactNode, useState } from 'react'
+import { CurrencyAmount, JSBI, KASHI_ADDRESS, Percent, ZERO } from 'sushi-sdk-ftm'
 
 export interface KashiMarketBorrowButtonProps extends Omit<BorrowExecutePayload, 'permit' | 'trade'> {
   view: KashiMarketView

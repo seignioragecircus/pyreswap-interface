@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { NATIVE } from '@sushiswap/core-sdk'
 import CloseIcon from 'app/components/CloseIcon'
 import Typography from 'app/components/Typography'
 import { useStore } from 'app/features/miso/context/store'
@@ -9,6 +8,7 @@ import { useToken } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC } from 'react'
 import { useFormContext } from 'react-hook-form'
+import { NATIVE } from 'sushi-sdk-ftm'
 
 interface WhitelistTableProps {
   entries: WhitelistEntry[]

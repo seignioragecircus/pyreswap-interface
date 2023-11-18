@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, JSBI, Percent, ZERO } from '@sushiswap/core-sdk'
 import { CurrencyLogoArray } from 'app/components/CurrencyLogo'
 import GradientDot from 'app/components/GradientDot'
 import Typography from 'app/components/Typography'
@@ -10,6 +9,7 @@ import { classNames, currencyFormatter, formatNumber, formatPercent } from 'app/
 import { useUSDCSubgraphValueWithLoadingIndicator } from 'app/hooks/useUSDCSubgraph'
 import { useRouter } from 'next/router'
 import React, { FC, memo, useMemo } from 'react'
+import { CurrencyAmount, JSBI, Percent, ZERO } from 'sushi-sdk-ftm'
 
 interface KashiLendingListItem {
   market: KashiMediumRiskLendingPair

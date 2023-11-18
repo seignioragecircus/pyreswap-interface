@@ -249,5 +249,8 @@
     "budget": 3584000,
     "budgetPercentIncreaseRed": 40,
     "showDetails": true
+  },
+  "dependencies": {
+    "sushi-sdk-ftm": "^1.0.5"
   }
 }

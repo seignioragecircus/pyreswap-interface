@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { NATIVE, WNATIVE, WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import Dots from 'app/components/Dots'
 import { useDerivedTridentSwapContext } from 'app/features/trident/swap/DerivedTradeContext'
@@ -11,6 +10,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useAppSelector } from 'app/state/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import React, { FC } from 'react'
+import { NATIVE, WNATIVE, WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
 
 import TridentApproveGate from '../TridentApproveGate'
 

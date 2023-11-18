@@ -1,7 +1,7 @@
-import { Token } from '@sushiswap/core-sdk'
 import { CurrencyLogoArray } from 'app/components/CurrencyLogo'
 import Image from 'next/image'
 import React, { FC } from 'react'
+import { Token } from 'sushi-sdk-ftm'
 
 interface PoolCellProps {
   assets: Token[]

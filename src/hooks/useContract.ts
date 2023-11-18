@@ -1,22 +1,4 @@
 import { Contract } from '@ethersproject/contracts'
-import {
-  BAR_ADDRESS,
-  BENTOBOX_ADDRESS,
-  BORING_HELPER_ADDRESS,
-  CHAIN_KEY,
-  ChainId,
-  CHAINLINK_ORACLE_ADDRESS,
-  ENS_REGISTRAR_ADDRESS,
-  MAKER_ADDRESS,
-  MASTERCHEF_ADDRESS,
-  MASTERCHEF_V2_ADDRESS,
-  MERKLE_DISTRIBUTOR_ADDRESS,
-  MINICHEF_ADDRESS,
-  MULTICALL2_ADDRESS,
-  SUSHI_ADDRESS,
-  TIMELOCK_ADDRESS,
-  WNATIVE_ADDRESS,
-} from '@sushiswap/core-sdk'
 import { LIMIT_ORDER_HELPER_ADDRESS, STOP_LIMIT_ORDER_ADDRESS } from '@sushiswap/limit-order-sdk'
 import MISO from '@sushiswap/miso/exports/all.json'
 import ConstantProductPoolArtifact from '@sushiswap/trident/artifacts/contracts/pool/constant-product/ConstantProductPool.sol/ConstantProductPool.json'
@@ -67,6 +49,24 @@ import { poolEntityMapper } from 'app/features/trident/poolEntityMapper'
 import { getContract } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useMemo } from 'react'
+import {
+  BAR_ADDRESS,
+  BENTOBOX_ADDRESS,
+  BORING_HELPER_ADDRESS,
+  CHAIN_KEY,
+  ChainId,
+  CHAINLINK_ORACLE_ADDRESS,
+  ENS_REGISTRAR_ADDRESS,
+  MAKER_ADDRESS,
+  MASTERCHEF_ADDRESS,
+  MASTERCHEF_V2_ADDRESS,
+  MERKLE_DISTRIBUTOR_ADDRESS,
+  MINICHEF_ADDRESS,
+  MULTICALL2_ADDRESS,
+  SUSHI_ADDRESS,
+  TIMELOCK_ADDRESS,
+  WNATIVE_ADDRESS,
+} from 'sushi-sdk-ftm'
 
 const UNI_FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
 const FACTORY_ADDRESS_PYRESWAP = '0x045D720873f0260e23DA812501a7c5930E510aA4'

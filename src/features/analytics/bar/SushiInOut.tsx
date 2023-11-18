@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import ExternalLink from 'app/components/ExternalLink'
 import Typography from 'app/components/Typography'
 import {
@@ -8,6 +7,7 @@ import {
 } from 'app/features/trident/constants'
 import { classNames, formatDateAgo, formatNumber, formatNumberScale, getExplorerLink } from 'app/functions'
 import { useRouter } from 'next/router'
+import { ChainId } from 'sushi-sdk-ftm'
 
 interface SushiInOutProps {
   title: string

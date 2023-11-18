@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
 
 export interface Assets {
   asset: CurrencyAmount<Currency>

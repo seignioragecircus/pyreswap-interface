@@ -1,4 +1,3 @@
-import { ChainId, CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { Feature } from 'app/enums'
 import { featureEnabled } from 'app/functions/feature'
 import {
@@ -9,6 +8,7 @@ import {
   getClones,
 } from 'app/services/graph/fetchers'
 import stringify from 'fast-json-stable-stringify'
+import { ChainId, CurrencyAmount, Token } from 'sushi-sdk-ftm'
 import useSWR from 'swr'
 
 import { GraphProps } from '../interfaces'

@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@sushiswap/core-sdk'
+import { ChainId, Token } from 'sushi-sdk-ftm'
 
 export const USDC = new Token(
   ChainId.ARBITRUM_NOVA,

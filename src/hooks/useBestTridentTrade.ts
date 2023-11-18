@@ -1,15 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import {
-  ChainId,
-  Currency,
-  CurrencyAmount,
-  JSBI,
-  Pair,
-  Trade as LegacyTrade,
-  TradeType,
-  WNATIVE,
-} from '@sushiswap/core-sdk'
-import {
   ConstantProductPool,
   convertTinesSingleRouteToLegacyRoute,
   findMultiRouteExactIn,
@@ -31,6 +21,7 @@ import { useAppDispatch } from 'app/state/hooks'
 import { setRouteInfo } from 'app/state/transactions/actions'
 import { TradeUnion } from 'app/types'
 import { useEffect, useMemo, useState } from 'react'
+import { ChainId, Currency, CurrencyAmount, JSBI, Pair, Trade as LegacyTrade, TradeType, WNATIVE } from 'sushi-sdk-ftm'
 
 import { useAllCurrencyCombinations } from './useAllCurrencyCombinations'
 import { useGetAllExistedPools } from './useConstantProductPools'

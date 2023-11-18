@@ -1,9 +1,9 @@
-import { Token } from '@sushiswap/core-sdk'
 import { useAtomValue, useUpdateAtom } from 'jotai/utils'
 import { Transaction, TransactionInfo, transactionsAtom, TransactionType } from 'lib/state/transactions'
 import ms from 'ms.macro'
 import { useCallback } from 'react'
 import { useActiveWeb3React } from 'services/web3'
+import { Token } from 'sushi-sdk-ftm'
 import invariant from 'tiny-invariant'
 
 import useBlockNumber from '../useBlockNumber'

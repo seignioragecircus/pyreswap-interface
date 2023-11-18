@@ -1,5 +1,5 @@
-// import { JSBI, ZERO } from '@sushiswap/core-sdk'
-import { JSBI } from '@sushiswap/core-sdk'
+// import { JSBI, ZERO } from 'sushi-sdk-ftm'
+import { JSBI } from 'sushi-sdk-ftm'
 
 // import { PROTOCOL_FEE, PROTOCOL_FEE_DIVISOR } from '@sushiswap/kashi-sdk'
 import { KashiMediumRiskLendingPair } from './KashiMediumRiskLendingPair'

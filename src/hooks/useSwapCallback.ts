@@ -8,17 +8,6 @@ import { arrayify, DataOptions, hexlify, Signature, SignatureLike, splitSignatur
 import { AddressZero } from '@ethersproject/constants'
 import { t } from '@lingui/macro'
 import {
-  ChainId,
-  Currency,
-  CurrencyAmount,
-  Percent,
-  Router as LegacyRouter,
-  SwapParameters,
-  toHex,
-  Trade as LegacyTrade,
-  TradeType,
-} from '@sushiswap/core-sdk'
-import {
   ComplexPathParams,
   ExactInputParams,
   ExactInputSingleParams,
@@ -50,6 +39,17 @@ import { TransactionResponseLight, useTransactionAdder } from 'app/state/transac
 import { useExpertModeManager } from 'app/state/user/hooks'
 import { fetchJsonRpc } from 'lib/jsonrpc'
 import { useMemo } from 'react'
+import {
+  ChainId,
+  Currency,
+  CurrencyAmount,
+  Percent,
+  Router as LegacyRouter,
+  SwapParameters,
+  toHex,
+  Trade as LegacyTrade,
+  TradeType,
+} from 'sushi-sdk-ftm'
 
 import { SUSHIGUARD_RELAY } from '../config/sushiguard'
 import { useArgentWalletContract } from './useArgentWalletContract'

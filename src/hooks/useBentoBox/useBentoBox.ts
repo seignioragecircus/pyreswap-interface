@@ -1,6 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { toShare } from '@sushiswap/bentobox-sdk'
-import { Currency, JSBI, Rebase } from '@sushiswap/core-sdk'
 import { ERC20_ABI } from 'app/constants/abis/erc20'
 import { getContract } from 'app/functions'
 import { useBentoBoxContract } from 'app/hooks'
@@ -8,6 +7,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { Signature } from 'ethers'
 import { useCallback } from 'react'
+import { Currency, JSBI, Rebase } from 'sushi-sdk-ftm'
 
 import {
   batchAction,

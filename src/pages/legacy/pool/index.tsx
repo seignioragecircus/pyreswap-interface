@@ -1,7 +1,6 @@
 import { PlusIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import Loader from 'app/components/Loader'
 import FullPositionCard from 'app/components/PositionCard'
@@ -13,6 +12,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import React from 'react'
+import { CurrencyAmount } from 'sushi-sdk-ftm'
 
 const Pool = () => {
   const { i18n } = useLingui()

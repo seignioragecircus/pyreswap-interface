@@ -1,6 +1,6 @@
-import { Token } from '@sushiswap/core-sdk'
 import { TokenInfo } from '@uniswap/token-lists'
 import { useMemo } from 'react'
+import { Token } from 'sushi-sdk-ftm'
 
 import { isAddress } from './validate'
 

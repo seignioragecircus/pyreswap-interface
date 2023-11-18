@@ -1,9 +1,9 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { DEFAULT_TXN_DISMISS_MS } from 'app/constants'
 import LibUpdater from 'lib/hooks/transactions/updater'
 import { useCallback, useMemo } from 'react'
 import { useActiveWeb3React } from 'services/web3'
 import { useAppDispatch, useAppSelector } from 'state/hooks'
+import { ChainId } from 'sushi-sdk-ftm'
 
 import { useAddPopup } from '../application/hooks'
 import { checkedTransaction, finalizeTransaction, updatePrivateTxStatus } from './actions'

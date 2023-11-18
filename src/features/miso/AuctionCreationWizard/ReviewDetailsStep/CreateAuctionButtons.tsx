@@ -1,7 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CHAIN_KEY, NATIVE, Percent } from '@sushiswap/core-sdk'
 import MISO from '@sushiswap/miso/exports/all.json'
 import LoadingCircle from 'app/animation/loading-circle.json'
 import Button from 'app/components/Button'
@@ -19,6 +18,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import Lottie from 'lottie-react'
 import { useRouter } from 'next/router'
 import React, { FC, useCallback, useEffect, useMemo, useState } from 'react'
+import { CHAIN_KEY, NATIVE, Percent } from 'sushi-sdk-ftm'
 
 const CreateAuctionButtons: FC<{ onBack(): void }> = ({ onBack }) => {
   const { i18n } = useLingui()

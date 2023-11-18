@@ -3,7 +3,6 @@ import { TransactionResponse } from '@ethersproject/providers'
 import { PlusIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId, CurrencyAmount, currencyEquals, NATIVE, WNATIVE } from '@sushiswap/core-sdk'
 import AssetInput from 'app/components/AssetInput'
 import Button from 'app/components/Button'
 import { HeadlessUiModal } from 'app/components/Modal'
@@ -24,6 +23,7 @@ import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useExpertModeManager } from 'app/state/user/hooks'
 import React, { useState } from 'react'
+import { ChainId, CurrencyAmount, currencyEquals, NATIVE, WNATIVE } from 'sushi-sdk-ftm'
 
 // @ts-ignore TYPE NEEDS FIXING
 const PoolDeposit = ({ currencyA, currencyB, header }) => {

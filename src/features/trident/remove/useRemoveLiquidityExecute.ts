@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Token, WNATIVE } from '@sushiswap/core-sdk'
 import {
   approveMasterContractAction,
   approveSLPAction,
@@ -23,6 +22,7 @@ import { USER_REJECTED_TX } from 'app/services/web3/WalletError'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
+import { CurrencyAmount, Token, WNATIVE } from 'sushi-sdk-ftm'
 
 export const useRemoveLiquidityExecute = () => {
   const { i18n } = useLingui()

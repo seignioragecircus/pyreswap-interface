@@ -1,7 +1,6 @@
 import ExclamationIcon from '@heroicons/react/outline/ExclamationIcon'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { BAR_ADDRESS, ChainId, SUSHI, ZERO } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import Container from 'app/components/Container'
 import Dots from 'app/components/Dots'
@@ -28,6 +27,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import React, { useState } from 'react'
+import { BAR_ADDRESS, ChainId, SUSHI, ZERO } from 'sushi-sdk-ftm'
 
 const INPUT_CHAR_LIMIT = 18
 

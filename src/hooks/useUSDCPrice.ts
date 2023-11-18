@@ -1,5 +1,5 @@
-import { ChainId, Currency, CurrencyAmount, Price, Token, USD } from '@sushiswap/core-sdk'
 import { useMemo } from 'react'
+import { ChainId, Currency, CurrencyAmount, Price, Token, USD } from 'sushi-sdk-ftm'
 
 import { useActiveWeb3React } from '../services/web3'
 import { useV2TradeExactOut } from './useV2Trades'

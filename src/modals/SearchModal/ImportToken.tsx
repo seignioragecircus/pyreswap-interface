@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Token } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import Chip from 'app/components/Chip'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
@@ -14,6 +13,7 @@ import { WrappedTokenInfo } from 'app/state/lists/wrappedTokenInfo'
 import { useAddUserToken } from 'app/state/user/hooks'
 import { useRouter } from 'next/router'
 import React, { FC } from 'react'
+import { Token } from 'sushi-sdk-ftm'
 
 interface ImportProps {
   tokens: Token[]

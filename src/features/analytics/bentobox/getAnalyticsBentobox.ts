@@ -1,7 +1,7 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { Feature } from 'app/enums'
 import { featureEnabled } from 'app/functions'
 import { getBentoBox, getBentoStrategies, getBentoTokens, getNativePrice, getTokens } from 'app/services/graph'
+import { ChainId } from 'sushi-sdk-ftm'
 
 export type AnalyticsBentobox = Awaited<ReturnType<typeof getAnalyticsBentobox>>
 

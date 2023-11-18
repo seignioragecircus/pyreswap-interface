@@ -1,7 +1,7 @@
 import { AddressZero } from '@ethersproject/constants'
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import { useUSDCValueSubgraph } from 'app/hooks/useUSDCSubgraph'
 import { FC, memo, ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
 
 // Dummy component that fetches usdcValue
 const USDCValue: FC<{

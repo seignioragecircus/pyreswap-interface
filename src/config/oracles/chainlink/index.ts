@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from 'sushi-sdk-ftm'
 
 import ARBITRUM from './mappings/arbitrum'
 import AVALANCHE from './mappings/avalanche'

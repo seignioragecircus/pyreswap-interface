@@ -1,6 +1,6 @@
 import { Web3Provider } from '@ethersproject/providers'
-import { ChainId } from '@sushiswap/core-sdk'
 import ms from 'ms.macro'
+import { ChainId } from 'sushi-sdk-ftm'
 
 const NETWORK_POLLING_INTERVALS: { [chainId: number]: number } = {
   [ChainId.ARBITRUM]: ms`1s`,

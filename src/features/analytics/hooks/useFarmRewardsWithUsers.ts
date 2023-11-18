@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Currency, NATIVE, SUSHI, Token } from '@sushiswap/core-sdk'
 import * as XDAI_TOKENS from 'app/config/tokens/xdai'
 import { Feature } from 'app/enums'
 import { Chef, PairType } from 'app/features/onsen/enum'
@@ -27,6 +26,7 @@ import {
   useSushiPrice,
 } from 'app/services/graph'
 import { useCallback, useMemo } from 'react'
+import { ChainId, Currency, NATIVE, SUSHI, Token } from 'sushi-sdk-ftm'
 
 export function getRewards({
   chainId,

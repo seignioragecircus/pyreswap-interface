@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getBlockDaysAgo, getDayData, getFactory } from 'app/services/graph'
+import { ChainId } from 'sushi-sdk-ftm'
 
 export type AnalyticsDashboard = Awaited<ReturnType<typeof getAnalyticsDashboard>>
 

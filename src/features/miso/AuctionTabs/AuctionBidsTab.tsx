@@ -1,7 +1,6 @@
 import { Switch } from '@headlessui/react'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import ExternalLink from 'app/components/ExternalLink'
 import Pagination from 'app/components/Pagination'
 import Typography from 'app/components/Typography'
@@ -14,6 +13,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, useMemo, useState } from 'react'
 // @ts-ignore TYPE NEEDS FIXING
 import { useFlexLayout, usePagination, useSortBy, useTable } from 'react-table'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
 
 export const useCommitmentTableConfig = (commitments?: AuctionCommitment[]) => {
   const { chainId } = useActiveWeb3React()

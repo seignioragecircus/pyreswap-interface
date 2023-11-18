@@ -1,5 +1,4 @@
 import { TransactionReceipt } from '@ethersproject/abstract-provider'
-import { ChainId } from '@sushiswap/core-sdk'
 import { SUSHIGUARD_RELAY } from 'app/config/sushiguard'
 import { PrivateTxState, PrivateTxStatus } from 'app/entities/SushiGuard'
 import { fetchJsonRpc } from 'app/lib/jsonrpc'
@@ -8,6 +7,7 @@ import useBlockNumber, { useFastForwardBlockNumber } from 'lib/hooks/useBlockNum
 import ms from 'ms.macro'
 import { useCallback, useEffect } from 'react'
 import { useActiveWeb3React } from 'services/web3'
+import { ChainId } from 'sushi-sdk-ftm'
 
 interface Transaction {
   addedTime: number

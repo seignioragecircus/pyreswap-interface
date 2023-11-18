@@ -1,11 +1,11 @@
 import { Interface } from '@ethersproject/abi'
-import { Currency, CurrencyAmount, JSBI, NATIVE, Token } from '@sushiswap/core-sdk'
 import ERC20_ABI from 'app/constants/abis/erc20.json'
 import { isAddress } from 'app/functions/validate'
 import { useInterfaceMulticall } from 'app/hooks/useContract'
 import { useMultipleContractSingleData, useSingleContractMultipleData } from 'app/lib/hooks/multicall'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useMemo } from 'react'
+import { Currency, CurrencyAmount, JSBI, NATIVE, Token } from 'sushi-sdk-ftm'
 
 /**
  * Returns a map of the given addresses to their eventually consistent ETH balances.

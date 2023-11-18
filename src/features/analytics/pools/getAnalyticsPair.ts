@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getBlockDaysAgo, getNativePrice, getPairDayData, getPairs } from 'app/services/graph'
+import { ChainId } from 'sushi-sdk-ftm'
 
 export type AnalyticsPair = Awaited<ReturnType<typeof getAnalyticsPair>>
 

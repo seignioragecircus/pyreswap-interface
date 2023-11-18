@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { Token } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import DoubleCurrencyLogo from 'app/components/DoubleLogo'
 import ExternalLink from 'app/components/ExternalLink'
@@ -18,6 +17,7 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React from 'react'
 import { ExternalLink as LinkIcon } from 'react-feather'
+import { Token } from 'sushi-sdk-ftm'
 import useSWR, { SWRConfig } from 'swr'
 
 const chartTimespans = [

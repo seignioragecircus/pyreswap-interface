@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { Chef } from 'app/features/onsen/enum'
 import {
   getMasterChefV1Farms,
@@ -17,6 +16,7 @@ import {
 import { useActiveWeb3React } from 'app/services/web3'
 import concat from 'lodash/concat'
 import { useMemo } from 'react'
+import { ChainId } from 'sushi-sdk-ftm'
 import useSWR, { SWRConfiguration } from 'swr'
 
 export function useMasterChefV1TotalAllocPoint(swrConfig = undefined) {

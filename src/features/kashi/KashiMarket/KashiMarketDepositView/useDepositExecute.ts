@@ -3,7 +3,6 @@ import { Signature } from '@ethersproject/bytes'
 import { TransactionResponse } from '@ethersproject/providers'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, KASHI_ADDRESS } from '@sushiswap/core-sdk'
 import KashiCooker from 'app/entities/KashiCooker'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { ZERO } from 'app/functions'
@@ -11,6 +10,7 @@ import { useBentoBoxContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
+import { Currency, CurrencyAmount, KASHI_ADDRESS } from 'sushi-sdk-ftm'
 
 export interface DepositExecutePayload {
   depositAmount?: CurrencyAmount<Currency>

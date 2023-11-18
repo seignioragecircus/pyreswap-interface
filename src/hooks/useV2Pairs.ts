@@ -1,10 +1,11 @@
 import { Interface } from '@ethersproject/abi'
 import IUniswapV2PairABI from '@sushiswap/core/abi/IUniswapV2Pair.json'
-import { computePairAddress, Currency, CurrencyAmount, FACTORY_ADDRESS, Pair } from '@sushiswap/core-sdk'
 import { useMultipleContractSingleData } from 'app/lib/hooks/multicall'
 import { useMemo } from 'react'
+import { computePairAddress, Currency, CurrencyAmount, Pair } from 'sushi-sdk-ftm'
 
 const PAIR_INTERFACE = new Interface(IUniswapV2PairABI)
+const FACTORY_ADDRESS_PYRESWAP = '0x045D720873f0260e23DA812501a7c5930E510aA4'
 
 export enum PairState {
   LOADING,
@@ -27,9 +28,11 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
           tokenB &&
           tokenA.chainId === tokenB.chainId &&
           !tokenA.equals(tokenB) &&
-          FACTORY_ADDRESS[tokenA.chainId]
+          // FACTORY_ADDRESS[tokenA.chainId]
+          FACTORY_ADDRESS_PYRESWAP
             ? computePairAddress({
-                factoryAddress: FACTORY_ADDRESS[tokenA.chainId],
+                // factoryAddress: FACTORY_ADDRESS[tokenA.chainId],
+                factoryAddress: FACTORY_ADDRESS_PYRESWAP,
                 tokenA,
                 tokenB,
               })

@@ -1,7 +1,6 @@
 import { CogIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Percent } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'
 import Popover from 'app/components/Popover'
@@ -13,6 +12,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useToggleSettingsMenu } from 'app/state/application/hooks'
 import { useExpertModeManager, useUserSingleHopOnly, useUserSushiGuard } from 'app/state/user/hooks'
 import React, { FC, useState } from 'react'
+import { Percent } from 'sushi-sdk-ftm'
 
 interface SettingsTabProps {
   placeholderSlippage?: Percent

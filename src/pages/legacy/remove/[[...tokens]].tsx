@@ -4,7 +4,6 @@ import { TransactionResponse } from '@ethersproject/providers'
 import { ArrowLeftIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId, NATIVE, Percent, WNATIVE, WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Input from 'app/components/Input'
@@ -34,6 +33,7 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useCallback, useMemo, useState } from 'react'
 import { Plus } from 'react-feather'
+import { ChainId, NATIVE, Percent, WNATIVE, WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
 const DEFAULT_REMOVE_LIQUIDITY_SLIPPAGE_TOLERANCE = new Percent(5, 100)
 
 export default function Remove() {

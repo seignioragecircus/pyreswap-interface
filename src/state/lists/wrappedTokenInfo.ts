@@ -1,6 +1,6 @@
-import { Currency, Token } from '@sushiswap/core-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { isAddress } from 'functions/validate'
+import { Currency, Token } from 'sushi-sdk-ftm'
 
 type TagDetails = Tags[keyof Tags]
 interface TagInfo extends TagDetails {

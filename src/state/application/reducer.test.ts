@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { createStore, Store } from 'redux'
+import { ChainId } from 'sushi-sdk-ftm'
 
 import { addPopup, ApplicationModal, removePopup, setOpenModal, updateBlockNumber } from './actions'
 import reducer, { ApplicationState } from './reducer'

@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { Contract } from '@ethersproject/contracts'
-import { ChainId, JSBI } from '@sushiswap/core-sdk'
 import { Signature } from 'ethers'
+import { ChainId, JSBI } from 'sushi-sdk-ftm'
 
 export type Action<T, P = { data: string; value?: BigNumber }> = (x: T) => P
 

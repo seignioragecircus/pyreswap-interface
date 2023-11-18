@@ -2,7 +2,6 @@ import { Transition } from '@headlessui/react'
 import { ArrowDownIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Fraction, JSBI, maximum, minimum, ZERO } from '@sushiswap/core-sdk'
 import {
   KashiMarketBorrowButton,
   KashiMarketBorrowLeverageView,
@@ -17,6 +16,7 @@ import { useV2TradeExactIn } from 'app/hooks/useV2Trades'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import React, { FC, useCallback, useMemo, useRef, useState } from 'react'
+import { CurrencyAmount, Fraction, JSBI, maximum, minimum, ZERO } from 'sushi-sdk-ftm'
 
 interface KashiMarketBorrowView {}
 

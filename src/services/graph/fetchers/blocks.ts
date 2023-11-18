@@ -1,8 +1,8 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { GRAPH_HOST } from 'app/services/graph/constants'
 import { blockQuery, blocksQuery, massBlocksQuery } from 'app/services/graph/queries'
 import { addSeconds, getUnixTime, startOfHour, startOfMinute, startOfSecond, subDays, subHours } from 'date-fns'
 import { request } from 'graphql-request'
+import { ChainId } from 'sushi-sdk-ftm'
 
 export const BLOCKS = {
   [ChainId.ETHEREUM]: 'blocklytics/ethereum-blocks',

@@ -1,8 +1,8 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { PairType } from 'app/features/onsen/enum'
 import { aprToApy } from 'app/functions/convert'
 import { useFarmHistories } from 'app/services/graph'
 import { useCallback, useMemo } from 'react'
+import { ChainId } from 'sushi-sdk-ftm'
 
 import { getRewards, useRewardCalculationData } from './useFarmRewardsWithUsers'
 

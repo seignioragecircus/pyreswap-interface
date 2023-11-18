@@ -1,6 +1,5 @@
 import { arrayify } from '@ethersproject/bytes'
 import { parseBytes32String } from '@ethersproject/strings'
-import { ChainId, Currency, NATIVE, Token, WNATIVE, WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
 import { createTokenFilterFunction } from 'app/functions/filtering'
 import { isAddress } from 'app/functions/validate'
 // import { NEVER_RELOAD, useSingleCallResult } from 'app/state/multicall-2/hooks'
@@ -11,6 +10,7 @@ import { TokenAddressMap, useAllLists, useInactiveListUrls, useUnsupportedTokenL
 import { WrappedTokenInfo } from 'app/state/lists/wrappedTokenInfo'
 import { useUserAddedTokens } from 'app/state/user/hooks'
 import { useMemo } from 'react'
+import { ChainId, Currency, NATIVE, Token, WNATIVE, WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
 
 import { useBytes32TokenContract, useTokenContract } from './useContract'
 

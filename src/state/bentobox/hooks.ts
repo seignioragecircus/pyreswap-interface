@@ -1,4 +1,3 @@
-import { CurrencyAmount, JSBI, Rebase, Token, ZERO } from '@sushiswap/core-sdk'
 import { isAddress, toAmountCurrencyAmount } from 'app/functions'
 import { useAllTokens } from 'app/hooks/Tokens'
 import { useBentoBoxContract } from 'app/hooks/useContract'
@@ -6,6 +5,7 @@ import { useSingleCallResult, useSingleContractMultipleData } from 'app/lib/hook
 import { useActiveWeb3React } from 'app/services/web3'
 import { OptionalMethodInputs } from 'app/types'
 import { useMemo } from 'react'
+import { CurrencyAmount, JSBI, Rebase, Token, ZERO } from 'sushi-sdk-ftm'
 
 export interface BentoBalance {
   address: string
