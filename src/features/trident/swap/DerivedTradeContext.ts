@@ -1,7 +1,7 @@
 import { Trade } from '@sushiswap/trident-sdk'
 import { createContext, useContext } from 'react'
 import { Currency, CurrencyAmount, Percent, TradeType } from 'sushi-sdk-ftm'
-import { Trade as LegacyTrade } from 'sushi-sdk-ftm/dist/entities/Trade'
+import { Trade as LegacyTrade } from 'sushi-sdk-ftm'
 
 interface DerivedTradeContext {
   formattedAmounts?: string[]

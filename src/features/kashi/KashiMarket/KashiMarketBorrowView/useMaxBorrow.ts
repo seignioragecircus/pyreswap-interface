@@ -6,7 +6,7 @@ import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import { useMemo } from 'react'
 import { Currency, CurrencyAmount, JSBI, Percent, TradeType, ZERO } from 'sushi-sdk-ftm'
-import { Trade as LegacyTrade } from 'sushi-sdk-ftm/dist/entities/Trade'
+import { Trade as LegacyTrade } from 'sushi-sdk-ftm'
 
 interface UseMaxBorrowPayload {
   leveraged: boolean

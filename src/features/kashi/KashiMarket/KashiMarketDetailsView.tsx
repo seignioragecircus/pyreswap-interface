@@ -14,7 +14,7 @@ import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import React, { FC, Fragment, useState } from 'react'
 import { Currency, CurrencyAmount, Fraction, JSBI, Percent, TradeType } from 'sushi-sdk-ftm'
-import { Trade as LegacyTrade } from 'sushi-sdk-ftm/dist/entities/Trade'
+import { Trade as LegacyTrade } from 'sushi-sdk-ftm'
 
 interface KashiMarketDetailsView {
   collateralAmount?: CurrencyAmount<Currency>
