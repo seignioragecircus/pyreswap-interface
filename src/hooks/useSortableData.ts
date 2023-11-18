@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { useMemo, useState } from 'react'
-import { CurrencyAmount, JSBI } from 'sushi-sdk-ftm'
+import { CurrencyAmount, JSBI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 function getNested(theObject: any, path: string, separator = '.') {
   try {

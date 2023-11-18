@@ -7,7 +7,7 @@ import {
   RawLauncherInfo,
   RawMarketInfo,
 } from 'app/features/miso/context/types'
-import { Currency, CurrencyAmount, Fraction, JSBI, Percent, Price, Token, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Fraction, JSBI, Percent, Price, Token, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export class Auction {
   public readonly template: AuctionTemplate

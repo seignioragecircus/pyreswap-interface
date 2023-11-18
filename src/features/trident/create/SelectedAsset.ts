@@ -1,5 +1,5 @@
 import { tryParseAmount } from 'app/functions'
-import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 import { v4 } from 'uuid'
 
 export enum SpendSource {

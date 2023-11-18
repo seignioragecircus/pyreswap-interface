@@ -13,7 +13,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useRouter } from 'next/router'
 import React, { FC, useCallback } from 'react'
-import { NATIVE } from 'sushi-sdk-ftm'
+import { NATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface ActionViewProps {
   onClose(): void

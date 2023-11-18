@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from '@heroicons/react/outline'
 import { unwrappedToken } from 'app/functions/currency/wrappedCurrency'
 import React, { Fragment, memo } from 'react'
-import { Currency, Trade, TradeType } from 'sushi-sdk-ftm'
+import { Currency, Trade, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const SwapRoute = memo(({ trade }: { trade: Trade<Currency, Currency, TradeType> }) => {
   return (

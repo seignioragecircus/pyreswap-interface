@@ -4,7 +4,7 @@ import { useCloneRewarderContract, useComplexRewarderContract } from 'app/hooks/
 import useBlockNumber from 'app/lib/hooks/useBlockNumber'
 import { useActiveWeb3React } from 'app/services/web3/hooks/useActiveWeb3React'
 import { useEffect, useMemo, useState } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Chef } from './enum'
 

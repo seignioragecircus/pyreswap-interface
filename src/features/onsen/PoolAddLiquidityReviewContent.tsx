@@ -10,7 +10,7 @@ import { setOnsenModalOpen } from 'app/features/onsen/onsenSlice'
 import { useAppDispatch } from 'app/state/hooks'
 import { Field } from 'app/state/mint/actions'
 import React, { FC } from 'react'
-import { Currency, CurrencyAmount, Percent, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Percent, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface PoolAddLiquidityReviewContentProps {
   noLiquidity?: boolean

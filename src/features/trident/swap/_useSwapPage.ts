@@ -11,7 +11,7 @@ import { useBestTridentTrade } from 'app/hooks/useBestTridentTrade'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppSelector } from 'app/state/hooks'
 import { useMemo } from 'react'
-import { JSBI, Percent, TradeType, TradeVersion, WNATIVE, ZERO } from 'sushi-sdk-ftm'
+import { JSBI, Percent, TradeType, TradeVersion, WNATIVE, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 /*
   Private hook, specific for the Swap page component, do not use anywhere else for performance reasons.

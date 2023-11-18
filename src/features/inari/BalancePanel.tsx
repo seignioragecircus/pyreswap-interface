@@ -8,7 +8,7 @@ import { setValues } from 'app/state/inari/actions'
 import { useDerivedInariState, useInariState, useSelectedInariStrategy } from 'app/state/inari/hooks'
 import { Field } from 'app/state/inari/types'
 import React, { FC, useCallback } from 'react'
-import { CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface BalancePanelProps {
   label: string

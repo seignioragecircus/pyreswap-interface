@@ -5,7 +5,7 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 // import { WalletLinkConnector } from 'web3-react-walletlink-connector'
 import { GamestopConnector, NetworkConnector } from 'app/entities/connectors'
 import Cookies from 'js-cookie'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 import { InjectedConnector } from 'web3-react-injected-connector'
 
 import RPC from './rpc'

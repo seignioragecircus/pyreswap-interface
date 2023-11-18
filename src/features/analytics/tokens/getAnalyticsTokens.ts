@@ -1,5 +1,5 @@
 import { getBentoStrategies, getBlockDaysAgo, getNativePrice, getTokens } from 'app/services/graph'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface getAnalyticsTokensProps {
   chainId: ChainId

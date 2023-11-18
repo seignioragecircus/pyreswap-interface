@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export default interface LPToken {
   id?: number

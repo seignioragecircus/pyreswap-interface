@@ -13,7 +13,7 @@ import {
   Token,
   Trade as V2Trade,
   TradeType,
-} from 'sushi-sdk-ftm'
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useEIP2612Contract } from './useContract'
 import useIsArgentWallet from './useIsArgentWallet'

@@ -1,7 +1,7 @@
 import { useActiveWeb3React } from 'app/services/web3'
 import flatMap from 'lodash/flatMap'
 import { useMemo } from 'react'
-import { Currency, Token } from 'sushi-sdk-ftm'
+import { Currency, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { ADDITIONAL_BASES, BASES_TO_CHECK_TRADES_AGAINST, CUSTOM_BASES } from '../config/routing'
 

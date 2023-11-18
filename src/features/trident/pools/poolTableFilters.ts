@@ -1,5 +1,5 @@
-import { Fee } from '@sushiswap/trident-sdk'
 import { TridentPool } from 'app/services/graph/fetchers/pools'
+import { Fee } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 type FilterSymbolsFunc<T> = (arg0: { original: TridentPool }[], arg1: string[], arg2: T) => any[]
 

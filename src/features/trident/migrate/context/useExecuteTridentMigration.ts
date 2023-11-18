@@ -16,7 +16,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useTokenBalances } from 'app/state/wallet/hooks'
-import { CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const useExecuteTridentMigration = () => {
   const { i18n } = useLingui()

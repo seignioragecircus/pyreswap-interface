@@ -23,7 +23,7 @@ import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useExpertModeManager } from 'app/state/user/hooks'
 import React, { useState } from 'react'
-import { ChainId, CurrencyAmount, currencyEquals, NATIVE, WNATIVE } from 'sushi-sdk-ftm'
+import { ChainId, CurrencyAmount, currencyEquals, NATIVE, WNATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 // @ts-ignore TYPE NEEDS FIXING
 const PoolDeposit = ({ currencyA, currencyB, header }) => {

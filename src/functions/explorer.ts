@@ -1,4 +1,4 @@
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const explorers = {
   etherscan: (link: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {

@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { LimitOrder } from '@sushiswap/limit-order-sdk'
 import Pagination from 'app/components/Pagination'
 import Typography from 'app/components/Typography'
 import useLimitOrders from 'app/features/legacy/limit-order/useLimitOrders'
@@ -18,6 +17,7 @@ import { useTransactionAdder } from 'app/state/transactions/hooks'
 import Link from 'next/link'
 import React, { FC, useCallback } from 'react'
 import { useFlexLayout, usePagination, useSortBy, useTable } from 'react-table'
+import { LimitOrder } from 'sushi-sdk-ftm/packages/limit-order-sdk'
 
 import { useOpenOrdersTableConfig } from './useOpenOrdersTableConfig'
 

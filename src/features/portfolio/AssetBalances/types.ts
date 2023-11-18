@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export interface Assets {
   asset: CurrencyAmount<Currency>

@@ -3,7 +3,7 @@ import { Signature } from '@ethersproject/bytes'
 import { Contract } from '@ethersproject/contracts'
 import { LiquidityOutput } from 'app/features/trident/types'
 import { StandardSignatureData } from 'app/hooks/useERC20Permit'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface Batch {
   contract: Contract

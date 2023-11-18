@@ -1,5 +1,5 @@
 import { Interface } from '@ethersproject/abi'
-import { BigintIsh, Currency, CurrencyAmount, JSBI } from 'sushi-sdk-ftm'
+import { BigintIsh, Currency, CurrencyAmount, JSBI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export function toHex(bigintIsh: BigintIsh) {
   const bigInt = JSBI.BigInt(bigintIsh)

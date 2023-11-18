@@ -9,7 +9,7 @@ import useTokenTemplateMap from 'app/features/miso/context/hooks/useTokenTemplat
 import { classNames, shortenAddress } from 'app/functions'
 import { useTotalSupply } from 'app/hooks/useTotalSupply'
 import React, { FC } from 'react'
-import { Percent } from 'sushi-sdk-ftm'
+import { Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface AuctionDetailsTabStatProps {
   label: string

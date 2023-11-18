@@ -11,7 +11,7 @@ import Typography from 'app/components/Typography'
 import { useKashiMarket, useLiquidationPrice } from 'app/features/kashi/KashiMarket'
 import { classNames } from 'app/functions'
 import React, { FC, useCallback, useState } from 'react'
-import { Currency, CurrencyAmount, Trade as LegacyTrade, TradeType } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Trade as LegacyTrade, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const LeverageColor = (x: number) => {
   if (x < 1) return 'text-green'

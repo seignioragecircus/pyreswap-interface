@@ -12,7 +12,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import cookie from 'cookie-cutter'
 import Image from 'next/image'
 import React, { FC, Fragment } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface NetworkGuardProps {
   feature: Feature

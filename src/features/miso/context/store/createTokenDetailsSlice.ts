@@ -3,7 +3,7 @@ import { useStore } from 'app/features/miso/context/store/index'
 import { StoreSlice, TokenSetup, TokenType } from 'app/features/miso/context/types'
 import { useToken } from 'app/hooks/Tokens'
 import { useMemo } from 'react'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export interface ITokenDetails {
   tokenType: TokenType

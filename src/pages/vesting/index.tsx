@@ -33,7 +33,7 @@ import { useUserHasSubmittedClaim } from 'app/state/transactions/hooks'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import React, { useEffect, useState } from 'react'
-import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useActiveWeb3React } from '../../services/web3'
 

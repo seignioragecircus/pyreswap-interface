@@ -16,7 +16,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useNativeCurrencyBalances } from 'app/state/wallet/hooks'
 import React, { useCallback, useMemo, useState } from 'react'
-import { BENTOBOX_ADDRESS, KASHI_ADDRESS, WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
+import { BENTOBOX_ADDRESS, KASHI_ADDRESS, WNATIVE_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import KashiMediumRiskLendingPair from '../kashi/KashiMediumRiskLendingPair'
 

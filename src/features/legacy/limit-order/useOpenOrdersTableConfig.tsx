@@ -1,13 +1,13 @@
 import { ChevronRightIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { LimitOrder } from '@sushiswap/limit-order-sdk'
 import Button from 'app/components/Button'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Typography from 'app/components/Typography'
 import { DerivedOrder } from 'app/features/legacy/limit-order/types'
 import React, { useMemo, useState } from 'react'
 import { CellProps } from 'react-table'
+import { LimitOrder } from 'sushi-sdk-ftm/packages/limit-order-sdk'
 
 export const useOpenOrdersTableConfig = ({
   orders,

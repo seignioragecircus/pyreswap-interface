@@ -8,7 +8,7 @@ import { useMultipleContractSingleData, useSingleCallResult } from 'app/lib/hook
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
-import { CHAIN_KEY, Currency, CurrencyAmount, Fraction, JSBI } from 'sushi-sdk-ftm'
+import { CHAIN_KEY, Currency, CurrencyAmount, Fraction, JSBI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const useAuctionPointLists = (auctionAddresses: string[]): string[] => {
   const callStates = useMultipleContractSingleData(auctionAddresses, new Interface(BASE_AUCTION_ABI), 'pointList')

@@ -10,7 +10,7 @@ import { TokenAddressMap, useAllLists, useInactiveListUrls, useUnsupportedTokenL
 import { WrappedTokenInfo } from 'app/state/lists/wrappedTokenInfo'
 import { useUserAddedTokens } from 'app/state/user/hooks'
 import { useMemo } from 'react'
-import { ChainId, Currency, NATIVE, Token, WNATIVE, WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
+import { ChainId, Currency, NATIVE, Token, WNATIVE, WNATIVE_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useBytes32TokenContract, useTokenContract } from './useContract'
 

@@ -6,7 +6,7 @@ import AuctionChart from 'app/features/miso/AuctionChart'
 import { useAuctionCommitments } from 'app/features/miso/context/hooks/useAuctionCommitments'
 import { classNames, formatBalance } from 'app/functions'
 import React, { useEffect, useState } from 'react'
-import { JSBI } from 'sushi-sdk-ftm'
+import { JSBI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Auction } from '../context/Auction'
 

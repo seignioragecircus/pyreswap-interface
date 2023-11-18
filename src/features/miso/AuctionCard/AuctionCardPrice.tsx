@@ -1,7 +1,7 @@
 import { formatNumber } from 'app/functions'
 import useInterval from 'app/hooks/useInterval'
 import { FC, useState } from 'react'
-import { Currency, Price, Token } from 'sushi-sdk-ftm'
+import { Currency, Price, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Auction } from '../context/Auction'
 

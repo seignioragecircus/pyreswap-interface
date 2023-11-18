@@ -14,7 +14,7 @@ import { classNames, maxAmountSpend, tryParseAmount } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useCurrencyBalance } from 'app/state/wallet/hooks'
 import React, { FC, useState } from 'react'
-import { CurrencyAmount, ZERO } from 'sushi-sdk-ftm'
+import { CurrencyAmount, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import AuctionCommitterSkeleton from './AuctionCommitterSkeleton'
 

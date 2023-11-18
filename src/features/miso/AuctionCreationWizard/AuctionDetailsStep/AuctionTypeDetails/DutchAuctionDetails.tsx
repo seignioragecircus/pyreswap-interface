@@ -12,7 +12,7 @@ import { useToken } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC } from 'react'
 import { useFormContext } from 'react-hook-form'
-import { Currency, CurrencyAmount, NATIVE, Price, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, NATIVE, Price, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const useAuctionData = () =>
   useStore(({ paymentCurrencyAddress, tokenAmount }) => ({

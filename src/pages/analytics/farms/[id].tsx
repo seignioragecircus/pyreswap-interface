@@ -12,7 +12,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useMemo } from 'react'
-import { ChainId, Token } from 'sushi-sdk-ftm'
+import { ChainId, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const chartTimespans = [
   {

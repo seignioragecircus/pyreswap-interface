@@ -2,7 +2,7 @@ import { PairType } from 'app/features/onsen/enum'
 import { aprToApy } from 'app/functions/convert'
 import { useFarmHistories } from 'app/services/graph'
 import { useCallback, useMemo } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { getRewards, useRewardCalculationData } from './useFarmRewardsWithUsers'
 

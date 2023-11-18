@@ -1,7 +1,7 @@
 import { TransactionReceipt, TransactionResponse } from '@ethersproject/abstract-provider'
 import { PrivateTxStatus } from 'app/entities/SushiGuard'
 import { atomWithImmer } from 'jotai/immer'
-import { Currency, CurrencyAmount, TradeType } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export enum TransactionType {
   APPROVAL,

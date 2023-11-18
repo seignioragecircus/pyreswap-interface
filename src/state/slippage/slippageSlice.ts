@@ -1,6 +1,6 @@
 import { createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { AppState } from 'app/state'
-import { Percent } from 'sushi-sdk-ftm'
+import { Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const GLOBAL_DEFAULT_SLIPPAGE_PERCENT = new Percent(50, 10_000) // .5%
 export const GLOBAL_DEFAULT_SLIPPAGE_STR = GLOBAL_DEFAULT_SLIPPAGE_PERCENT.toFixed(2)

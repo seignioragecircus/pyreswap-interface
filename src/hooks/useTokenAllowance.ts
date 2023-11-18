@@ -1,6 +1,6 @@
 import { useSingleCallResult } from 'app/lib/hooks/multicall'
 import { useMemo } from 'react'
-import { CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useTokenContract } from './useContract'
 

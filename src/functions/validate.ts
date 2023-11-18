@@ -3,7 +3,7 @@
 import { getAddress } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
 import { TokenAddressMap } from 'app/state/lists/hooks'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 /**
  * Returns true if the string value is zero in hex

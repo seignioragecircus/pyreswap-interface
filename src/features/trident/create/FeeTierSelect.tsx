@@ -1,7 +1,7 @@
-import { Fee } from '@sushiswap/trident-sdk'
 import Typography from 'app/components/Typography'
 import { classNames } from 'app/functions/styling'
 import React, { FC } from 'react'
+import { Fee } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 interface FeeTierSelectProps {
   tier: Fee

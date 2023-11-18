@@ -11,7 +11,7 @@ import { addressValidator } from 'app/functions/yupValidators'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { CHAIN_KEY } from 'sushi-sdk-ftm'
+import { CHAIN_KEY } from 'sushi-sdk-ftm/packages/core-sdk'
 import * as yup from 'yup'
 
 export interface TokenCreationFormInput {

@@ -6,7 +6,7 @@ import useIsWindowVisible from 'app/hooks/useIsWindowVisible'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch } from 'app/state/hooks'
 import { useCallback, useEffect } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { acceptListUpdate, enableList } from './actions'
 import { useActiveListUrls, useAllLists } from './hooks'

@@ -6,7 +6,7 @@ import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 import IUniswapV2Router02ABI from 'app/constants/abis/uniswap-v2-router-02.json'
 import IUniswapV2Router02NoETHABI from 'app/constants/abis/uniswap-v2-router-02-no-eth.json'
 import { isAddress } from 'app/functions/validate'
-import { ChainId, ROUTER_ADDRESS } from 'sushi-sdk-ftm'
+import { ChainId, ROUTER_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 // account is not optional
 export function getSigner(library: Web3Provider, account: string): JsonRpcSigner {

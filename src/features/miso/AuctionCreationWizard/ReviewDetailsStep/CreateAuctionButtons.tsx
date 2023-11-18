@@ -18,7 +18,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import Lottie from 'lottie-react'
 import { useRouter } from 'next/router'
 import React, { FC, useCallback, useEffect, useMemo, useState } from 'react'
-import { CHAIN_KEY, NATIVE, Percent } from 'sushi-sdk-ftm'
+import { CHAIN_KEY, NATIVE, Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const CreateAuctionButtons: FC<{ onBack(): void }> = ({ onBack }) => {
   const { i18n } = useLingui()

@@ -9,7 +9,7 @@ import { useBentoMasterContractAllowed } from 'app/state/bentobox/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { KASHI_ADDRESS } from 'sushi-sdk-ftm'
+import { KASHI_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useBentoBoxContract } from './useContract'
 

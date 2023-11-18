@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { PoolState } from '@sushiswap/trident-sdk'
 import {
   selectAddNormalInput,
   selectAddSpendFromWallet,
@@ -14,7 +13,8 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
-import { Currency, CurrencyAmount, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
+import { PoolState } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 import { useDependentAssetInputs } from '../useDependentAssetInputs'
 

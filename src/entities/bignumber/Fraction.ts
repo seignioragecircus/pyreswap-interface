@@ -3,7 +3,7 @@ import { One, Zero } from '@ethersproject/constants'
 import { formatBalance } from 'app/functions/format'
 import { parseBalance } from 'app/functions/parse'
 import { isEmptyValue } from 'app/functions/validate'
-import { Fraction as SDKFraction } from 'sushi-sdk-ftm'
+import { Fraction as SDKFraction } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export class Fraction {
   static BASE = BigNumber.from(10).pow(18)

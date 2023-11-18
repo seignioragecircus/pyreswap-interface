@@ -4,7 +4,7 @@ import { maxAmountSpend, toAmountCurrencyAmount, toShareCurrencyAmount, tryParse
 import { useBentoOrWalletBalances } from 'app/hooks/useBentoOrWalletBalance'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useCallback, useEffect, useMemo } from 'react'
-import { CurrencyAmount } from 'sushi-sdk-ftm'
+import { CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export type useDependentAssetInputs = (x: {
   fixedRatio: boolean

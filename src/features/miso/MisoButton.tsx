@@ -7,7 +7,7 @@ import { AuctionStatus } from 'app/features/miso/context/types'
 import { ApprovalState, useApproveCallback } from 'app/hooks'
 import Lottie from 'lottie-react'
 import React, { FC } from 'react'
-import { CurrencyAmount, NativeCurrency, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, NativeCurrency, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface MisoButtonProps {
   auction: Auction

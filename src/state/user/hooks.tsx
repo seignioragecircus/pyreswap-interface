@@ -19,7 +19,7 @@ import {
   KASHI_ADDRESS,
   Pair,
   Token,
-} from 'sushi-sdk-ftm'
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 import {
   addSerializedPair,

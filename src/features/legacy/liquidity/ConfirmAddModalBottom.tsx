@@ -3,7 +3,7 @@ import { useLingui } from '@lingui/react'
 import Button from 'app/components/Button'
 import { Field } from 'app/state/mint/actions'
 import React from 'react'
-import { Currency, CurrencyAmount, Fraction, Percent } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Fraction, Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export function ConfirmAddModalBottom({
   noLiquidity,

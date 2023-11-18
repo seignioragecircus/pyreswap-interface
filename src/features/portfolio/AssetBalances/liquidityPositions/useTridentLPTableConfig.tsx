@@ -1,4 +1,3 @@
-import { PoolType } from '@sushiswap/trident-sdk'
 import Chip from 'app/components/Chip'
 import Typography from 'app/components/Typography'
 import { PoolCell } from 'app/features/trident/pools/PoolCell'
@@ -9,6 +8,7 @@ import { TridentPositionRow } from 'app/services/graph'
 import { useRollingPoolStats } from 'app/services/graph/hooks/pools'
 import Link from 'next/link'
 import React, { useMemo } from 'react'
+import { PoolType } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 interface TridentLPTableConfig {
   positions?: TridentPositionRow[]

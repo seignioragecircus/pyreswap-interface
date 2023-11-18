@@ -11,7 +11,7 @@ import { useRemoveLiquidityExecute } from 'app/features/trident/remove/useRemove
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import React, { FC, useCallback } from 'react'
-import { CurrencyAmount, NATIVE, WNATIVE, ZERO } from 'sushi-sdk-ftm'
+import { CurrencyAmount, NATIVE, WNATIVE, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import WithdrawalSubmittedModalContent from './WithdrawalSubmittedModalContent'
 

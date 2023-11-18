@@ -6,7 +6,7 @@ import { isAddressValidator, pipeline } from 'app/features/miso/AuctionAdminForm
 import { useAuctionPointListPoints } from 'app/features/miso/context/hooks/useAuctionPointList'
 import { classNames, isAddress } from 'app/functions'
 import React, { FC, useState } from 'react'
-import { Currency, ZERO } from 'sushi-sdk-ftm'
+import { Currency, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface WhitelistCheckerProps {
   listAddress?: string

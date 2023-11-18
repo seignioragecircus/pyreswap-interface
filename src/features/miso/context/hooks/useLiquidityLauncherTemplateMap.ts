@@ -4,7 +4,7 @@ import MISO from '@sushiswap/miso/exports/all.json'
 import { LiquidityLauncherTemplate } from 'app/features/miso/context/types'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useCallback, useMemo } from 'react'
-import { CHAIN_KEY } from 'sushi-sdk-ftm'
+import { CHAIN_KEY } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const useLiquidityLauncherTemplateMap = () => {
   const { i18n } = useLingui()

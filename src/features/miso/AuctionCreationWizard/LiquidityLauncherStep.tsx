@@ -18,7 +18,7 @@ import { useToken } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, ReactNode, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import { NATIVE } from 'sushi-sdk-ftm'
+import { NATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 import * as yup from 'yup'
 
 const useAuctionData = () =>

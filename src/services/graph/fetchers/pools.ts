@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { Fee, PoolType } from '@sushiswap/trident-sdk'
 import { GRAPH_HOST, TRIDENT } from 'app/services/graph/constants'
 import {
   getTransactionsForPoolQuery,
@@ -10,7 +9,8 @@ import {
   poolKpisQuery,
 } from 'app/services/graph/queries'
 import { WrappedTokenInfo } from 'app/state/lists/wrappedTokenInfo'
-import { ChainId, Token } from 'sushi-sdk-ftm'
+import { ChainId, Token } from 'sushi-sdk-ftm/packages/core-sdk'
+import { Fee, PoolType } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 import { TridentTransactionRawData, tridentTransactionsRawDataFormatter } from '../hooks/transactions/trident'
 import { pager } from './pager'

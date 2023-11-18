@@ -5,7 +5,7 @@ import { usePoolContext } from 'app/features/trident/PoolContext'
 import SumUSDCValues from 'app/features/trident/SumUSDCValues'
 import { formatPercent } from 'app/functions'
 import { FC } from 'react'
-import { ZERO } from 'sushi-sdk-ftm'
+import { ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const ClassicMyPosition: FC = () => {
   const { i18n } = useLingui()

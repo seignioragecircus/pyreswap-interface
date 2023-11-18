@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Price } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const getPriceOfNewPool = (
   amounts: (CurrencyAmount<Currency> | undefined)[]

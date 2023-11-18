@@ -14,7 +14,7 @@ import {
   tokenSubsetQuery,
   transactionsQuery,
 } from 'app/services/graph/queries'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { pager } from './pager'
 

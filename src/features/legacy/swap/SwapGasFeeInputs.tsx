@@ -8,7 +8,7 @@ import { useAppDispatch } from 'app/state/hooks'
 import { setFees, setMaxFee, setPriorityFee } from 'app/state/swap/actions'
 import { useExpertModeManager } from 'app/state/user/hooks'
 import React, { FC, useEffect, useState } from 'react'
-import { CurrencyAmount, NATIVE } from 'sushi-sdk-ftm'
+import { CurrencyAmount, NATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 import { toWei } from 'web3-utils'
 
 const SwapGasFeeInputs: FC = () => {

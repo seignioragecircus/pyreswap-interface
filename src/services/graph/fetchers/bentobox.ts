@@ -7,7 +7,7 @@ import {
   bentoUserTokensQuery,
   clonesQuery,
 } from 'app/services/graph/queries/bentobox'
-import { ChainId, CurrencyAmount, JSBI, Token } from 'sushi-sdk-ftm'
+import { ChainId, CurrencyAmount, JSBI, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { pager } from './pager'
 

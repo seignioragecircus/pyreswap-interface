@@ -10,7 +10,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useAppSelector } from 'app/state/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import React, { FC } from 'react'
-import { NATIVE, WNATIVE, WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
+import { NATIVE, WNATIVE, WNATIVE_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import TridentApproveGate from '../TridentApproveGate'
 

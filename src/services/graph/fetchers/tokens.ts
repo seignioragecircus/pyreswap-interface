@@ -5,7 +5,7 @@ import {
   getTridentTokenPricesQuery,
   getTridentTokensQuery,
 } from 'app/services/graph/queries'
-import { ChainId, Currency, CurrencyAmount } from 'sushi-sdk-ftm'
+import { ChainId, Currency, CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const formatCurrencyAmounts = (chainId: ChainId, tokenPrices: TokenPrice[]) => {
   return tokenPrices.map(({ derivedUSD }) => {

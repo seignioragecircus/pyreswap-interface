@@ -1,8 +1,8 @@
 import { getAddress } from '@ethersproject/address'
-import { PoolType } from '@sushiswap/trident-sdk'
 import { fetcher, TridentPoolData } from 'app/services/graph'
 import { getTridentPositionsQuery } from 'app/services/graph/queries'
-import { ChainId, Token } from 'sushi-sdk-ftm'
+import { ChainId, Token } from 'sushi-sdk-ftm/packages/core-sdk'
+import { PoolType } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 interface TridentPositionQueryResult {
   liquidityPositions?: TridentPosition[]

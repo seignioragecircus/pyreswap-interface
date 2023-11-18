@@ -7,7 +7,7 @@ import MyOrders from 'app/features/legacy/limit-order/MyOrders'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useRouter } from 'next/router'
 import React, { FC } from 'react'
-import { Currency } from 'sushi-sdk-ftm'
+import { Currency } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const getQuery = (input?: Currency, output?: Currency) => {
   if (!input && !output) return

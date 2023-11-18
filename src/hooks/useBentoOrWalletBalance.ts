@@ -1,7 +1,7 @@
 import { useBentoBalancesV2 } from 'app/state/bentobox/hooks'
 import { useCurrencyBalances } from 'app/state/wallet/hooks'
 import { useMemo } from 'react'
-import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const useBentoOrWalletBalances = (
   account: string | undefined,

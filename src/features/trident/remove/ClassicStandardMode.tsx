@@ -29,7 +29,7 @@ import { useUSDCValue } from 'app/hooks/useUSDCPrice'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import React, { FC } from 'react'
-import { Currency, CurrencyAmount, Percent, WNATIVE } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Percent, WNATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import SumUSDCValues from '../SumUSDCValues'
 

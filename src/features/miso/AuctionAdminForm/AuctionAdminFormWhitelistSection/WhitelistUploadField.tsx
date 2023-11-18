@@ -7,7 +7,7 @@ import useAuctionEdit from 'app/features/miso/context/hooks/useAuctionEdit'
 import { WhitelistEntry } from 'app/features/miso/context/types'
 import Lottie from 'lottie-react'
 import React, { FC, useCallback, useState } from 'react'
-import { Fraction, JSBI } from 'sushi-sdk-ftm'
+import { Fraction, JSBI } from 'sushi-sdk-ftm/packages/core-sdk'
 import { toWei } from 'web3-utils'
 
 import WhitelistUpload from '../../WhitelistUpload'

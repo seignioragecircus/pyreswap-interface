@@ -6,7 +6,7 @@ import { calculateSlippageAmount, toShareCurrencyAmount } from 'app/functions'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import { useMemo } from 'react'
-import { CurrencyAmount, Percent, ZERO } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Percent, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const useAddDetails = () => {
   const {

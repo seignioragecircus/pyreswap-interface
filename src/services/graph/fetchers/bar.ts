@@ -9,7 +9,7 @@ import {
 } from 'app/services/graph/queries/bar'
 import { getUnixTime, startOfHour, startOfMinute, startOfSecond, subDays } from 'date-fns'
 import { request } from 'graphql-request'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const BAR = {
   [ChainId.ETHEREUM]: 'olastenberg/bar',

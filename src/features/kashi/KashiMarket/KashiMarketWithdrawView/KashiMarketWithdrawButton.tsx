@@ -10,7 +10,7 @@ import { useBentoBoxContract } from 'app/hooks'
 import { useBentoOrWalletBalance } from 'app/hooks/useBentoOrWalletBalance'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, useState } from 'react'
-import { Currency, CurrencyAmount, KASHI_ADDRESS, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, KASHI_ADDRESS, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export interface KashiMarketWithdrawButtonProps {
   receiveToWallet: boolean

@@ -18,7 +18,13 @@ import { useAppDispatch } from 'app/state/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCurrencyBalance } from 'app/state/wallet/hooks'
 import React, { useState } from 'react'
-import { ChainId, MASTERCHEF_ADDRESS, MASTERCHEF_V2_ADDRESS, MINICHEF_ADDRESS, Token } from 'sushi-sdk-ftm'
+import {
+  ChainId,
+  MASTERCHEF_ADDRESS,
+  MASTERCHEF_V2_ADDRESS,
+  MINICHEF_ADDRESS,
+  Token,
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Chef, PairType } from './enum'
 import { useUserInfo } from './hooks'

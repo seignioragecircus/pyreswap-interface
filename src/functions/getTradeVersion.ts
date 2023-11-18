@@ -1,5 +1,5 @@
-import { Trade as V3Trade } from '@sushiswap/trident-sdk'
-import { Currency, Trade as V2Trade, TradeType, TradeVersion } from 'sushi-sdk-ftm'
+import { Currency, Trade as V2Trade, TradeType, TradeVersion } from 'sushi-sdk-ftm/packages/core-sdk'
+import { Trade as V3Trade } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 export function getTradeVersion(
   trade?: V2Trade<Currency, Currency, TradeType> | V3Trade<Currency, Currency, TradeType>

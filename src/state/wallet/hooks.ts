@@ -1,7 +1,7 @@
 import { useTokenBalances, useTokenBalancesWithLoadingIndicator } from 'lib/hooks/useCurrencyBalance'
 import { useMemo } from 'react'
 import { useActiveWeb3React } from 'services/web3'
-import { CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useAllTokens } from '../../hooks/Tokens'
 

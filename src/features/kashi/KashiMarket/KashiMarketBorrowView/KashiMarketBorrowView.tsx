@@ -16,7 +16,7 @@ import { useV2TradeExactIn } from 'app/hooks/useV2Trades'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import React, { FC, useCallback, useMemo, useRef, useState } from 'react'
-import { CurrencyAmount, Fraction, JSBI, maximum, minimum, ZERO } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Fraction, JSBI, maximum, minimum, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface KashiMarketBorrowView {}
 

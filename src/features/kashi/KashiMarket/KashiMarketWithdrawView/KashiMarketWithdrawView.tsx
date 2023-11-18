@@ -10,7 +10,7 @@ import {
 import SwapAssetPanel from 'app/features/trident/swap/SwapAssetPanel'
 import { tryParseAmount, unwrappedToken } from 'app/functions'
 import React, { FC, useMemo, useState } from 'react'
-import { CurrencyAmount, minimum } from 'sushi-sdk-ftm'
+import { CurrencyAmount, minimum } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { KashiMarketLentDetailsView } from '../KashiMarketLentDetailsView'
 

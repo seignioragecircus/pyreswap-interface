@@ -7,7 +7,7 @@ import { useSingleCallResult } from 'app/lib/hooks/multicall'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useEffect, useState } from 'react'
-import { ChainId, Currency, CurrencyAmount, JSBI, SUSHI } from 'sushi-sdk-ftm'
+import { ChainId, Currency, CurrencyAmount, JSBI, SUSHI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface UserClaimData {
   index: number

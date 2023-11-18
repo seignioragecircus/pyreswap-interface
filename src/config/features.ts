@@ -1,5 +1,5 @@
 import { Feature } from 'app/enums'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 type FeatureMap = { readonly [chainId in ChainId]?: Feature[] }
 

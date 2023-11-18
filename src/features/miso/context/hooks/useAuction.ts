@@ -14,7 +14,7 @@ import { getNativeOrToken, getStatusByTimestamp } from 'app/features/miso/contex
 import useCurrentBlockTimestamp from 'app/hooks/useCurrentBlockTimestamp'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useMemo } from 'react'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Auction } from '../Auction'
 import { useAuctionList } from './useAuctionList'

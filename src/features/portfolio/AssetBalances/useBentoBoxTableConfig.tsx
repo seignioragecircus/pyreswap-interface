@@ -3,7 +3,7 @@ import { Assets } from 'app/features/portfolio/AssetBalances/types'
 import { ValueCell } from 'app/features/portfolio/AssetBalances/ValueCell'
 import { formatPercent } from 'app/functions'
 import React, { useMemo } from 'react'
-import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export type CellProps = { cell: { value: CurrencyAmount<Currency> } }
 

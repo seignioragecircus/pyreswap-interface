@@ -13,7 +13,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useBentoBalanceV2, useBentoShareForAccount } from 'app/state/bentobox/hooks'
 import { useCurrencyBalance } from 'app/state/wallet/hooks'
 import React, { FC, useCallback, useState } from 'react'
-import { ZERO } from 'sushi-sdk-ftm'
+import { ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface WithdrawViewProps {
   onBack(): void

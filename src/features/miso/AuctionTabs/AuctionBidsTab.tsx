@@ -13,7 +13,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, useMemo, useState } from 'react'
 // @ts-ignore TYPE NEEDS FIXING
 import { useFlexLayout, usePagination, useSortBy, useTable } from 'react-table'
-import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const useCommitmentTableConfig = (commitments?: AuctionCommitment[]) => {
   const { chainId } = useActiveWeb3React()

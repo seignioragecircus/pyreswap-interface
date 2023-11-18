@@ -5,7 +5,7 @@ import QuestionHelper from 'app/components/QuestionHelper'
 import SwapRoute from 'app/features/legacy/swap/SwapRoute'
 import { computeRealizedLPFeePercent } from 'app/functions/prices'
 import React, { useMemo } from 'react'
-import { Currency, Trade as V2Trade, TradeType } from 'sushi-sdk-ftm'
+import { Currency, Trade as V2Trade, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
 
 function TradeReview({
   trade,

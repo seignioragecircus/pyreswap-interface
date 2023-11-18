@@ -1,7 +1,7 @@
 import { XSUSHI } from 'app/config/tokens/ethereum'
 import { getBar, getBarHistory, getBlockDaysAgo, getNativePrice, getTokens } from 'app/services/graph'
 import { addYears, getUnixTime } from 'date-fns'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export type AnalyticsXsushi = Awaited<ReturnType<typeof getAnalyticsXsushi>>
 

@@ -17,7 +17,7 @@ import { useUSDCValue } from 'app/hooks/useUSDCPrice'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import React, { useMemo } from 'react'
-import { NATIVE, WNATIVE } from 'sushi-sdk-ftm'
+import { NATIVE, WNATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import TransactionDetails from './TransactionDetails'
 

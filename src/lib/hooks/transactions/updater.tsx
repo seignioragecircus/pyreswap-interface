@@ -7,7 +7,7 @@ import useBlockNumber, { useFastForwardBlockNumber } from 'lib/hooks/useBlockNum
 import ms from 'ms.macro'
 import { useCallback, useEffect } from 'react'
 import { useActiveWeb3React } from 'services/web3'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface Transaction {
   addedTime: number

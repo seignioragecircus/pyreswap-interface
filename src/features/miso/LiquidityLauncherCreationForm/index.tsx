@@ -11,7 +11,7 @@ import { formatData } from 'app/features/miso/LiquidityLauncherCreationForm/util
 import { addressValidator } from 'app/functions/yupValidators'
 import React, { FC, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 import * as yup from 'yup'
 
 export interface LiquidityLauncherFormInput {

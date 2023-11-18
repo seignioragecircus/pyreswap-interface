@@ -1,7 +1,7 @@
-// import { JSBI, ZERO } from 'sushi-sdk-ftm'
-import { JSBI } from 'sushi-sdk-ftm'
+// import { JSBI, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
+import { JSBI } from 'sushi-sdk-ftm/packages/core-sdk'
 
-// import { PROTOCOL_FEE, PROTOCOL_FEE_DIVISOR } from '@sushiswap/kashi-sdk'
+// import { PROTOCOL_FEE, PROTOCOL_FEE_DIVISOR } from 'sushi-sdk-ftm/packages/kashi-sdk'
 import { KashiMediumRiskLendingPair } from './KashiMediumRiskLendingPair'
 
 export function accrueTotalAssetWithFee(pair: KashiMediumRiskLendingPair): {

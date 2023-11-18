@@ -1,10 +1,10 @@
 import { ChevronRightIcon } from '@heroicons/react/outline'
-import { OrderStatus } from '@sushiswap/limit-order-sdk'
 import Chip from 'app/components/Chip'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Typography from 'app/components/Typography'
 import React, { useMemo, useState } from 'react'
 import { CellProps } from 'react-table'
+import { OrderStatus } from 'sushi-sdk-ftm/packages/limit-order-sdk'
 
 import { DerivedOrder } from './types'
 

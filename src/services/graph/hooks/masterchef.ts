@@ -16,7 +16,7 @@ import {
 import { useActiveWeb3React } from 'app/services/web3'
 import concat from 'lodash/concat'
 import { useMemo } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 import useSWR, { SWRConfiguration } from 'swr'
 
 export function useMasterChefV1TotalAllocPoint(swrConfig = undefined) {

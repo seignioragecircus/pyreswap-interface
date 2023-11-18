@@ -10,7 +10,7 @@ import { KashiMarketDetailsView, useKashiMarket, useRepayExecute } from 'app/fea
 import { unwrappedToken, warningSeverity } from 'app/functions'
 import { useIsExpertMode } from 'app/state/user/hooks'
 import React, { FC, useCallback, useState } from 'react'
-import { CurrencyAmount } from 'sushi-sdk-ftm'
+import { CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { KashiMarketRepayButtonProps } from './KashiMarketRepayButton'
 

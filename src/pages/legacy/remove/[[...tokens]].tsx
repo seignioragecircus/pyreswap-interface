@@ -33,7 +33,7 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useCallback, useMemo, useState } from 'react'
 import { Plus } from 'react-feather'
-import { ChainId, NATIVE, Percent, WNATIVE, WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
+import { ChainId, NATIVE, Percent, WNATIVE, WNATIVE_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 const DEFAULT_REMOVE_LIQUIDITY_SLIPPAGE_TOLERANCE = new Percent(5, 100)
 
 export default function Remove() {

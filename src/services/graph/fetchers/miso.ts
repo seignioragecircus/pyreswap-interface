@@ -1,6 +1,6 @@
 import { pager } from 'app/services/graph'
 import { misoCommitmentsQuery } from 'app/services/graph/queries/miso'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { GRAPH_HOST } from '../constants'
 

@@ -21,7 +21,7 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useCallback, useEffect, useState } from 'react'
 import { Plus } from 'react-feather'
-import { Currency, CurrencyAmount, JSBI, NATIVE, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, JSBI, NATIVE, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 enum Fields {
   TOKEN0 = 0,

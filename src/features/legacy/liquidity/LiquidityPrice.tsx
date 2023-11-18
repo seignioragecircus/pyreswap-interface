@@ -4,7 +4,7 @@ import TradePrice from 'app/features/legacy/swap/TradePrice'
 import { classNames } from 'app/functions'
 import { Field } from 'app/state/mint/actions'
 import React, { FC, useState } from 'react'
-import { Currency, Percent, Price } from 'sushi-sdk-ftm'
+import { Currency, Percent, Price } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface LiquidityPriceProps {
   currencies: { [field in Field]?: Currency }

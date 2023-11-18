@@ -1,9 +1,9 @@
-import { Fee } from '@sushiswap/trident-sdk'
 import Checkbox from 'app/components/Checkbox'
 import Typography from 'app/components/Typography'
 import { selectTridentPools, setPoolsFeeTiers, setPoolsTWAPOnly } from 'app/features/trident/pools/poolsSlice'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import React, { FC } from 'react'
+import { Fee } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 const Section: FC<{ title: string }> = ({ children, title }) => {
   return (

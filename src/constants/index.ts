@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent } from 'sushi-sdk-ftm'
+import { ChainId, JSBI, Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 // TODO: Move some of this to config level...
 

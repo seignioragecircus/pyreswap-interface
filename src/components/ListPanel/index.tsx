@@ -1,7 +1,7 @@
 import { classNames, formatNumber } from 'app/functions'
 import { useUSDCValueSubgraph } from 'app/hooks/useUSDCSubgraph'
 import React, { FC, ReactNode } from 'react'
-import { Currency, CurrencyAmount, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import Chip from '../Chip'
 import { CurrencyLogo } from '../CurrencyLogo'

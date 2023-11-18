@@ -6,7 +6,7 @@ import useSushiPerXSushi from 'app/hooks/useXSushiPerSushi'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback, useMemo, useState } from 'react'
-import { CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useDerivedInariState } from '../hooks'
 import { Strategy, StrategyBalances, StrategyGeneralInfo, StrategyTokenDefinitions } from '../types'

@@ -23,7 +23,15 @@ import { useAppSelector } from 'app/state/hooks'
 import { selectSlippageWithDefault } from 'app/state/slippage/slippageSlice'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import React, { useCallback, useMemo, useState } from 'react'
-import { ChainId, CurrencyAmount, currencyEquals, NATIVE, Percent, WNATIVE, ZERO } from 'sushi-sdk-ftm'
+import {
+  ChainId,
+  CurrencyAmount,
+  currencyEquals,
+  NATIVE,
+  Percent,
+  WNATIVE,
+  ZERO,
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 const DEFAULT_REMOVE_LIQUIDITY_SLIPPAGE_TOLERANCE = new Percent(5, 100)
 

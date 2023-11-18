@@ -20,7 +20,7 @@ import { useCreateActionHandlers, useCreateState, useDerivedCreateInfo } from 'a
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useRouter } from 'next/router'
 import React, { Fragment, useCallback } from 'react'
-import { CHAINLINK_ORACLE_ADDRESS, Currency, KASHI_ADDRESS } from 'sushi-sdk-ftm'
+import { CHAINLINK_ORACLE_ADDRESS, Currency, KASHI_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export default function Create() {
   const { i18n } = useLingui()

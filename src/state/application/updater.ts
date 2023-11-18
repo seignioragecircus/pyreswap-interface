@@ -2,7 +2,7 @@ import useDebounce from 'app/hooks/useDebounce'
 import useIsWindowVisible from 'app/hooks/useIsWindowVisible'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useEffect, useState } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useAppDispatch } from '../hooks'
 import { updateChainId } from './reducer'

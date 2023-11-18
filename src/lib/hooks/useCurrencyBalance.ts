@@ -5,7 +5,7 @@ import { useInterfaceMulticall } from 'app/hooks/useContract'
 import { useMultipleContractSingleData, useSingleContractMultipleData } from 'app/lib/hooks/multicall'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useMemo } from 'react'
-import { Currency, CurrencyAmount, JSBI, NATIVE, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, JSBI, NATIVE, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 /**
  * Returns a map of the given addresses to their eventually consistent ETH balances.

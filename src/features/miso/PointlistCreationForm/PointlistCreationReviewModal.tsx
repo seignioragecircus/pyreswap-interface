@@ -10,7 +10,7 @@ import { useToken } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
 import Lottie from 'lottie-react'
 import React, { FC, useCallback, useEffect, useState } from 'react'
-import { Fraction, JSBI, NATIVE } from 'sushi-sdk-ftm'
+import { Fraction, JSBI, NATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 import { toWei } from 'web3-utils'
 
 import PointlistCreationSubmittedModalContent from './PointlistCreationSubmittedModalContent'

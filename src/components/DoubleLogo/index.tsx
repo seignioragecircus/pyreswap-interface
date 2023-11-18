@@ -1,6 +1,6 @@
 import { classNames } from 'app/functions'
 import React from 'react'
-import { Currency } from 'sushi-sdk-ftm'
+import { Currency } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { CurrencyLogo } from '../CurrencyLogo'
 

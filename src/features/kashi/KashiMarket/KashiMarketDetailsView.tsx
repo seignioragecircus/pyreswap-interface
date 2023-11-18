@@ -13,8 +13,8 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import React, { FC, Fragment, useState } from 'react'
-import { Currency, CurrencyAmount, Fraction, JSBI, Percent, TradeType } from 'sushi-sdk-ftm'
-import { Trade as LegacyTrade } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Fraction, JSBI, Percent, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
+import { Trade as LegacyTrade } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface KashiMarketDetailsView {
   collateralAmount?: CurrencyAmount<Currency>

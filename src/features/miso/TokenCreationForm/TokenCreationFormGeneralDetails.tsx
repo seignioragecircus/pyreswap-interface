@@ -5,7 +5,7 @@ import Form from 'app/components/Form'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC } from 'react'
 import { useWatch } from 'react-hook-form'
-import { CHAIN_KEY } from 'sushi-sdk-ftm'
+import { CHAIN_KEY } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface TokenCreationFormGeneralDetailsProps {}
 

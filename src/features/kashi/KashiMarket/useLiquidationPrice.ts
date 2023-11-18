@@ -4,7 +4,7 @@ import { unwrappedToken } from 'app/functions'
 import { useUSDCPrice } from 'app/hooks'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
-import { Currency, CurrencyAmount, Price, Trade as LegacyTrade, TradeType, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Price, Trade as LegacyTrade, TradeType, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface Payload {
   borrowAmount?: CurrencyAmount<Currency>

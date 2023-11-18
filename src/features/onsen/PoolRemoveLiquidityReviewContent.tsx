@@ -9,7 +9,7 @@ import { useFarmListItemDetailsModal } from 'app/features/onsen/FarmListItemDeta
 import { setOnsenModalOpen } from 'app/features/onsen/onsenSlice'
 import { useAppDispatch } from 'app/state/hooks'
 import React, { FC } from 'react'
-import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface PoolRemoveLiquidityReviewContentProps {
   liquidityAmount?: CurrencyAmount<Token>

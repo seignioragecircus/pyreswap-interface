@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Currency, Token } from 'sushi-sdk-ftm'
+import { Currency, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import Typography from '../Typography'
 import CurrencyLogo, { CurrencyLogoProps } from './CurrencyLogo'

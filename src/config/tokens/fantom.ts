@@ -1,4 +1,4 @@
-import { ChainId, Token } from 'sushi-sdk-ftm'
+import { ChainId, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 // export const USDC = new Token(ChainId.FANTOM, '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', 6, 'USDC', 'USD Coin')
 // export const WBTC = new Token(

@@ -33,7 +33,7 @@ import { useExpertModeManager } from 'app/state/user/hooks'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React, { useCallback, useState } from 'react'
-import { Currency, currencyEquals, WNATIVE } from 'sushi-sdk-ftm'
+import { Currency, currencyEquals, WNATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export default function Add() {
   const { i18n } = useLingui()

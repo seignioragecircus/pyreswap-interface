@@ -1,5 +1,5 @@
 import store, { AppState } from 'app/state'
-import { Percent } from 'sushi-sdk-ftm'
+import { Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import {
   formatSlippageInput,

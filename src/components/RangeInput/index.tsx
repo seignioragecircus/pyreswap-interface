@@ -1,7 +1,7 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import { FC } from 'react'
-import { Currency } from 'sushi-sdk-ftm'
+import { Currency } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { classNames } from '../../functions'
 import { Input as NumericalInput } from '../Input/Numeric'

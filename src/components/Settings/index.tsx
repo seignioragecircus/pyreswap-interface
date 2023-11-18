@@ -12,7 +12,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useToggleSettingsMenu } from 'app/state/application/hooks'
 import { useExpertModeManager, useUserSingleHopOnly, useUserSushiGuard } from 'app/state/user/hooks'
 import React, { FC, useState } from 'react'
-import { Percent } from 'sushi-sdk-ftm'
+import { Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface SettingsTabProps {
   placeholderSlippage?: Percent

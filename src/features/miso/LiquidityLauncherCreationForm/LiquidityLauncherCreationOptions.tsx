@@ -7,7 +7,7 @@ import useAuction from 'app/features/miso/context/hooks/useAuction'
 import LiquidityLauncherCreationLockupField from 'app/features/miso/LiquidityLauncherCreationForm/LiquidityLauncherCreationLockupField'
 import React, { FC } from 'react'
 import { useWatch } from 'react-hook-form'
-import { Percent } from 'sushi-sdk-ftm'
+import { Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface LiquidityLauncherCreationOptionsProps {}
 

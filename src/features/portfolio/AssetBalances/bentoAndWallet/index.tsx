@@ -10,7 +10,7 @@ import { useBentoBalancesV2ForAccount } from 'app/state/bentobox/hooks'
 import { useAppDispatch } from 'app/state/hooks'
 import { useAllTokenBalancesWithLoadingIndicator, useCurrencyBalance } from 'app/state/wallet/hooks'
 import React, { useCallback, useMemo } from 'react'
-import { NATIVE, ZERO } from 'sushi-sdk-ftm'
+import { NATIVE, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useBasicTableConfig } from '../useBasicTableConfig'
 import { useBentoBoxTableConfig } from '../useBentoBoxTableConfig'

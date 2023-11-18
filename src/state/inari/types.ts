@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { ChainId, CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { BaseStrategyHook } from './strategies/useBaseStrategy'
 import { BaseStrategyWithBentoBoxTraitHook } from './traits/useBentoBoxTrait'

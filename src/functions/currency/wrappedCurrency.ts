@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, NATIVE, WNATIVE } from 'sushi-sdk-ftm'
+import { ChainId, Currency, CurrencyAmount, NATIVE, WNATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export function unwrappedToken(currency: Currency): Currency {
   if (currency.isNative) return currency

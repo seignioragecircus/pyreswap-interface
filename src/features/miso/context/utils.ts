@@ -7,7 +7,7 @@ import {
   AuctionTemplate,
   RawAuctionInfo,
 } from 'app/features/miso/context/types'
-import { CHAIN_KEY, ChainId, NATIVE, Token } from 'sushi-sdk-ftm'
+import { CHAIN_KEY, ChainId, NATIVE, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 // @ts-ignore TYPE NEEDS FIXING
 export const AuctionStatusById = (i18n) => ({

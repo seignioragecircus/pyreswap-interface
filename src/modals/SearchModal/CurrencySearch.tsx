@@ -13,7 +13,7 @@ import { useCurrencyModalContext } from 'app/modals/SearchModal/CurrencySearchMo
 import { useActiveWeb3React } from 'app/services/web3'
 import { useRouter } from 'next/router'
 import React, { KeyboardEvent, useCallback, useMemo, useState } from 'react'
-import { ChainId, Currency, NATIVE, Token } from 'sushi-sdk-ftm'
+import { ChainId, Currency, NATIVE, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import CommonBases from './CommonBases'
 import CurrencyList from './CurrencyList'

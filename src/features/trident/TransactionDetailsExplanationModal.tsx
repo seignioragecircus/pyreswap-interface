@@ -6,7 +6,7 @@ import { usePoolContext } from 'app/features/trident/PoolContext'
 import { useTridentPoolContract } from 'app/hooks'
 import { useSingleCallResult } from 'app/lib/hooks/multicall'
 import React, { FC } from 'react'
-import { Fraction } from 'sushi-sdk-ftm'
+import { Fraction } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const TransactionDetailsExplanationModal: FC = ({ children }) => {
   const { i18n } = useLingui()

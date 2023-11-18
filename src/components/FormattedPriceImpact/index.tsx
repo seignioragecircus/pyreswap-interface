@@ -1,7 +1,7 @@
 import Typography from 'app/components/Typography'
 import { warningSeverity } from 'app/functions/prices'
 import React, { FC } from 'react'
-import { Percent } from 'sushi-sdk-ftm'
+import { Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const SEVERITY = {
   0: '',

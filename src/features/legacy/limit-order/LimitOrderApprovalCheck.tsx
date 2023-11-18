@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { STOP_LIMIT_ORDER_ADDRESS } from '@sushiswap/limit-order-sdk'
 import Button from 'app/components/Button'
 import HeadlessUIModal from 'app/components/Modal/HeadlessUIModal'
 import Typography from 'app/components/Typography'
@@ -12,6 +11,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 // @ts-ignore
 import cookie from 'cookie-cutter'
 import React, { FC, useState } from 'react'
+import { STOP_LIMIT_ORDER_ADDRESS } from 'sushi-sdk-ftm/packages/limit-order-sdk'
 
 const LimitOrderApprovalCheck: FC = () => {
   const { i18n } = useLingui()

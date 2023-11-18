@@ -9,7 +9,7 @@ import { useModalOpen, useNetworkModalToggle } from 'app/state/application/hooks
 import { ApplicationModal } from 'app/state/application/reducer'
 import Image from 'next/image'
 import React, { FC } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const SUPPORTED_NETWORKS: Record<
   number,

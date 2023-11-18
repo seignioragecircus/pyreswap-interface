@@ -9,7 +9,7 @@ import TransactionConfirmationModal, {
 } from 'app/modals/TransactionConfirmationModal'
 import { TradeUnion } from 'app/types'
 import React, { FC, useMemo } from 'react'
-import { Percent, TradeVersion } from 'sushi-sdk-ftm'
+import { Percent, TradeVersion } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import SwapModalFooter from './SwapModalFooter'
 import SwapModalHeader from './SwapModalHeader'

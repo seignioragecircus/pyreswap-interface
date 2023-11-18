@@ -5,7 +5,7 @@ import { BigNumberish } from '@ethersproject/bignumber'
 import { formatUnits } from '@ethersproject/units'
 // @ts-ignore TYPE NEEDS FIXING
 import Numeral from 'numeral'
-import { Currency, CurrencyAmount, Fraction, JSBI, Price } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Fraction, JSBI, Price } from 'sushi-sdk-ftm/packages/core-sdk'
 
 // @ts-ignore TYPE NEEDS FIXING
 export const capitalize = (s) => {

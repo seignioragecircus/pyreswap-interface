@@ -13,7 +13,7 @@ import SwapAssetPanel from 'app/features/trident/swap/SwapAssetPanel'
 import { tryParseAmount, unwrappedToken } from 'app/functions'
 import { useV2TradeExactOut } from 'app/hooks/useV2Trades'
 import React, { FC, useCallback, useState } from 'react'
-import { CurrencyAmount, JSBI, maximum, ZERO } from 'sushi-sdk-ftm'
+import { CurrencyAmount, JSBI, maximum, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const KashiMarketRepayView: FC = () => {
   const { i18n } = useLingui()

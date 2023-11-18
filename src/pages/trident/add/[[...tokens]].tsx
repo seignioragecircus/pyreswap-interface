@@ -1,7 +1,6 @@
 import { ChevronLeftIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { PoolState } from '@sushiswap/trident-sdk'
 import Alert from 'app/components/Alert'
 import Button from 'app/components/Button'
 import SettingsTab from 'app/components/Settings'
@@ -18,6 +17,7 @@ import TridentLayout, { TridentBody, TridentHeader } from 'app/layouts/Trident'
 import { useActiveWeb3React } from 'app/services/web3'
 import Link from 'next/link'
 import React from 'react'
+import { PoolState } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 const AddClassic = () => {
   const { i18n } = useLingui()

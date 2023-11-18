@@ -5,7 +5,7 @@ import { formatNumber, formatPercent } from 'app/functions'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import ColoredNumber from '../ColoredNumber'
 

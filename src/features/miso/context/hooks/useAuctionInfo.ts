@@ -7,7 +7,7 @@ import { useContract, useMisoHelperContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useSingleContractWithCallData } from 'lib/hooks/multicall'
 import { useMemo } from 'react'
-import { CHAIN_KEY } from 'sushi-sdk-ftm'
+import { CHAIN_KEY } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const AUCTION_INTERFACE = new Interface(BASE_AUCTION_ABI)
 

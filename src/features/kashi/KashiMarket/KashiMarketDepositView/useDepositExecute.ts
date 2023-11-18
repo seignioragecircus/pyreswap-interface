@@ -10,7 +10,7 @@ import { useBentoBoxContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
-import { Currency, CurrencyAmount, KASHI_ADDRESS } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, KASHI_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export interface DepositExecutePayload {
   depositAmount?: CurrencyAmount<Currency>

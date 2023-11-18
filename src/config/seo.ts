@@ -8,8 +8,8 @@ const SEO = {
   //   site_name: 'Sushi',
   // },
   // twitter: {
-  //   handle: '@SushiSwap',
-  //   site: '@SushiSwap',
+  //   handle: 'sushi-sdk-ftm/packages',
+  //   site: 'sushi-sdk-ftm/packages',
   //   cardType: 'summary_large_image',
   // },
 }

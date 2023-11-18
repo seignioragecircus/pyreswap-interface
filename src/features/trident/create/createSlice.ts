@@ -1,7 +1,7 @@
 import { Signature } from '@ethersproject/bytes'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Fee, PoolType } from '@sushiswap/trident-sdk'
 import { AppState } from 'app/state'
+import { Fee, PoolType } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 import { SelectedAsset } from './SelectedAsset'
 

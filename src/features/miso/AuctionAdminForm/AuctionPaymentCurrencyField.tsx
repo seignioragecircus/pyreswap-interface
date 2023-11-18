@@ -17,7 +17,7 @@ import {
   SUSHI_ADDRESS,
   USDC_ADDRESS,
   USDT_ADDRESS,
-} from 'sushi-sdk-ftm'
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface AuctionPaymentCurrencyFieldProps {
   name: string

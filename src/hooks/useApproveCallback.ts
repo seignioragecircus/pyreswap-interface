@@ -4,7 +4,14 @@ import { calculateGasMargin } from 'app/functions/trade'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useHasPendingApproval, useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback, useMemo } from 'react'
-import { Currency, CurrencyAmount, Percent, ROUTER_ADDRESS, Trade as V2Trade, TradeType } from 'sushi-sdk-ftm'
+import {
+  Currency,
+  CurrencyAmount,
+  Percent,
+  ROUTER_ADDRESS,
+  Trade as V2Trade,
+  TradeType,
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useTokenContract } from './useContract'
 import { useTokenAllowance } from './useTokenAllowance'

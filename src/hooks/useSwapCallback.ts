@@ -7,19 +7,6 @@ import { isBigNumberish } from '@ethersproject/bignumber/lib/bignumber'
 import { arrayify, DataOptions, hexlify, Signature, SignatureLike, splitSignature } from '@ethersproject/bytes'
 import { AddressZero } from '@ethersproject/constants'
 import { t } from '@lingui/macro'
-import {
-  ComplexPathParams,
-  ExactInputParams,
-  ExactInputSingleParams,
-  getBigNumber,
-  InitialPath,
-  MultiRoute,
-  Output,
-  Path,
-  PercentagePath,
-  RouteType,
-  Trade as TridentTrade,
-} from '@sushiswap/trident-sdk'
 import { EIP_1559_ACTIVATION_BLOCK } from 'app/constants'
 import { Feature } from 'app/enums'
 import { approveMasterContractAction, batchAction, unwrapWETHAction } from 'app/features/trident/actions'
@@ -49,7 +36,20 @@ import {
   toHex,
   Trade as LegacyTrade,
   TradeType,
-} from 'sushi-sdk-ftm'
+} from 'sushi-sdk-ftm/packages/core-sdk'
+import {
+  ComplexPathParams,
+  ExactInputParams,
+  ExactInputSingleParams,
+  getBigNumber,
+  InitialPath,
+  MultiRoute,
+  Output,
+  Path,
+  PercentagePath,
+  RouteType,
+  Trade as TridentTrade,
+} from 'sushi-sdk-ftm/packages/trident-sdk'
 
 import { SUSHIGUARD_RELAY } from '../config/sushiguard'
 import { useArgentWalletContract } from './useArgentWalletContract'

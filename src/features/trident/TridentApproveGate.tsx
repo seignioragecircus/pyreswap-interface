@@ -8,7 +8,7 @@ import { StandardSignatureData, useTridentLiquidityTokenPermit } from 'app/hooks
 import { useActiveWeb3React } from 'app/services/web3'
 import { useWalletModalToggle } from 'app/state/application/hooks'
 import React, { FC, memo, ReactNode, useCallback, useEffect, useState } from 'react'
-import { Currency, CurrencyAmount, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface TokenApproveButtonProps {
   id: string

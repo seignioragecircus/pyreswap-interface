@@ -13,7 +13,7 @@ import { WrappedTokenInfo } from 'app/state/lists/wrappedTokenInfo'
 import { useAddUserToken } from 'app/state/user/hooks'
 import { useRouter } from 'next/router'
 import React, { FC } from 'react'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface ImportProps {
   tokens: Token[]

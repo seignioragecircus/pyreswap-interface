@@ -8,7 +8,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useNativeCurrencyBalances } from 'app/state/wallet/hooks'
 import Image from 'next/image'
 import React, { FC } from 'react'
-import { NATIVE } from 'sushi-sdk-ftm'
+import { NATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import Dots from '../Dots'
 import Typography from '../Typography'

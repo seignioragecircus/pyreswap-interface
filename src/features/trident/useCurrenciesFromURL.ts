@@ -1,9 +1,9 @@
-import { Fee } from '@sushiswap/trident-sdk'
 import { useCurrency } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useRouter } from 'next/router'
 import { useCallback, useMemo } from 'react'
-import { ChainId, Currency, NATIVE, SUSHI } from 'sushi-sdk-ftm'
+import { ChainId, Currency, NATIVE, SUSHI } from 'sushi-sdk-ftm/packages/core-sdk'
+import { Fee } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 const getToken = (urlToken: string | undefined, chainId: ChainId | undefined) => {
   if (!urlToken || !chainId) return undefined

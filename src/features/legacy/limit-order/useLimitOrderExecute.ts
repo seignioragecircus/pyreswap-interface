@@ -1,6 +1,5 @@
 import { Signature } from '@ethersproject/bytes'
 import { TransactionResponse } from '@ethersproject/providers'
-import { LimitOrder, STOP_LIMIT_ORDER_ADDRESS } from '@sushiswap/limit-order-sdk'
 import useLimitOrders from 'app/features/legacy/limit-order/useLimitOrders'
 import { calculateGasMargin } from 'app/functions'
 import { useBentoBox, useBentoBoxContract, useLimitOrderHelperContract } from 'app/hooks'
@@ -14,7 +13,8 @@ import { OrderExpiration } from 'app/state/limit-order/reducer'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { BigNumber } from 'ethers'
 import { useCallback } from 'react'
-import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
+import { LimitOrder, STOP_LIMIT_ORDER_ADDRESS } from 'sushi-sdk-ftm/packages/limit-order-sdk'
 
 const getEndTime = (orderExpiration: OrderExpiration | string): number => {
   switch (orderExpiration) {

@@ -1,7 +1,7 @@
 import useHttpLocations from 'app/hooks/useHttpLocations'
 import { WrappedTokenInfo } from 'app/state/lists/wrappedTokenInfo'
 import React, { FunctionComponent, useMemo } from 'react'
-import { ChainId, Currency, WNATIVE } from 'sushi-sdk-ftm'
+import { ChainId, Currency, WNATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import Logo, { UNKNOWN_ICON } from '../Logo'
 

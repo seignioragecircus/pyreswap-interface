@@ -1,6 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
 import useSearchAndSort from 'app/hooks/useSearchAndSort'
-import { Currency, CurrencyAmount } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const reduceBalances = (balanceSources: CurrencyAmount<Currency>[]) =>
   Object.values(

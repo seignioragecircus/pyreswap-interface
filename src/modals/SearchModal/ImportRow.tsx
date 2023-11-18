@@ -6,7 +6,7 @@ import { HeadlessUiModal } from 'app/components/Modal'
 import Typography from 'app/components/Typography'
 import { shortenAddress } from 'app/functions'
 import React, { FC } from 'react'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface ImportRow {
   token: Token

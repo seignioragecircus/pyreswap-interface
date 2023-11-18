@@ -1,6 +1,6 @@
 import { useBentoStrategies, useNativePrice, useOneDayBlock, useOneWeekBlock, useTokens } from 'app/services/graph'
 import { useEffect, useMemo, useState } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export default function useTokensAnalytics({ chainId = ChainId.ETHEREUM }) {
   const [loadState, setLoadState] = useState<'loading' | 'initial' | 'loaded'>('loading')

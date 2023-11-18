@@ -5,7 +5,7 @@ import ColoredNumber from 'app/features/analytics/ColoredNumber'
 import { formatNumber, formatNumberScale, formatPercent, getApy } from 'app/functions'
 import { useRouter } from 'next/router'
 import React from 'react'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface PairListProps {
   pairs: {

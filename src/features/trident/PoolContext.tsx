@@ -1,4 +1,3 @@
-import { ConstantProductPool, PoolState } from '@sushiswap/trident-sdk'
 import useCurrenciesFromURL from 'app/features/trident/useCurrenciesFromURL'
 import { toAmountCurrencyAmount } from 'app/functions'
 import useBentoRebases from 'app/hooks/useBentoRebases'
@@ -8,7 +7,8 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useTokenBalance } from 'app/state/wallet/hooks'
 import { PoolWithState } from 'app/types'
 import React, { createContext, FC, useContext, useMemo } from 'react'
-import { Currency, CurrencyAmount, JSBI, Percent, Rebase, Token, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, JSBI, Percent, Rebase, Token, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
+import { ConstantProductPool, PoolState } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 interface PoolContext {
   poolWithState?: PoolWithState<ConstantProductPool>

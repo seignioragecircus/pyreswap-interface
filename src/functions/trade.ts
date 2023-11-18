@@ -1,5 +1,14 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Currency, CurrencyAmount, Fraction, JSBI, Percent, Token, Trade, TradeType } from 'sushi-sdk-ftm'
+import {
+  Currency,
+  CurrencyAmount,
+  Fraction,
+  JSBI,
+  Percent,
+  Token,
+  Trade,
+  TradeType,
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { ONE_HUNDRED_PERCENT, ZERO_PERCENT } from '../constants'
 

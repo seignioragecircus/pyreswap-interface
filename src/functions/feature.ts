@@ -1,6 +1,6 @@
 import features from 'app/config/features'
 import { Feature } from 'app/enums'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export function featureEnabled(feature: Feature, chainId: ChainId = ChainId.ETHEREUM): boolean {
   // @ts-ignore TYPE NEEDS FIXING

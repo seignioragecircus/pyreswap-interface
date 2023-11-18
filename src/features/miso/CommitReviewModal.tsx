@@ -14,7 +14,7 @@ import { useContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import React, { FC, useCallback, useState } from 'react'
-import { Currency, CurrencyAmount, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Auction } from './context/Auction'
 

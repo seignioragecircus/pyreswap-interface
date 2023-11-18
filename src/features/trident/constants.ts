@@ -1,6 +1,6 @@
-import { PoolType } from '@sushiswap/trident-sdk'
 import { ChipColor } from 'app/components/Chip'
 import { classNames } from 'app/functions'
+import { PoolType } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 type PoolTypesInterface = Record<
   PoolType,

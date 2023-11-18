@@ -1,9 +1,9 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import * as Sentry from '@sentry/browser'
-import { ConstantProductPool, Fee } from '@sushiswap/trident-sdk'
 import { PoolUnion } from 'app/features/trident/types'
 import { RoutingInfo } from 'app/hooks/useBestTridentTrade'
-import { Pair, Token } from 'sushi-sdk-ftm'
+import { Pair, Token } from 'sushi-sdk-ftm/packages/core-sdk'
+import { ConstantProductPool, Fee } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 function serializeRoute(obj: any) {
   return JSON.stringify(

@@ -1,7 +1,7 @@
 import { tryParseAmount } from 'app/functions/parse'
 import { useAppSelector } from 'app/state/hooks'
 import { useMemo } from 'react'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import useStakeSushiToAaveStrategy from './strategies/useStakeSushiToAaveStrategy'
 import useStakeSushiToBentoStrategy from './strategies/useStakeSushiToBentoStrategy'

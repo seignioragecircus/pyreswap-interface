@@ -15,7 +15,7 @@ import useSushiPerXSushi from 'app/hooks/useXSushiPerSushi'
 import Image from 'next/image'
 import { NextSeo } from 'next-seo'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
-import { ChainId, Currency, SUSHI, Token } from 'sushi-sdk-ftm'
+import { ChainId, Currency, SUSHI, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export enum Field {
   INPUT = 'INPUT',

@@ -1,4 +1,24 @@
 import { BigNumber } from '@ethersproject/bignumber'
+import { PoolUnion } from 'app/features/trident/types'
+import { toAmountJSBI, toShareCurrencyAmount } from 'app/functions'
+import { useBentoRebase } from 'app/hooks/useBentoRebases'
+import { PairState, useV2Pairs } from 'app/hooks/useV2Pairs'
+import useBlockNumber from 'app/lib/hooks/useBlockNumber'
+import { useActiveWeb3React } from 'app/services/web3'
+import { useAppDispatch } from 'app/state/hooks'
+import { setRouteInfo } from 'app/state/transactions/actions'
+import { TradeUnion } from 'app/types'
+import { useEffect, useMemo, useState } from 'react'
+import {
+  ChainId,
+  Currency,
+  CurrencyAmount,
+  JSBI,
+  Pair,
+  Trade as LegacyTrade,
+  TradeType,
+  WNATIVE,
+} from 'sushi-sdk-ftm/packages/core-sdk'
 import {
   ConstantProductPool,
   convertTinesSingleRouteToLegacyRoute,
@@ -10,18 +30,7 @@ import {
   PoolState,
   RouteStatus,
   Trade,
-} from '@sushiswap/trident-sdk'
-import { PoolUnion } from 'app/features/trident/types'
-import { toAmountJSBI, toShareCurrencyAmount } from 'app/functions'
-import { useBentoRebase } from 'app/hooks/useBentoRebases'
-import { PairState, useV2Pairs } from 'app/hooks/useV2Pairs'
-import useBlockNumber from 'app/lib/hooks/useBlockNumber'
-import { useActiveWeb3React } from 'app/services/web3'
-import { useAppDispatch } from 'app/state/hooks'
-import { setRouteInfo } from 'app/state/transactions/actions'
-import { TradeUnion } from 'app/types'
-import { useEffect, useMemo, useState } from 'react'
-import { ChainId, Currency, CurrencyAmount, JSBI, Pair, Trade as LegacyTrade, TradeType, WNATIVE } from 'sushi-sdk-ftm'
+} from 'sushi-sdk-ftm/packages/trident-sdk'
 
 import { useAllCurrencyCombinations } from './useAllCurrencyCombinations'
 import { useGetAllExistedPools } from './useConstantProductPools'

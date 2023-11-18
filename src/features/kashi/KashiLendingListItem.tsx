@@ -9,7 +9,7 @@ import { classNames, currencyFormatter, formatNumber, formatPercent } from 'app/
 import { useUSDCSubgraphValueWithLoadingIndicator } from 'app/hooks/useUSDCSubgraph'
 import { useRouter } from 'next/router'
 import React, { FC, memo, useMemo } from 'react'
-import { CurrencyAmount, JSBI, Percent, ZERO } from 'sushi-sdk-ftm'
+import { CurrencyAmount, JSBI, Percent, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface KashiLendingListItem {
   market: KashiMediumRiskLendingPair

@@ -14,7 +14,7 @@ import {
 } from 'app/state/slippage/slippageSlice'
 import { useUserTransactionTTL } from 'app/state/user/hooks'
 import React, { FC, useState } from 'react'
-import { Percent } from 'sushi-sdk-ftm'
+import { Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import Button from '../Button'
 import QuestionHelper from '../QuestionHelper'

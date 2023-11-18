@@ -1,5 +1,5 @@
 import { TradeUnion } from 'app/types'
-import { ChainId, Currency, CurrencyAmount, JSBI, Percent, Trade, TradeType } from 'sushi-sdk-ftm'
+import { ChainId, Currency, CurrencyAmount, JSBI, Percent, Trade, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import {
   ALLOWED_PRICE_IMPACT_HIGH,

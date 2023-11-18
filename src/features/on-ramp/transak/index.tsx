@@ -4,7 +4,7 @@ import { useLingui } from '@lingui/react'
 import transakSDK from '@transak/transak-sdk'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useCallback } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const DEFAULT_NETWORK = {
   [ChainId.ETHEREUM]: 'ethereum',

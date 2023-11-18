@@ -16,7 +16,7 @@ import { useBentoBoxContract } from 'app/hooks'
 import { useBentoOrWalletBalance } from 'app/hooks/useBentoOrWalletBalance'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, ReactNode, useState } from 'react'
-import { CurrencyAmount, JSBI, KASHI_ADDRESS, Percent, ZERO } from 'sushi-sdk-ftm'
+import { CurrencyAmount, JSBI, KASHI_ADDRESS, Percent, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export interface KashiMarketBorrowButtonProps extends Omit<BorrowExecutePayload, 'permit' | 'trade'> {
   view: KashiMarketView

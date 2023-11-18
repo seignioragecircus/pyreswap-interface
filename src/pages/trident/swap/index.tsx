@@ -38,7 +38,7 @@ import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useExpertModeManager } from 'app/state/user/hooks'
 import { TradeUnion } from 'app/types'
 import React, { useCallback, useMemo, useState } from 'react'
-import { TradeVersion, ZERO } from 'sushi-sdk-ftm'
+import { TradeVersion, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { SwapProps } from '../../swap'
 

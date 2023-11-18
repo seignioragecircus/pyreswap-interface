@@ -1,6 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
 import approveAmountCalldata, { toHex } from 'app/functions/approveAmountCalldata'
-import { ChainId, Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { ChainId, Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 describe('approveAmountCalldata functions', () => {
   describe('toHex', () => {

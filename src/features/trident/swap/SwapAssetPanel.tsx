@@ -12,7 +12,7 @@ import { useUSDCValue } from 'app/hooks/useUSDCPrice'
 import CurrencySearchModal from 'app/modals/SearchModal/CurrencySearchModal'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, ForwardedRef, forwardRef, useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { Currency, Percent, ZERO } from 'sushi-sdk-ftm'
+import { Currency, Percent, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import BentoBoxFundingSourceModal from '../add/BentoBoxFundingSourceModal'
 

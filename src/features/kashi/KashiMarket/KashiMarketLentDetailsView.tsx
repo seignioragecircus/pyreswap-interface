@@ -11,7 +11,7 @@ import { classNames, formatPercent, unwrappedToken } from 'app/functions'
 import { useBentoStrategies } from 'app/services/graph'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, Fragment } from 'react'
-import { Currency, CurrencyAmount, JSBI, Percent, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, JSBI, Percent, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface KashiMarketLentDetailsView {
   lentAmount?: CurrencyAmount<Currency>

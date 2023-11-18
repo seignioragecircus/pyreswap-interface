@@ -2,7 +2,7 @@ import { TokenList } from '@uniswap/token-lists'
 import { HeadlessUiModal } from 'app/components/Modal'
 import usePrevious from 'app/hooks/usePrevious'
 import React, { createContext, FC, ReactNode, useCallback, useContext, useMemo, useState } from 'react'
-import { Currency, Token } from 'sushi-sdk-ftm'
+import { Currency, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import CurrencyModalView from './CurrencyModalView'
 import { CurrencySearch } from './CurrencySearch'

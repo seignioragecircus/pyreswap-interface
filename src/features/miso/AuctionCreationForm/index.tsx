@@ -14,7 +14,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useRouter } from 'next/router'
 import React, { FC, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Currency, CurrencyAmount, NATIVE, Price, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, NATIVE, Price, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 import * as yup from 'yup'
 
 export interface AuctionCreationFormInput {

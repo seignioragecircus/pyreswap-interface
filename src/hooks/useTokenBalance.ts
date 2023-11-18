@@ -5,7 +5,7 @@ import { isAddress } from 'app/functions/validate'
 import useBlockNumber from 'app/lib/hooks/useBlockNumber'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useCallback, useEffect, useState } from 'react'
-import { WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
+import { WNATIVE_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useContract } from './useContract'
 import useTransactionStatus from './useTransactionStatus'

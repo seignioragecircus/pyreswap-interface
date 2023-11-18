@@ -9,7 +9,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useTokenBalance } from 'app/state/wallet/hooks'
 import Image from 'next/image'
 import React, { FC } from 'react'
-import { ChainId, SUSHI } from 'sushi-sdk-ftm'
+import { ChainId, SUSHI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Field, MeowshiState } from '../../pages/tools/meowshi'
 

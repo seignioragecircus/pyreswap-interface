@@ -1,6 +1,6 @@
 import { getApy } from 'app/functions'
 import { getBlockDaysAgo, getPairs } from 'app/services/graph'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface getAnalyticsPairsProps {
   chainId: ChainId

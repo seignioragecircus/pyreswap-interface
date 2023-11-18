@@ -6,7 +6,14 @@ import { useActiveWeb3React } from 'app/services/web3'
 import concat from 'lodash/concat'
 import zip from 'lodash/zip'
 import { useCallback, useMemo } from 'react'
-import { CurrencyAmount, JSBI, MASTERCHEF_ADDRESS, MASTERCHEF_V2_ADDRESS, MINICHEF_ADDRESS, SUSHI } from 'sushi-sdk-ftm'
+import {
+  CurrencyAmount,
+  JSBI,
+  MASTERCHEF_ADDRESS,
+  MASTERCHEF_V2_ADDRESS,
+  MINICHEF_ADDRESS,
+  SUSHI,
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Chef } from './enum'
 

@@ -1,7 +1,7 @@
 import { BETTER_TRADE_LESS_HOPS_THRESHOLD } from 'app/constants'
 import { isTradeBetter } from 'app/functions/trade'
 import { useMemo } from 'react'
-import { Currency, CurrencyAmount, Pair, Trade, TradeType } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Pair, Trade, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useAllCurrencyCombinations } from './useAllCurrencyCombinations'
 import { PairState, useV2Pairs } from './useV2Pairs'

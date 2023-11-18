@@ -19,7 +19,7 @@ import CurrencySearchModal from 'app/modals/SearchModal/CurrencySearchModal'
 import { useActiveWeb3React } from 'app/services/web3'
 import Lottie from 'lottie-react'
 import React, { createContext, FC, ReactNode, useContext, useEffect, useMemo, useRef, useState } from 'react'
-import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface AssetInputProps {
   value?: string

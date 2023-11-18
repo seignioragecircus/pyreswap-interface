@@ -16,7 +16,7 @@ import { useRouter } from 'next/router'
 import React, { FC } from 'react'
 // @ts-ignore TYPE NEEDS FIXING
 import { useFlexLayout, usePagination, useSortBy, useTable } from 'react-table'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import Typography from '../../components/Typography'
 import { TablePageToggler } from './TablePageToggler'

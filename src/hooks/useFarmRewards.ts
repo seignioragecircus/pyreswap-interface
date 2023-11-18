@@ -28,7 +28,7 @@ import {
 } from 'app/services/graph'
 import { useGetAllTridentPools } from 'app/services/graph/hooks/pools'
 import { useCallback, useMemo } from 'react'
-import { ChainId, Currency, NATIVE, SUSHI, Token } from 'sushi-sdk-ftm'
+import { ChainId, Currency, NATIVE, SUSHI, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useAllTokens } from './Tokens'
 

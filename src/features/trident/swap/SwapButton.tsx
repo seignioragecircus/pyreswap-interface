@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Trade as TridentTrade } from '@sushiswap/trident-sdk'
 import Button from 'app/components/Button'
 import Dots from 'app/components/Dots'
 import Typography from 'app/components/Typography'
@@ -16,7 +15,8 @@ import { useExpertModeManager } from 'app/state/user/hooks'
 import { TradeUnion } from 'app/types'
 import { Signature } from 'ethers'
 import React, { FC, useCallback, useMemo, useState } from 'react'
-import { Percent, Trade as LegacyTrade, TradeVersion } from 'sushi-sdk-ftm'
+import { Percent, Trade as LegacyTrade, TradeVersion } from 'sushi-sdk-ftm/packages/core-sdk'
+import { Trade as TridentTrade } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 import TridentApproveGate from '../TridentApproveGate'
 

@@ -5,7 +5,7 @@ import Table, { Column } from 'app/components/Table'
 import { formatNumber, formatPercent } from 'app/functions'
 import { useRouter } from 'next/router'
 import React from 'react'
-import { Token as CoreToken } from 'sushi-sdk-ftm'
+import { Token as CoreToken } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import ColoredNumber from '../ColoredNumber'
 

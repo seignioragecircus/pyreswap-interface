@@ -1,5 +1,5 @@
 import { getBlockDaysAgo, getDayData, getFactory } from 'app/services/graph'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export type AnalyticsDashboard = Awaited<ReturnType<typeof getAnalyticsDashboard>>
 

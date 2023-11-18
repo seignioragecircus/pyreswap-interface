@@ -7,7 +7,7 @@ import {
 } from 'app/features/trident/constants'
 import { classNames, formatDateAgo, formatNumber, formatNumberScale, getExplorerLink } from 'app/functions'
 import { useRouter } from 'next/router'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface SushiInOutProps {
   title: string

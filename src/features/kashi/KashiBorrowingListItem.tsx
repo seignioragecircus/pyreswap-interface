@@ -9,7 +9,7 @@ import { classNames, currencyFormatter, formatNumber, formatPercent } from 'app/
 import { useUSDCSubgraphValueWithLoadingIndicator } from 'app/hooks/useUSDCSubgraph'
 import { useRouter } from 'next/router'
 import React, { FC, memo, useMemo, useState } from 'react'
-import { CurrencyAmount, Percent, Price } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Percent, Price } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { LTV } from './constants'
 

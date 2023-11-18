@@ -3,7 +3,7 @@ import { useERC20Permit } from 'app/hooks/useERC20Permit'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
-import { CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useDerivedInariState } from '../hooks'
 import { BaseStrategyHook } from '../strategies/useBaseStrategy'

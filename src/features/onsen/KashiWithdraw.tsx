@@ -1,7 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { toShare } from '@sushiswap/bentobox-sdk'
 import AssetInput from 'app/components/AssetInput'
 import Button from 'app/components/Button'
 import { HeadlessUiModal } from 'app/components/Modal'
@@ -14,7 +13,8 @@ import useKashiApproveCallback, { BentoApprovalState } from 'app/hooks/useKashiA
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import React, { useCallback, useMemo, useState } from 'react'
-import { CurrencyAmount, JSBI, KASHI_ADDRESS, minimum, ZERO } from 'sushi-sdk-ftm'
+import { toShare } from 'sushi-sdk-ftm/packages/bentobox-sdk'
+import { CurrencyAmount, JSBI, KASHI_ADDRESS, minimum, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import KashiMediumRiskLendingPair from '../kashi/KashiMediumRiskLendingPair'
 

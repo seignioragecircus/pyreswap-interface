@@ -17,7 +17,7 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React from 'react'
 import { ExternalLink as LinkIcon } from 'react-feather'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 import useSWR, { SWRConfig } from 'swr'
 
 const chartTimespans = [

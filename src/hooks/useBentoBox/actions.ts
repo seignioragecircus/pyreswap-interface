@@ -10,7 +10,7 @@ import {
   WithdrawAction,
 } from 'app/hooks/useBentoBox/types'
 import { BigNumber } from 'ethers'
-import { WNATIVE_ADDRESS } from 'sushi-sdk-ftm'
+import { WNATIVE_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const depositAction: Action<DepositActionPayload> = ({
   bentobox,

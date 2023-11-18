@@ -3,7 +3,7 @@ import LibUpdater from 'lib/hooks/transactions/updater'
 import { useCallback, useMemo } from 'react'
 import { useActiveWeb3React } from 'services/web3'
 import { useAppDispatch, useAppSelector } from 'state/hooks'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useAddPopup } from '../application/hooks'
 import { checkedTransaction, finalizeTransaction, updatePrivateTxStatus } from './actions'

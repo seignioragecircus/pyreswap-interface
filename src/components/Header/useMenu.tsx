@@ -5,7 +5,7 @@ import { Feature } from 'app/enums'
 import { featureEnabled } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import { ReactNode, useMemo } from 'react'
-import { SUSHI_ADDRESS } from 'sushi-sdk-ftm'
+import { SUSHI_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export interface MenuItemLeaf {
   key: string

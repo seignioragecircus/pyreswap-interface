@@ -1,5 +1,5 @@
-import { ILimitOrderData, LimitOrder, OrderStatus } from '@sushiswap/limit-order-sdk'
-import { Price, Token } from 'sushi-sdk-ftm'
+import { Price, Token } from 'sushi-sdk-ftm/packages/core-sdk'
+import { ILimitOrderData, LimitOrder, OrderStatus } from 'sushi-sdk-ftm/packages/limit-order-sdk'
 
 export interface LimitOrdersResponse {
   pendingOrders: PendingOrders

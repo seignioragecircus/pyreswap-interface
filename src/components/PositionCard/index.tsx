@@ -14,7 +14,7 @@ import { useTokenBalance } from 'app/state/wallet/hooks'
 import { useRouter } from 'next/router'
 import { FC } from 'preact/compat'
 import React, { Fragment } from 'react'
-import { CurrencyAmount, JSBI, Pair, Percent, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, JSBI, Pair, Percent, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import Button from '../Button'
 import { CurrencyLogoArray } from '../CurrencyLogo'

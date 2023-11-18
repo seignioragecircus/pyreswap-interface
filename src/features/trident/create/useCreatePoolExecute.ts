@@ -18,7 +18,7 @@ import { USER_REJECTED_TX } from 'app/services/web3/WalletError'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
-import { Currency, CurrencyAmount, toHex } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, toHex } from 'sushi-sdk-ftm/packages/core-sdk'
 
 type ExecutePayload = {
   parsedAmounts: (CurrencyAmount<Currency> | undefined)[]

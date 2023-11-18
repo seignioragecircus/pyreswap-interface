@@ -4,7 +4,7 @@ import { useTotalSupply } from 'app/hooks/useTotalSupply'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTokenBalance } from 'app/state/wallet/hooks'
 import React, { FC } from 'react'
-import { JSBI, Pair } from 'sushi-sdk-ftm'
+import { JSBI, Pair } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface PoolValueProps {
   pair: Pair

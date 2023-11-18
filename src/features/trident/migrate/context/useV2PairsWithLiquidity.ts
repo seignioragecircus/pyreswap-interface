@@ -3,7 +3,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { toV2LiquidityToken, useTrackedTokenPairs } from 'app/state/user/hooks'
 import { useTokenBalancesWithLoadingIndicator } from 'app/state/wallet/hooks'
 import { useMemo } from 'react'
-import { Pair } from 'sushi-sdk-ftm'
+import { Pair } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface V2PairsWithLiquidity {
   loading: boolean

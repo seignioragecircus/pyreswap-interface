@@ -4,7 +4,7 @@ import { formatNumber, formatPercent } from 'app/functions'
 import { useAllTokens } from 'app/hooks/Tokens'
 import React, { useMemo } from 'react'
 import { UsePaginationOptions, UseSortByOptions } from 'react-table'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 import useSWR from 'swr'
 
 import { filterForSearchQuery } from './tokenTableFilters'

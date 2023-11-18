@@ -1,6 +1,6 @@
 import { computeRealizedLPFeeAmount } from 'app/functions/prices'
-import { ChainId, CurrencyAmount, JSBI, Token, TradeType } from 'sushi-sdk-ftm'
-import { Pair, Route, Trade } from 'sushi-sdk-ftm'
+import { ChainId, CurrencyAmount, JSBI, Token, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
+import { Pair, Route, Trade } from 'sushi-sdk-ftm/packages/core-sdk'
 
 describe('prices', () => {
   const token1 = new Token(ChainId.ETHEREUM, '0x0000000000000000000000000000000000000001', 18)

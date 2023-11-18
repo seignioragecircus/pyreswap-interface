@@ -9,7 +9,7 @@ import { useNativeCurrencyBalances } from 'app/state/wallet/hooks'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { FC, Fragment, useState } from 'react'
-import { NATIVE } from 'sushi-sdk-ftm'
+import { NATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { NavigationItem } from './NavigationItem'
 

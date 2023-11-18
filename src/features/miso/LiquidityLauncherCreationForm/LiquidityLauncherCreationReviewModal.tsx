@@ -10,7 +10,7 @@ import { getExplorerLink, shortenString } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import Lottie from 'lottie-react'
 import React, { FC, useCallback, useEffect, useState } from 'react'
-import { Percent } from 'sushi-sdk-ftm'
+import { Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import LiquidityLauncherCreationSubmittedModalContent from './LiquidityLauncherCreationSubmittedModalContent'
 

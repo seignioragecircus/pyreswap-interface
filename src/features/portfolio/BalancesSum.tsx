@@ -9,7 +9,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useBentoBalancesV2ForAccount } from 'app/state/bentobox/hooks'
 import { useAllTokenBalancesWithLoadingIndicator, useCurrencyBalance } from 'app/state/wallet/hooks'
 import React, { FC, useMemo } from 'react'
-import { Currency, CurrencyAmount, NATIVE, Token, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, NATIVE, Token, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const LiquidityPositionsBalancesSum = () => {
   const { i18n } = useLingui()

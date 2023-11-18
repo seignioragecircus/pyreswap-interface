@@ -14,7 +14,7 @@ import {
 import { useRemoveLiquiditySingleExecute } from 'app/features/trident/remove/useRemoveLiquiditySingleExecute'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import React, { FC, useCallback, useMemo } from 'react'
-import { CurrencyAmount, ZERO } from 'sushi-sdk-ftm'
+import { CurrencyAmount, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import WithdrawalSubmittedModalContent from './WithdrawalSubmittedModalContent'
 

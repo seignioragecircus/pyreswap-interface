@@ -14,7 +14,7 @@ import { useSingleCallResult } from 'app/lib/hooks/multicall'
 import { useClones } from 'app/services/graph'
 import { useActiveWeb3React, useQueryFilter } from 'app/services/web3'
 import { useMemo } from 'react'
-import { ChainId, JSBI, KASHI_ADDRESS, Token, ZERO } from 'sushi-sdk-ftm'
+import { ChainId, JSBI, KASHI_ADDRESS, Token, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import KashiMediumRiskLendingPair from './KashiMediumRiskLendingPair'
 

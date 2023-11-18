@@ -2,7 +2,7 @@ import { Interface } from '@ethersproject/abi'
 import { BigNumber } from '@ethersproject/bignumber'
 import ERC20_ABI from 'app/constants/abis/erc20.json'
 import { useMultipleContractSingleData } from 'app/lib/hooks/multicall'
-import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 function bigNumToCurrencyAmount(totalSupply?: BigNumber, token?: Currency) {
   return token?.isToken && totalSupply ? CurrencyAmount.fromRawAmount(token, totalSupply.toString()) : undefined

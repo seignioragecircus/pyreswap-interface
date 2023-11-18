@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { AddressZero } from '@ethersproject/constants'
 import { calculateGasMargin, calculateSlippageAmount } from 'app/functions/trade'
-import { ChainId, CurrencyAmount, Percent, Token } from 'sushi-sdk-ftm'
+import { ChainId, CurrencyAmount, Percent, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 describe('#calculateSlippageAmount', () => {
   it('bounds are correct', () => {

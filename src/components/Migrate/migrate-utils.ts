@@ -1,6 +1,6 @@
-import { Fee } from '@sushiswap/trident-sdk'
 import { TridentPool } from 'app/services/graph'
-import { Pair } from 'sushi-sdk-ftm'
+import { Pair } from 'sushi-sdk-ftm/packages/core-sdk'
+import { Fee } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 export const deDupe = (value: any, i: number, arr: any[]) => arr.indexOf(value) === i
 

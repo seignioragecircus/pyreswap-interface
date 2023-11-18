@@ -1,5 +1,5 @@
 import { getExplorerLink } from 'app/functions/explorer'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 describe('utils', () => {
   describe('#getExplorerLink', () => {

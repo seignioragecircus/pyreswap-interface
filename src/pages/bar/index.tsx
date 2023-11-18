@@ -27,7 +27,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import React, { useState } from 'react'
-import { BAR_ADDRESS, ChainId, SUSHI, ZERO } from 'sushi-sdk-ftm'
+import { BAR_ADDRESS, ChainId, SUSHI, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const INPUT_CHAR_LIMIT = 18
 

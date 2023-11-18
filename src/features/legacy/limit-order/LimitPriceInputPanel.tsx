@@ -6,7 +6,7 @@ import { useAppDispatch } from 'app/state/hooks'
 import { LimitPrice, setLimitOrderInvertState, setLimitPrice } from 'app/state/limit-order/actions'
 import useLimitOrderDerivedCurrencies, { useLimitOrderState } from 'app/state/limit-order/hooks'
 import React, { FC } from 'react'
-import { Currency, Price, Trade, TradeType } from 'sushi-sdk-ftm'
+import { Currency, Price, Trade, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface LimitPriceInputPanel {
   trade?: Trade<Currency, Currency, TradeType.EXACT_INPUT | TradeType.EXACT_OUTPUT>

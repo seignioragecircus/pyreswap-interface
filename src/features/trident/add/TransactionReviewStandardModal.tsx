@@ -11,7 +11,7 @@ import { useAddLiquidityExecute } from 'app/features/trident/add/useAddLiquidity
 import { usePoolContext } from 'app/features/trident/PoolContext'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { FC, useCallback } from 'react'
-import { CurrencyAmount } from 'sushi-sdk-ftm'
+import { CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import DepositSubmittedModalContent from './DepositSubmittedModalContent'
 

@@ -12,7 +12,7 @@ import { useAppDispatch } from 'app/state/hooks'
 import { setLimitOrderShowReview } from 'app/state/limit-order/actions'
 import { useLimitOrderState } from 'app/state/limit-order/hooks'
 import React, { FC, useCallback, useMemo, useState } from 'react'
-import { Currency, CurrencyAmount, Percent, Price, Trade, TradeType, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Percent, Price, Trade, TradeType, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface LimitOrderReviewModal {
   trade?: Trade<Currency, Currency, TradeType>

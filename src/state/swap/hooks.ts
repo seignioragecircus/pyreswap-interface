@@ -25,7 +25,7 @@ import {
   Trade as V2Trade,
   TradeType,
   WNATIVE_ADDRESS,
-} from 'sushi-sdk-ftm'
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 // import {
 //   EstimatedSwapCall,

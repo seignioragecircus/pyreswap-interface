@@ -11,7 +11,7 @@ import { useBentoBoxContract, useMulticall2Contract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
-import { Currency, CurrencyAmount, JSBI, KASHI_ADDRESS, Rebase } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, JSBI, KASHI_ADDRESS, Rebase } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export interface WithdrawExecutePayload {
   withdrawAmount?: CurrencyAmount<Currency>

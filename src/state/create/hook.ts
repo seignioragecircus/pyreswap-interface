@@ -5,7 +5,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { AppState } from 'app/state'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useCallback } from 'react'
-import { Currency } from 'sushi-sdk-ftm'
+import { Currency } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Field, selectCurrency, switchCurrencies, typeInput } from './actions'
 

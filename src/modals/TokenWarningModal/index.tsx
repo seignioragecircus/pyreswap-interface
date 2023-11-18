@@ -1,6 +1,6 @@
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'
 import React, { FC } from 'react'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { ImportToken } from '../SearchModal/ImportToken'
 

@@ -1,6 +1,6 @@
 import { Dappeteer } from '@chainsafe/dappeteer'
-import { closeValues } from '@sushiswap/trident-sdk'
 import { Browser, Page } from 'puppeteer'
+import { closeValues } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 import { ADDRESSES, FUNDING_SOURCE } from './constants/Index'
 import { ApprovalHelper } from './helpers/ApprovalHelper'

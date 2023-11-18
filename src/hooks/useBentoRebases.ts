@@ -1,6 +1,6 @@
 import { useSingleContractMultipleData } from 'app/lib/hooks/multicall'
 import { useMemo } from 'react'
-import { Currency, JSBI, Rebase, Token } from 'sushi-sdk-ftm'
+import { Currency, JSBI, Rebase, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useBentoBoxContract } from './useContract'
 

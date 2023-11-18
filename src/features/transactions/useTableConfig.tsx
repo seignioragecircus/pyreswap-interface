@@ -1,6 +1,6 @@
 import { formatDateAgo, getExplorerLink } from 'app/functions'
 import React, { useMemo } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import ExternalLink from '../../components/ExternalLink'
 import { shortenAddress } from './table-utils'

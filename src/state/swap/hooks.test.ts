@@ -1,5 +1,5 @@
 import { parse } from 'qs'
-import { ChainId, SUSHI_ADDRESS } from 'sushi-sdk-ftm'
+import { ChainId, SUSHI_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Field } from './actions'
 import { queryParametersToSwapState } from './hooks'

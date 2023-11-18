@@ -1,7 +1,7 @@
 import { useNativePrice, useTokens, useTridentTokens } from 'app/services/graph'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useMemo } from 'react'
-import { Currency, CurrencyAmount, Price, Token, USD } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Price, Token, USD } from 'sushi-sdk-ftm/packages/core-sdk'
 
 /**
  * Returns the prices in USDC of the input currency

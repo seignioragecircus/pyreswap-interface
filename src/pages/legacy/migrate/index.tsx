@@ -7,7 +7,7 @@ import Chip from 'app/components/Chip'
 import { USER_REJECTED_TX } from 'app/services/web3/WalletError'
 import Head from 'next/head'
 import React, { useCallback, useEffect, useState } from 'react'
-import { ChainId, JSBI } from 'sushi-sdk-ftm'
+import { ChainId, JSBI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import Button from '../../../components/Button'
 import Container from '../../../components/Container'

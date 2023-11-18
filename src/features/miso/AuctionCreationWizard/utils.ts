@@ -4,7 +4,7 @@ import {
   AuctionCreationWizardInputFormatted,
   TokenSetup,
 } from 'app/features/miso/context/types'
-import { Currency, CurrencyAmount, Fraction, JSBI, Percent, Price, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Fraction, JSBI, Percent, Price, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 import { toWei } from 'web3-utils'
 
 export const getPriceEntity = (price: string, auctionToken: Token, paymentToken: Currency) => {

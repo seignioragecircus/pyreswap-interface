@@ -4,7 +4,7 @@ import { PoolPanelAssetsLabel } from 'app/components/Migrate/PoolPanelAssetsLabe
 import { PoolValueEstimation } from 'app/components/Migrate/PoolValueEstimation'
 import { MigrationSource, v2Migration } from 'app/features/trident/migrate/context/migrateSlice'
 import React, { FC } from 'react'
-import { Pair } from 'sushi-sdk-ftm'
+import { Pair } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface PanelProps {
   pair: Pair

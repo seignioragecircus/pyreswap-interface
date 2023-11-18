@@ -1,10 +1,10 @@
-import { PoolType } from '@sushiswap/trident-sdk'
 import Chip from 'app/components/Chip'
 import { formatNumber, formatPercent } from 'app/functions/format'
 import { TridentPool } from 'app/services/graph/fetchers/pools'
 import { useGetAllTridentPools } from 'app/services/graph/hooks/pools'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { ReactNode, useMemo } from 'react'
+import { PoolType } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 import { PoolCell } from './PoolCell'
 import { feeTiersFilter, filterForSearchQueryAndTWAP } from './poolTableFilters'

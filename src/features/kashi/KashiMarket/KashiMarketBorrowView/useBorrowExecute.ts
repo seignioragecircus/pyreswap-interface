@@ -21,7 +21,7 @@ import {
   SUSHISWAP_MULTISWAPPER_ADDRESS,
   Trade as LegacyTrade,
   TradeType,
-} from 'sushi-sdk-ftm'
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useKashiMarket } from '..'
 

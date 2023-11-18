@@ -10,7 +10,7 @@ import { useBarXsushi, useBarXsushiUser } from 'app/services/graph/hooks/bar'
 import { useBar } from 'app/services/graph/hooks/bar'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export default function User() {
   const router = useRouter()

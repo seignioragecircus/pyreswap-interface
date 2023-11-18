@@ -7,7 +7,7 @@ import { tryParseAmount } from 'app/functions'
 import useDesktopMediaQuery from 'app/hooks/useDesktopMediaQuery'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC } from 'react'
-import { ChainId, SUSHI } from 'sushi-sdk-ftm'
+import { ChainId, SUSHI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const Rewards: FC = () => {
   const { chainId } = useActiveWeb3React()

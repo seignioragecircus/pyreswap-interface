@@ -1,5 +1,5 @@
 import React from 'react'
-import { Currency, CurrencyAmount, Fraction, JSBI } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Fraction, JSBI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const CURRENCY_AMOUNT_MIN = new Fraction(JSBI.BigInt(1), JSBI.BigInt(1000000))
 

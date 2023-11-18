@@ -1,4 +1,4 @@
-import { ChainId, Token } from 'sushi-sdk-ftm'
+import { ChainId, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 // Default Ethereum chain tokens
 export const ALPHA = new Token(

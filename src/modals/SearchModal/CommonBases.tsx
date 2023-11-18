@@ -9,7 +9,7 @@ import { currencyId } from 'app/functions'
 import { useCurrencyModalContext } from 'app/modals/SearchModal/CurrencySearchModal'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC } from 'react'
-import { Currency } from 'sushi-sdk-ftm'
+import { Currency } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const CommonBases: FC = () => {
   const { chainId } = useActiveWeb3React()

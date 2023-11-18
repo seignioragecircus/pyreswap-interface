@@ -1,4 +1,4 @@
-import { ChainId, Currency } from 'sushi-sdk-ftm'
+import { ChainId, Currency } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export function currencyId(currency: Currency): string {
   if ([ChainId.CELO].includes(currency.chainId)) {

@@ -3,7 +3,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCurrencyBalance } from 'app/state/wallet/hooks'
 import { useMemo } from 'react'
-import { ChainId, Currency, NATIVE, WNATIVE } from 'sushi-sdk-ftm'
+import { ChainId, Currency, NATIVE, WNATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useWETH9Contract } from './useContract'
 

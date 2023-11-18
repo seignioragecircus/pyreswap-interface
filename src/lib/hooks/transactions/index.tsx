@@ -3,7 +3,7 @@ import { Transaction, TransactionInfo, transactionsAtom, TransactionType } from 
 import ms from 'ms.macro'
 import { useCallback } from 'react'
 import { useActiveWeb3React } from 'services/web3'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 import invariant from 'tiny-invariant'
 
 import useBlockNumber from '../useBlockNumber'

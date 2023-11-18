@@ -23,7 +23,7 @@ import {
   TradeType,
   WNATIVE_ADDRESS,
   ZERO,
-} from 'sushi-sdk-ftm'
+} from 'sushi-sdk-ftm/packages/core-sdk'
 
 import {
   Field,

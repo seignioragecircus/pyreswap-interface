@@ -1,11 +1,11 @@
 import { Contract } from '@ethersproject/contracts'
-import { ConstantProductPool, Fee } from '@sushiswap/trident-sdk'
 import { v2Migration } from 'app/features/trident/migrate/context/migrateSlice'
 import { calculateSlippageAmount, toShareCurrencyAmount } from 'app/functions'
 import store from 'app/state'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import { PoolWithState } from 'app/types'
-import { CurrencyAmount, Percent, Rebase, Token } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Percent, Rebase, Token } from 'sushi-sdk-ftm/packages/core-sdk'
+import { ConstantProductPool, Fee } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 const NEW_POOL_MIN_LP_RECIEVED = '1'
 

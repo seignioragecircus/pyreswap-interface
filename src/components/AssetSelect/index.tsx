@@ -14,7 +14,7 @@ import { useBentoBalanceV2 } from 'app/state/bentobox/hooks'
 import { useTokenBalance } from 'app/state/wallet/hooks'
 import Lottie from 'lottie-react'
 import React, { FC, ReactNode, useState } from 'react'
-import { Currency } from 'sushi-sdk-ftm'
+import { Currency } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface AssetSelectProps {
   title?: string

@@ -5,7 +5,7 @@ import { useAllTokens } from 'app/hooks/Tokens'
 import Image from 'next/image'
 import React, { useMemo } from 'react'
 import { UsePaginationOptions, UseSortByOptions } from 'react-table'
-import { Token } from 'sushi-sdk-ftm'
+import { Token } from 'sushi-sdk-ftm/packages/core-sdk'
 import useSWR from 'swr'
 
 import { filterForSearchQuery } from './poolTableFilters'

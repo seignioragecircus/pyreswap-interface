@@ -1,6 +1,6 @@
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import React, { FC } from 'react'
-import { Pair } from 'sushi-sdk-ftm'
+import { Pair } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const PoolPanelAssetsLabel: FC<{ pair: Pair }> = ({ pair }) => (
   <div className="flex items-center">

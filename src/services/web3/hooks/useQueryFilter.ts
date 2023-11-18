@@ -1,6 +1,6 @@
 import { Contract } from '@ethersproject/contracts'
 import stringify from 'fast-json-stable-stringify'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 import useSWR from 'swr'
 
 // @ts-ignore TYPE NEEDS FIXING

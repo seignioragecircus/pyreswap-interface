@@ -4,7 +4,7 @@ import {
   AuctionCreationFormInputFormatted,
   AuctionCreationFormInputValidated,
 } from 'app/features/miso/AuctionCreationForm/index'
-import { Currency, CurrencyAmount, JSBI, Percent, Price, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, JSBI, Percent, Price, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const getPriceEntity = (price: string, auctionToken: Token, paymentToken: Currency) => {
   const base = CurrencyAmount.fromRawAmount(

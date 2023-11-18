@@ -7,7 +7,7 @@ import { TABLE_TBODY_TD_CLASSNAME, TABLE_TBODY_TR_CLASSNAME } from 'app/features
 import { classNames, formatNumber } from 'app/functions'
 import Link from 'next/link'
 import React, { FC, memo, useMemo } from 'react'
-import { CurrencyAmount, Percent } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import KashiMediumRiskLendingPair from './KashiMediumRiskLendingPair'
 

@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Currency, CurrencyAmount, Price, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Price, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 import { GetState, SetState } from 'zustand'
 
 export type StoreSlice<T extends object, E extends object = T> = (

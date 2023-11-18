@@ -1,4 +1,4 @@
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const config = {
   // Global configuration

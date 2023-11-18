@@ -9,7 +9,7 @@ import { useUSDCValue } from 'app/hooks/useUSDCPrice'
 import { TradeUnion } from 'app/types'
 import React, { FC } from 'react'
 import { ArrowDown } from 'react-feather'
-import { Currency, CurrencyAmount, TradeType, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, TradeType, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface SwapModalHeader {
   trade?: TradeUnion

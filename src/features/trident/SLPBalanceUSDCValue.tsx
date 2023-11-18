@@ -1,10 +1,10 @@
-import { ConstantProductPool } from '@sushiswap/trident-sdk'
 import { useTotalSupply } from 'app/hooks/useTotalSupply'
 import { useUSDCValue } from 'app/hooks/useUSDCPrice'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTokenBalance } from 'app/state/wallet/hooks'
 import { FC, ReactNode } from 'react'
-import { CurrencyAmount, Token, USDC } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Token, USDC } from 'sushi-sdk-ftm/packages/core-sdk'
+import { ConstantProductPool } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 interface _SLPBalanceProps {
   sum: CurrencyAmount<Token>

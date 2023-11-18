@@ -12,7 +12,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import React from 'react'
-import { CurrencyAmount } from 'sushi-sdk-ftm'
+import { CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const Pool = () => {
   const { i18n } = useLingui()

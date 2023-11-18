@@ -1,6 +1,6 @@
 import { JsonRpcProvider } from '@ethersproject/providers'
 import { Contract, Signer, utils, Wallet } from 'ethers'
-import { BENTOBOX_ADDRESS, ChainId } from 'sushi-sdk-ftm'
+import { BENTOBOX_ADDRESS, ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { ADDRESSES } from '../constants/Index'
 

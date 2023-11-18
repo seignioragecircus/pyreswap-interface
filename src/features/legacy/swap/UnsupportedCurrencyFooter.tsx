@@ -10,7 +10,7 @@ import { getExplorerLink } from 'app/functions/explorer'
 import { useUnsupportedTokens } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, useState } from 'react'
-import { Currency } from 'sushi-sdk-ftm'
+import { Currency } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface UnsupportedCurrencyFooter {
   currencies: (Currency | undefined)[]

@@ -12,7 +12,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useRouter } from 'next/router'
 import React, { useMemo, useState } from 'react'
-import { ChainId, CurrencyAmount, JSBI, Token, ZERO } from 'sushi-sdk-ftm'
+import { ChainId, CurrencyAmount, JSBI, Token, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useKashiMediumRiskLendingPair } from '../kashi/hooks'
 import { PairType } from './enum'

@@ -18,7 +18,7 @@ import {
   poolsV2Query,
 } from 'app/services/graph/queries'
 import { request } from 'graphql-request'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const MINICHEF = {
   [ChainId.MATIC]: 'jiro-ono/minichef-staging-updates',

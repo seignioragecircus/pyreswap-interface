@@ -6,7 +6,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useBentoBalanceV2 } from 'app/state/bentobox/hooks'
 import { useTokenBalances } from 'app/state/wallet/hooks'
 import { useEffect, useMemo } from 'react'
-import { ChainId, SUSHI, SUSHI_ADDRESS } from 'sushi-sdk-ftm'
+import { ChainId, SUSHI, SUSHI_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import useBentoBoxTrait from '../traits/useBentoBoxTrait'
 import { StrategyGeneralInfo, StrategyHook, StrategyTokenDefinitions } from '../types'

@@ -10,7 +10,7 @@ import { getProviderOrSigner, getSigner } from 'app/functions/contract'
 import { ZERO } from 'app/functions/math'
 import { toElastic } from 'app/functions/rebase'
 import { KashiPermit } from 'app/hooks/useKashiApproveCallback'
-import { BENTOBOX_ADDRESS, ChainId, WNATIVE } from 'sushi-sdk-ftm'
+import { BENTOBOX_ADDRESS, ChainId, WNATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export async function signMasterContractApproval(
   bentoBoxContract: Contract | null,

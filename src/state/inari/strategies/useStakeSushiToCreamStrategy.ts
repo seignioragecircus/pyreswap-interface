@@ -8,7 +8,7 @@ import { useInariContract, useZenkoContract } from 'app/hooks/useContract'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTokenBalances } from 'app/state/wallet/hooks'
 import { useCallback, useEffect, useMemo, useRef } from 'react'
-import { ChainId, CurrencyAmount, SUSHI, SUSHI_ADDRESS, Token } from 'sushi-sdk-ftm'
+import { ChainId, CurrencyAmount, SUSHI, SUSHI_ADDRESS, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { useDerivedInariState } from '../hooks'
 import { StrategyGeneralInfo, StrategyHook, StrategyTokenDefinitions } from '../types'

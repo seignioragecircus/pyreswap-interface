@@ -9,7 +9,7 @@ import { useAppDispatch } from 'app/state/hooks'
 import { useCurrencyBalances } from 'app/state/wallet/hooks'
 import { useCallback, useMemo } from 'react'
 import { useSelector } from 'react-redux'
-import { Currency, CurrencyAmount, JSBI, Pair, Percent, Price, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, JSBI, Pair, Percent, Price, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Field, typeInput } from './actions'
 

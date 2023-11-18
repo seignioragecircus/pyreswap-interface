@@ -8,7 +8,7 @@ import { AppState } from 'app/state'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useTokenBalances } from 'app/state/wallet/hooks'
 import { useCallback } from 'react'
-import { Currency, CurrencyAmount, JSBI, Pair, Percent, Token, ZERO } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, JSBI, Pair, Percent, Token, ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { Field, typeInput } from './actions'
 

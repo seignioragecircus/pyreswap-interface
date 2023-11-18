@@ -1,4 +1,4 @@
-import { JSBI, Percent } from 'sushi-sdk-ftm'
+import { JSBI, Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 // converts a basis points value to a sdk percent
 export function basisPointsToPercent(num: number): Percent {

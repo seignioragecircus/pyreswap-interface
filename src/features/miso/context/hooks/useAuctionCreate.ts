@@ -17,7 +17,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { addMinutes, getUnixTime } from 'date-fns'
 import { useCallback } from 'react'
-import { CHAIN_KEY, Percent } from 'sushi-sdk-ftm'
+import { CHAIN_KEY, Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 const useAuctionCreate = () => {
   const { chainId, account } = useActiveWeb3React()
   const addTransaction = useTransactionAdder()

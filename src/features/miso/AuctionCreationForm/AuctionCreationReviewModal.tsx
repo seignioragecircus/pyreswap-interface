@@ -13,7 +13,7 @@ import { getExplorerLink, shortenString } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import Lottie from 'lottie-react'
 import React, { FC, useCallback, useEffect, useState } from 'react'
-import { CurrencyAmount, JSBI } from 'sushi-sdk-ftm'
+import { CurrencyAmount, JSBI } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface AuctionCreationModalProps {
   open: boolean

@@ -8,7 +8,7 @@ import { BentoApprovalState } from 'app/hooks/useBentoMasterApproveCallback'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useDerivedInariState, useSelectedInariStrategy } from 'app/state/inari/hooks'
 import React, { FC, useCallback, useState } from 'react'
-import { ZERO } from 'sushi-sdk-ftm'
+import { ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface InariButtonProps extends ButtonProps {}
 

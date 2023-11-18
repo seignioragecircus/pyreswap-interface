@@ -9,7 +9,7 @@ import { AuctionPriceHelperTextByTemplateId } from 'app/features/miso/context/ut
 import { classNames } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC } from 'react'
-import { ZERO } from 'sushi-sdk-ftm'
+import { ZERO } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { ChartCard } from './ChartCard'
 

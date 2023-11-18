@@ -16,7 +16,7 @@ import {
   getTransaction,
   getTransfers,
 } from 'app/services/covalent/fetchers'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 import useSWR from 'swr'
 
 // CLASS A

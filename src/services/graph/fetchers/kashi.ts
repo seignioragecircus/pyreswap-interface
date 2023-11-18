@@ -2,7 +2,7 @@ import { toAmount } from 'app/functions'
 import { GRAPH_HOST } from 'app/services/graph/constants'
 import { getTokenSubset } from 'app/services/graph/fetchers'
 import { kashiPairsQuery } from 'app/services/graph/queries/kashi'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { getBentoTokens } from './bentobox'
 import { pager } from './pager'

@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { PoolState, Trade } from '@sushiswap/trident-sdk'
-import { Currency, CurrencyAmount, Token, Trade as LegacyTrade, TradeType } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Token, Trade as LegacyTrade, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
+import { PoolState, Trade } from 'sushi-sdk-ftm/packages/trident-sdk'
 
 export type TradeUnion =
   | Trade<Currency, Currency, TradeType.EXACT_INPUT | TradeType.EXACT_OUTPUT>

@@ -4,7 +4,7 @@ import { calculateSlippageAmount, toAmountCurrencyAmount } from 'app/functions'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import { useCallback, useMemo } from 'react'
-import { Currency, CurrencyAmount, Percent } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export const useRemoveDetails = () => {
   const {

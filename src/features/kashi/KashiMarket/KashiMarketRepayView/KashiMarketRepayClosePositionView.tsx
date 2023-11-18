@@ -10,7 +10,7 @@ import Typography from 'app/components/Typography'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { classNames, unwrappedToken } from 'app/functions'
 import React, { FC, Fragment } from 'react'
-import { CurrencyAmount } from 'sushi-sdk-ftm'
+import { CurrencyAmount } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface KashiMarketRepayClosePositionView {
   enabled: boolean

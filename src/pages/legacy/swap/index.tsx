@@ -33,7 +33,7 @@ import { useDefaultsFromURLSearch, useDerivedSwapInfo, useSwapActionHandlers, us
 import { useExpertModeManager, useUserSingleHopOnly } from 'app/state/user/hooks'
 import { NextSeo } from 'next-seo'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
-import { Currency, JSBI, Token, Trade as V2Trade, TradeType } from 'sushi-sdk-ftm'
+import { Currency, JSBI, Token, Trade as V2Trade, TradeType } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { SwapProps } from '../../swap'
 

@@ -1,7 +1,7 @@
 import { getCurrencyLogoUrls } from 'app/components/CurrencyLogo/CurrencyLogo'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useCallback, useState } from 'react'
-import { Currency, Token } from 'sushi-sdk-ftm'
+import { Currency, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export default function useAddToken(currencyToAdd: Currency | undefined): {
   addToken: () => void

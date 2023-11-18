@@ -8,7 +8,7 @@ import { useToken } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC } from 'react'
 import { useFormContext } from 'react-hook-form'
-import { NATIVE } from 'sushi-sdk-ftm'
+import { NATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface AuctionCreationFormBatchAuctionProps {}
 

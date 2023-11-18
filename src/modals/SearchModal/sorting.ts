@@ -1,5 +1,5 @@
 import { useAllTokenBalances } from 'app/state/wallet/hooks'
-import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm'
+import { Currency, CurrencyAmount, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
 // compare two token amounts with highest one coming first
 function balanceComparator(balanceA?: CurrencyAmount<Currency>, balanceB?: CurrencyAmount<Currency>) {

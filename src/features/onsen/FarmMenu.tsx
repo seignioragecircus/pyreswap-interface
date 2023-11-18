@@ -6,7 +6,7 @@ import Typography from 'app/components/Typography'
 import { useWalletModalToggle } from 'app/state/application/hooks'
 import { useRouter } from 'next/router'
 import React, { FC, Fragment, ReactNode, useMemo, useState } from 'react'
-import { ChainId } from 'sushi-sdk-ftm'
+import { ChainId } from 'sushi-sdk-ftm/packages/core-sdk'
 
 const MenuLink: FC<{ href?: string; label: string; onClick?(): void }> = ({ href, label, onClick }) => {
   const router = useRouter()

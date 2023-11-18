@@ -5,7 +5,7 @@ import { AXSUSHI } from 'app/config/tokens/ethereum'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTokenBalances } from 'app/state/wallet/hooks'
 import { useEffect, useMemo } from 'react'
-import { ChainId, SUSHI, SUSHI_ADDRESS } from 'sushi-sdk-ftm'
+import { ChainId, SUSHI, SUSHI_ADDRESS } from 'sushi-sdk-ftm/packages/core-sdk'
 
 import { StrategyGeneralInfo, StrategyHook, StrategyTokenDefinitions } from '../types'
 import useBaseStrategy from './useBaseStrategy'

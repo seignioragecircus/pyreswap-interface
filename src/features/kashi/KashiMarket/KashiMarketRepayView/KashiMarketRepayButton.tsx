@@ -11,8 +11,17 @@ import { useBentoBoxContract } from 'app/hooks'
 import { useBentoOrWalletBalance } from 'app/hooks/useBentoOrWalletBalance'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, ReactNode, useState } from 'react'
-import { Currency, CurrencyAmount, JSBI, KASHI_ADDRESS, maximum, TradeType, WNATIVE_ADDRESS, ZERO } from 'sushi-sdk-ftm'
-import { Trade as LegacyTrade } from 'sushi-sdk-ftm'
+import {
+  Currency,
+  CurrencyAmount,
+  JSBI,
+  KASHI_ADDRESS,
+  maximum,
+  TradeType,
+  WNATIVE_ADDRESS,
+  ZERO,
+} from 'sushi-sdk-ftm/packages/core-sdk'
+import { Trade as LegacyTrade } from 'sushi-sdk-ftm/packages/core-sdk'
 
 export interface KashiMarketRepayButtonProps {
   view: KashiMarketView

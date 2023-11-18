@@ -2,7 +2,7 @@ import { uriToHttp } from 'app/functions/convert'
 import Vibrant from 'node-vibrant'
 import { shade } from 'polished'
 import { useLayoutEffect, useState } from 'react'
-import { ChainId, Token } from 'sushi-sdk-ftm'
+import { ChainId, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 // @ts-ignore TYPE NEEDS FIXING
 import { hex } from 'wcag-contrast'
 

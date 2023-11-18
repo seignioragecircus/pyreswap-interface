@@ -6,7 +6,7 @@ import Typography from 'app/components/Typography'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket/KashiMarketContext'
 import { classNames, unwrappedToken } from 'app/functions'
 import React, { FC } from 'react'
-import { CurrencyAmount, Percent } from 'sushi-sdk-ftm'
+import { CurrencyAmount, Percent } from 'sushi-sdk-ftm/packages/core-sdk'
 
 interface KashiMarketCurrentPosition {
   setCollateralAmount?(x: string): void
