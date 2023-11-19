@@ -172,6 +172,7 @@ function useCombinedTokenMapFromUrls(urls: string[] | undefined): TokenAddressMa
 // filter out unsupported lists
 export function useActiveListUrls(): string[] | undefined {
   const activeListUrls = useAppSelector((state) => state.lists.activeListUrls)
+  // console.log(activeListUrls)
   return useMemo(() => activeListUrls?.filter((url) => !UNSUPPORTED_LIST_URLS.includes(url)), [activeListUrls])
 }
 
@@ -197,6 +198,7 @@ export function useInactiveListUrls(): string[] {
 // get all the tokens from active lists, combine with local default tokens
 export function useCombinedActiveList(): TokenAddressMap {
   const activeListUrls = useActiveListUrls()
+  // console.log(activeListUrls)
   const activeTokens = useCombinedTokenMapFromUrls(activeListUrls)
   return activeTokens
 }

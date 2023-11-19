@@ -111,11 +111,6 @@ export const useAddLiquidityExecute: UseAddLiquidityExecute = () => {
 
         dispatch(setAddAttemptingTxn(false))
 
-        gtag('event', 'Add', {
-          event_category: 'Liquidity',
-          event_label: [pool.token0.symbol, pool.token1.symbol].join('/'),
-        })
-
         dispatch(setAddBentoPermit(undefined))
         return tx
       } catch (error) {

@@ -34,19 +34,19 @@ const useMenu: UseMenu = () => {
 
     const menu: Menu = []
 
-    const trade = [
-      {
-        key: 'swap',
-        title: i18n._(t`Swap`),
-        link: '/swap',
-      },
-      // {
-      //   key: 'limit',
-      //   title: i18n._(t`Limit order`),
-      //   link: '/limit-order',
-      //   disabled: !featureEnabled(Feature.LIMIT_ORDERS, chainId),
-      // },
-    ]
+    // const trade = [
+    //   {
+    //     key: 'swap',
+    //     title: i18n._(t`Swap`),
+    //     link: '/swap',
+    //   },
+    //   // {
+    //   //   key: 'limit',
+    //   //   title: i18n._(t`Limit order`),
+    //   //   link: '/limit-order',
+    //   //   disabled: !featureEnabled(Feature.LIMIT_ORDERS, chainId),
+    //   // },
+    // ]
 
     const liquidity = [
       {
@@ -134,12 +134,12 @@ const useMenu: UseMenu = () => {
         })
       }
     } else {
-      menu.push({
-        key: 'trade',
-        title: i18n._(t`Trade`),
-        icon: <SwitchVerticalIcon width={20} />,
-        items: trade.filter((item) => item),
-      })
+      // menu.push({
+      //   key: 'trade',
+      //   title: i18n._(t`Trade`),
+      //   icon: <SwitchVerticalIcon width={20} />,
+      //   items: trade.filter((item) => item),
+      // })
       menu.push({
         key: 'liquidity',
         title: i18n._(t`Liquidity`),

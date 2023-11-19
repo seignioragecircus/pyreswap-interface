@@ -231,11 +231,6 @@ export default function Remove() {
           })
 
           setTxHash(response.hash)
-
-          gtag('event', 'Remove', {
-            event_category: 'Routing',
-            event_label: [currencyA?.symbol, currencyB?.symbol].join('/'),
-          })
         })
         .catch((error: Error) => {
           setAttemptingTxn(false)

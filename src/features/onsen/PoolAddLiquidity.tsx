@@ -153,11 +153,6 @@ const PoolDeposit = ({ currencyA, currencyB, header }) => {
               } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`
             ),
           })
-
-          gtag('event', 'Add', {
-            event_category: 'Liquidity',
-            event_label: [currencies[Field.CURRENCY_A]?.symbol, currencies[Field.CURRENCY_B]?.symbol].join('/'),
-          })
         })
       )
       .catch((error) => {

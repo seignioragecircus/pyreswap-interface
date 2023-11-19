@@ -16,26 +16,30 @@ const ROLL_LIST = 'https://app.tryroll.com/tokens.json'
 // const DHEDGE_LIST = 'https://list.dhedge.eth.link'
 const SUSHI_LIST = 'https://token-list.sushi.com'
 const CHAINLINK_LIST = 'https://token-list.sushi.com/chainlink'
+// const PYRESWAP_LIST = 'https://raw.githubusercontent.com/KiaDezoSC/API-Test/main/test.json'
+const PYRESWAP_LIST = 'https://raw.githubusercontent.com/KiaDezoSC/Pyreswap-tokens-API/main/pyreswap-tokens-list.json'
 
-export const UNSUPPORTED_LIST_URLS: string[] = [BA_LIST]
+// export const UNSUPPORTED_LIST_URLS: string[] = [BA_LIST]
+export const UNSUPPORTED_LIST_URLS: string[] = []
 
 // this is the default list of lists that are exposed to users
 // lower index == higher priority for token import
 const DEFAULT_LIST_OF_LISTS_TO_DISPLAY: string[] = [
-  SUSHI_LIST,
-  CHAINLINK_LIST,
-  COMPOUND_LIST,
-  AAVE_LIST,
+  PYRESWAP_LIST,
+  // SUSHI_LIST,
+  // CHAINLINK_LIST,
+  // COMPOUND_LIST,
+  // AAVE_LIST,
   // CMC_ALL_LIST,
-  COINGECKO_LIST,
+  // COINGECKO_LIST,
   // UMA_LIST,
-  SYNTHETIX_LIST,
-  KLEROS_LIST,
-  GEMINI_LIST,
-  WRAPPED_LIST,
-  SET_LIST,
-  ROLL_LIST,
-  NFTX_LIST,
+  // SYNTHETIX_LIST,
+  // KLEROS_LIST,
+  // GEMINI_LIST,
+  // WRAPPED_LIST,
+  // SET_LIST,
+  // ROLL_LIST,
+  // NFTX_LIST,
   // DHEDGE_LIST,
 ]
 
@@ -45,4 +49,5 @@ export const DEFAULT_LIST_OF_LISTS: string[] = [
 ]
 
 // default lists to be 'active' aka searched across
-export const DEFAULT_ACTIVE_LIST_URLS: string[] = [SUSHI_LIST, CHAINLINK_LIST, NFTX_LIST]
+// export const DEFAULT_ACTIVE_LIST_URLS: string[] = [SUSHI_LIST, CHAINLINK_LIST, NFTX_LIST]
+export const DEFAULT_ACTIVE_LIST_URLS: string[] = [PYRESWAP_LIST]

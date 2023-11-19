@@ -25,12 +25,6 @@ const useSushiRoll = (dex: LPToken['dex']) => {
           gasLimit: gasLimit.mul(120).div(100),
         })
 
-        gtag('event', `${from}->Sushiswap`, {
-          event_category: 'Migrate',
-          event_label: 'migrate',
-          event_action: `${from}->Sushiswap`,
-        })
-
         return tx
       }
     },
@@ -64,12 +58,6 @@ const useSushiRoll = (dex: LPToken['dex']) => {
         const gasLimit = await sushiRoll.estimateGas.migrateWithPermit(...args)
         const tx = await sushiRoll.migrateWithPermit(...args, {
           gasLimit: gasLimit.mul(120).div(100),
-        })
-
-        gtag('event', `${from}->Sushiswap`, {
-          event_category: 'Migrate',
-          event_label: 'migrateWithPermit',
-          event_action: `${from}->Sushiswap`,
         })
 
         return tx

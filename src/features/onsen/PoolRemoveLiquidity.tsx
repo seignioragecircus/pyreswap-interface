@@ -272,21 +272,11 @@ const PoolWithdraw = ({ currencyA, currencyB, header }) => {
               txHash={response.hash}
             />
           )
-
-          gtag('event', 'Remove', {
-            event_category: 'Liquidity',
-            event_label: [currencyA?.symbol, currencyB?.symbol].join('/'),
-          })
         })
         .catch((error: Error) => {
           setAttemptingTxn(false)
           // we only care if the error is something _other_ than the user rejected the tx
           console.error(error)
-
-          gtag('event', 'Remove Failed', {
-            event_category: 'Liquidity',
-            event_label: [currencyA?.symbol, currencyB?.symbol].join('/'),
-          })
         })
     }
   }

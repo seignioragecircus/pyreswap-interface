@@ -76,10 +76,6 @@ export function useUserSingleHopOnly(): [boolean, (newSingleHopOnly: boolean) =>
 
   const setSingleHopOnly = useCallback(
     (newSingleHopOnly: boolean) => {
-      gtag('event', newSingleHopOnly ? 'Enabled Single Hop' : 'Disabled Single Hop', {
-        event_category: 'Routing',
-      })
-
       dispatch(updateUserSingleHopOnly({ userSingleHopOnly: newSingleHopOnly }))
     },
     [dispatch]

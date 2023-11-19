@@ -91,11 +91,6 @@ export const useCreatePoolExecute: UseCreatePoolExecute = () => {
 
         dispatch(setCreateAttemptingTxn(false))
 
-        gtag('event', 'Create', {
-          event_category: 'Constant Product Pool',
-          event_label: [assets[0].currency!!.symbol, assets[1].currency!!.symbol].join('/'),
-        })
-
         dispatch(setCreateBentoPermit(undefined))
         return tx
       } catch (error) {

@@ -38,44 +38,20 @@ const ListRow: FC<{ listUrl: string }> = memo(({ listUrl }) => {
 
   const handleAcceptListUpdate = useCallback(() => {
     if (!pending) return
-    gtag('event', 'Update List from List Select', {
-      event_category: 'Lists',
-      event_label: listUrl,
-    })
     dispatch(acceptListUpdate(listUrl))
   }, [dispatch, listUrl, pending])
 
   const handleRemoveList = useCallback(() => {
-    gtag('event', 'Start Remove List', {
-      event_category: 'Lists',
-      event_label: listUrl,
-    })
-
     if (window.prompt(`Please confirm you would like to remove this list by typing REMOVE`) === `REMOVE`) {
-      gtag('event', 'Confirm Remove List', {
-        event_category: 'Lists',
-        event_label: listUrl,
-      })
-
       dispatch(removeList(listUrl))
     }
   }, [dispatch, listUrl])
 
   const handleEnableList = useCallback(() => {
-    gtag('event', 'Enable List', {
-      event_category: 'Lists',
-      event_label: listUrl,
-    })
-
     dispatch(enableList(listUrl))
   }, [dispatch, listUrl])
 
   const handleDisableList = useCallback(() => {
-    gtag('event', 'Disable List', {
-      event_category: 'Lists',
-      event_label: listUrl,
-    })
-
     dispatch(disableList(listUrl))
   }, [dispatch, listUrl])
 

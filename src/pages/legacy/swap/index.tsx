@@ -26,7 +26,6 @@ import { useSwapCallback } from 'app/hooks/useSwapCallback'
 import { useUSDCValue } from 'app/hooks/useUSDCPrice'
 import useWrapCallback, { WrapType } from 'app/hooks/useWrapCallback'
 import { SwapLayout, SwapLayoutCard } from 'app/layouts/SwapLayout'
-import TokenWarningModal from 'app/modals/TokenWarningModal'
 import { useActiveWeb3React } from 'app/services/web3'
 import { Field, setRecipient } from 'app/state/swap/actions'
 import { useDefaultsFromURLSearch, useDerivedSwapInfo, useSwapActionHandlers, useSwapState } from 'app/state/swap/hooks'
@@ -216,27 +215,6 @@ const Swap = ({ banners }: SwapProps) => {
           swapErrorMessage: undefined,
           txHash: hash,
         })
-
-        gtag(
-          'event',
-          recipient === null
-            ? 'Swap w/o Send'
-            : (recipientAddress ?? recipient) === account
-            ? 'Swap w/o Send + recipient'
-            : 'Swap w/ Send',
-          {
-            event_category: 'Swap',
-            event_label: [
-              trade?.inputAmount?.currency?.symbol,
-              trade?.outputAmount?.currency?.symbol,
-              singleHopOnly ? 'SH' : 'MH',
-            ].join('/'),
-          }
-        )
-
-        gtag('event', singleHopOnly ? 'Swap with multihop disabled' : 'Swap with multihop enabled', {
-          event_category: 'Routing',
-        })
       })
       .catch((error) => {
         setSwapState({
@@ -357,11 +335,11 @@ const Swap = ({ banners }: SwapProps) => {
         swapErrorMessage={swapErrorMessage}
         onDismiss={handleConfirmDismiss}
       />
-      <TokenWarningModal
+      {/* <TokenWarningModal
         isOpen={importTokensNotInDefault.length > 0 && !dismissTokenWarning}
         tokens={importTokensNotInDefault}
         onConfirm={handleConfirmTokenWarning}
-      />
+      /> */}
 
       <SwapLayoutCard>
         <div className="px-2">

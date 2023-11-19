@@ -15,7 +15,6 @@ import { useRouter } from 'next/router'
 import React, { KeyboardEvent, useCallback, useMemo, useState } from 'react'
 import { ChainId, Currency, NATIVE, Token } from 'sushi-sdk-ftm/packages/core-sdk'
 
-import CommonBases from './CommonBases'
 import CurrencyList from './CurrencyList'
 import ImportRow from './ImportRow'
 import { useTokenComparator } from './sorting'
@@ -60,15 +59,6 @@ export function CurrencySearch({
       return obj
     }, {})
   }
-
-  // useEffect(() => {
-  //   if (isAddressSearch) {
-  //     gtag('event', 'Search by address', {
-  //       event_category: 'Currency Select',
-  //       event_label: isAddressSearch,
-  //     })
-  //   }
-  // }, [isAddressSearch])
 
   const filteredTokens: Token[] = useMemo(() => {
     return filterTokens(Object.values(allTokens), debouncedQuery)
@@ -152,7 +142,7 @@ export function CurrencySearch({
           className="w-full bg-[rgba(0,0,0,0.2)] border border-dark-800 focus:border-blue rounded placeholder-secondary font-bold text-base p-4 appearance-none"
         />
       )}
-      {showCommonBases && <CommonBases />}
+      {/* {showCommonBases && <CommonBases />} */}
 
       {searchToken && !searchTokenIsAdded && <ImportRow token={searchToken} onClick={handleImport} />}
       <div className="h-full overflow-hidden overflow-y-auto border rounded border-dark-800 bg-[rgba(0,0,0,0.2)]">

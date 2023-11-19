@@ -29,19 +29,10 @@ const ImportList: FC = () => {
     setAddError(undefined)
     fetchList(listUrl)
       .then(() => {
-        gtag('event', 'Add List', {
-          event_category: 'Lists',
-          event_label: listUrl,
-        })
         dispatch(enableList(listUrl))
         setView(CurrencyModalView.manage)
       })
       .catch((error) => {
-        gtag('event', 'Add List Failed', {
-          event_category: 'Lists',
-          event_label: listUrl,
-        })
-
         setAddError(error.message)
         dispatch(removeList(listUrl))
       })

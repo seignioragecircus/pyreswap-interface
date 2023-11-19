@@ -315,14 +315,14 @@ export const ADDITIONAL_BASES: {
   //   [FANTOM.FRAX.address]: [FANTOM.FXS],
   //   [FANTOM.FXS.address]: [FANTOM.FRAX],
   // },
-  [ChainId.BSC]: {
-    [BSC.FRAX.address]: [BSC.FXS],
-    [BSC.FXS.address]: [BSC.FRAX],
-  },
-  [ChainId.AVALANCHE]: {
-    [AVALANCHE.FRAX.address]: [AVALANCHE.FXS],
-    [AVALANCHE.FXS.address]: [AVALANCHE.FRAX],
-  },
+  // [ChainId.BSC]: {
+  //   [BSC.FRAX.address]: [BSC.FXS],
+  //   [BSC.FXS.address]: [BSC.FRAX],
+  // },
+  // [ChainId.AVALANCHE]: {
+  //   [AVALANCHE.FRAX.address]: [AVALANCHE.FXS],
+  //   [AVALANCHE.FXS.address]: [AVALANCHE.FRAX],
+  // },
 }
 
 /**

@@ -95,11 +95,6 @@ export const useRemoveLiquiditySingleExecute = () => {
 
         dispatch(setRemoveAttemptingTxn(false))
 
-        gtag('event', 'Burn', {
-          event_category: 'Liquidity',
-          event_label: [poolWithState.pool.token0.symbol, poolWithState.pool.token1.symbol].join('/'),
-        })
-
         dispatch(setRemoveDeletePermits())
         return tx
       } catch (error) {
