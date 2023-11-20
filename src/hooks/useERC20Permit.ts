@@ -284,7 +284,7 @@ export function useERC20Permit(
 
 const REMOVE_V2_LIQUIDITY_PERMIT_INFO: PermitInfo = {
   version: '1',
-  name: 'SushiSwap LP Token',
+  name: 'PyreSwap LP Token',
   type: PermitType.AMOUNT,
 }
 
