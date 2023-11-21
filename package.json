@@ -251,7 +251,7 @@
     "showDetails": true
   },
   "dependencies": {
-    "node-sass": "^9.0.0",
+    "node-sass": "6.0.0",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "sushi-sdk-ftm": "^1.0.8"
