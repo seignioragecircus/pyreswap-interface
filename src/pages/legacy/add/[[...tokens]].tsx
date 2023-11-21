@@ -381,7 +381,7 @@ export default function Add() {
           )}
         </Typography>
       )}
-      <Typography variant="xs" className="px-10 mt-5 text-center text-low-emphesis">
+      {/* <Typography variant="xs" className="px-10 mt-5 text-center text-low-emphesis">
         <Typography variant="xs" weight={700} component="span">
           Tip
         </Typography>
@@ -391,7 +391,7 @@ export default function Add() {
                 proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be
                 claimed by withdrawing your liquidity.`
         )}
-      </Typography>
+      </Typography> */}
     </>
   )
 }

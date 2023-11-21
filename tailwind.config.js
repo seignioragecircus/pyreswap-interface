@@ -3,6 +3,15 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   // important: '#__next',
+  mode: 'jit',
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
+  },
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {

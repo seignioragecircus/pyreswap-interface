@@ -13,7 +13,6 @@ import { useRouter } from 'next/router'
 import React, { FC } from 'react'
 import { NATIVE } from 'sushi-sdk-ftm/packages/core-sdk'
 
-import Button from '../Button'
 import Dots from '../Dots'
 import Typography from '../Typography'
 import { NavigationItem } from './NavigationItem'
@@ -27,7 +26,7 @@ const Desktop: FC = () => {
   const { account, chainId, library } = useActiveWeb3React()
   const userEthBalance = useNativeCurrencyBalances(account ? [account] : [])?.[account ?? '']
   const isCoinbaseWallet = useIsCoinbaseWallet()
-  const [showBanner, setShowBanner] = React.useState<boolean>(true)
+  // const [showBanner, setShowBanner] = React.useState<boolean>(true)
 
   return (
     <>
@@ -39,7 +38,12 @@ const Desktop: FC = () => {
                 <div className="flex items-center w-6 mr-4">
                   <Image src="https://app.sushi.com/images/logo.svg" alt="Sushi logo" width="24px" height="24px" />
                 </div>
-                <Button onClick={() => router.push('/swap')}>{i18n._(t`Swap`)}</Button>
+                {/* <Button className="headerTest" onClick={() => router.push('/swap')}>
+                  {i18n._(t`Swap`)}
+                </Button> */}
+                <div className="headerBtn" onClick={() => router.push('/swap')}>
+                  {i18n._(t`Swap`)}
+                </div>
                 {menu.map((node) => {
                   return <NavigationItem node={node} key={node.key} />
                 })}

@@ -1,12 +1,16 @@
 @tailwind base;
 
+@import './fonts.css';
 @import '@fontsource/dm-sans/index.css';
 @import 'react-virtualized/styles.css';
 @import './variables.css';
+@import './commonClasses.css';
 
 @tailwind components;
 
 @tailwind utilities;
+
+@import './header/header';
 
 *,
 *:before,
@@ -19,27 +23,36 @@ html {
   box-sizing: border-box;
   touch-action: manipulation;
   font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
-  text-rendering: optimizeLegibility;
+  /* text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
   overflow-y: auto;
   overflow-x: hidden;
 }
 
 html,
 body {
-  font-family: var(--font-sans);
-  text-rendering: optimizeLegibility;
+  /* font-family: var(--font-sans); */
+  /* text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary);
-  color: var(--text-primary);
+  -moz-osx-font-smoothing: grayscale; */
+  /* background-color: var(--primary); */
+  color: var(--mainTextColor);
 }
 
 body {
   position: relative;
   margin: 0;
   min-height: 100%;
+}
+
+body {
+  font-family: "alagard", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("../assets/BetaTestingOpacity.png");
+  background-size: auto;
+  background-repeat: repeat;
 }
 
 a {
@@ -102,4 +115,23 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
 
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.show-flex {
+  display: flex;
 }

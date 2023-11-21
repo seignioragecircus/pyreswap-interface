@@ -1,0 +1,15 @@
+.header {
+    &Btn {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    &Liq {
+        font-size: 20px;
+    }
+    &Background {
+        background-color: var(--bgColor);
+    }
+  }

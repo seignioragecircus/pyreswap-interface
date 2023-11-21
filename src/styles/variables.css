@@ -3,4 +3,9 @@
     --text-primary: #BFBFBF;
     --font-sans: "DM Sans", -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', sans-serif;
     --scrollbar-width: 14px;
+    --mainTextColor: #fff;
+    --secondaryTextColor: #000;
+    --warningColor: #fb5f00;
+    --buttonColor: #058cef;
+    --bgColor: #000;
 }

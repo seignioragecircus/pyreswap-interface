@@ -35,7 +35,7 @@ export const NavigationItem: FC<NavigationItem> = ({ node }) => {
         variant="sm"
         className={classNames(
           router.asPath === link ? 'text-white' : '',
-          'hover:text-white font-bold py-5 px-2 rounded flex gap-3'
+          'hover:text-white font-bold py-5 px-2 rounded flex gap-3 headerLiq'
         )}
       >
         {!isDesktop && node.icon}
@@ -57,7 +57,10 @@ export const NavigationItem: FC<NavigationItem> = ({ node }) => {
             <Typography
               weight={700}
               variant="sm"
-              className={classNames(open ? 'text-white' : '', 'font-bold py-5 px-2 rounded flex gap-3 items-center')}
+              className={classNames(
+                open ? 'text-white' : '',
+                'font-bold py-5 px-2 rounded flex gap-3 items-center headerLiq'
+              )}
             >
               {!isDesktop && node.icon}
               {node.title}

@@ -59,11 +59,11 @@ const Pool = () => {
           </div>
         )}
       </SwapLayoutCard>
-      <Typography variant="xs" className="px-10 mt-5 text-center text-low-emphesis">
+      {/* <Typography variant="xs" className="px-10 mt-5 text-center text-low-emphesis">
         {i18n._(t`Liquidity providers earn a 0.25% fee on all trades proportional to their share of
                         the pool. Fees are added to the pool, accrue in real time and can be claimed by
                         withdrawing your liquidity`)}
-      </Typography>
+      </Typography> */}
     </>
   )
 }
